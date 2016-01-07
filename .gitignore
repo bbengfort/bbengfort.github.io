@@ -1,2 +1,9 @@
-_site/
-.sass-cache/
+_site
+.sass-cache
+.jekyll-metadata
+_gh_pages
+.ruby-version
+
+.DS_Store
+Thumbs.db
+._*
