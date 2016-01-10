@@ -2,7 +2,7 @@
 layout: post
 title:  "One Big Gift Selection Algorithm"
 date:   2015-12-25 11:54:12 -0500
-categories: snippets reminders
+categories: snippets
 ---
 
 My family does "one big gift" every Christmas; that is instead of everyone simply buying everyone else a smaller gift; every person is assigned to one other person to give them a single large gift. Selection of who gives what to who is a place of some (minor) conflict. Therefore we simply use a random algorithm. Unfortunately, apparently a uniform random sample of pairs is not enough, therefore we take 100 samples to vote for each combination to see who gets what as follows:
@@ -64,4 +64,4 @@ if __name__ == '__main__':
 ## Follow Ups
 
 - The (secret) [Gist](https://gist.github.com/bbengfort/4df612b0155ca2a362ae) contains all the code including the data file.
-- Need to implement a method that does not allow for repeat giftee pairs. 
+- Need to implement a method that does not allow for repeat giftee pairs.

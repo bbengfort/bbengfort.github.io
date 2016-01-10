@@ -2,7 +2,7 @@
 layout: post
 title:  "Frequently Copied and Pasted"
 date:   2016-01-08 23:14:57 -0500
-categories: notes
+categories: programmer
 ---
 
 I have a bit of catch up to do &mdash; and I think that this notepad and development journal is the perfect resource to do it. You see, I am _constantly_ copy and pasting code from other projects into the current project that I'm working on. Usually this takes the form of a problem that I had solved previously that has a similar domain to a new problem, but requires a slight amount of tweaking. Other times I am just doing the same task over and over again.
@@ -21,4 +21,4 @@ However, there is also a whole host of stuff that we use in our utilities, like 
 
 <script src="https://gist.github.com/bbengfort/bd5be18d00c9e982a032.js"></script>
 
-But you know, hunting for Gists is hard, hunting for code in other repositories is hard. So you know what? I'm just going to put it all here. Quick and dirty in the hopes that I'll have a one stop shop for copy and paste. Plus embedding those Gists is very, very handy. 
+But you know, hunting for Gists is hard, hunting for code in other repositories is hard. So you know what? I'm just going to put it all here. Quick and dirty in the hopes that I'll have a one stop shop for copy and paste. Plus embedding those Gists is very, very handy.
