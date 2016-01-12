@@ -7,3 +7,9 @@ _gh_pages
 .DS_Store
 Thumbs.db
 ._*
+
+Gemfile.lock
+*.gem
+.bundle/
+.ruby-version
+.ruby-gemset
