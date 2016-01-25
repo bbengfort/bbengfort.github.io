@@ -176,7 +176,7 @@ $ twine upload -r pypitest dist/foo-0.1*
 Note that you can also sign the package with a GnuPG key with the `-s` option, but we will skip that for now. Once again, we should test our packages with a virtual environment as above, but this time downloading them from PyPI Test directly:
 
 ```bash
-$ pip install -i https://testpypi.python.org/pipi foo
+$ pip install -i https://testpypi.python.org/pypi foo
 ```
 
 Once this is done and everything is ready to rock, you can repeat the process for uploading to the package to PyPI, simplified here as follows:
@@ -194,7 +194,7 @@ Assuming you're using [MkDocs](http://www.mkdocs.org/) as recommended then you c
 
 ```bash
 $ mkdocs build --clean
-$ pyhthon setup.py upload_docs --upload-dir=site
+$ python setup.py upload_docs --upload-dir=site
 ```
 
 ### Clean Up

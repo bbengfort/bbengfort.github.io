@@ -44,7 +44,7 @@ $ project
 
 Our primary code base is in the `foo` library, which should hold 99% of the Python code. The only other Python modules in this example that are outside of the `foo` library are `foo-app.py` and `setup.py`. The `foo-app.py` script is the main entry point for our application and is very simple, which we will see shortly. The `setup.py` script is for packaging and distribution via `pip`, which will will also discuss in a bit.
 
-The `foo` package includes a `foo.console` module, which in turn contains a `foo.console.commands` and `foo.console.app` modules. The `app` module will contain a subclass of `commis.ConsoleUtility`, which defines how our console application should behave. The `commands` module will organize our various subcommands, and as you can see, the `build` and `serve` modules are already listed, in which the `build` and `serve` commands will be implemented by extending `commis.Command`. We will discuss the `ConsoleUtility` and `Command` interfaces in detail.
+The `foo` package includes a `foo.console` module, which in turn contains a `foo.console.commands` and `foo.console.app` modules. The `app` module will contain a subclass of `commis.ConsoleProgram`, which defines how our console application should behave. The `commands` module will organize our various subcommands, and as you can see, the `build` and `serve` modules are already listed, in which the `build` and `serve` commands will be implemented by extending `commis.Command`. We will discuss the `ConsoleProgram` and `Command` interfaces in detail.
 
 The `foo-app.py` should be incredibly simple, even though it is the main entry point to the application. In fact, all it should do is import the console utility from `foo.console.app` and execute it, _that's it_. It will pretty much look as follows:
 
@@ -82,15 +82,15 @@ For more details on Python code organization see [&ldquo;Basic Python Project Fi
 
 ## Creating a Console Utility
 
-The Commis library utilizes a class-based interface for defining console utilities and commands. The primary usage is to subclass (extend) both the `ConsoleUtility` and the `Command` class for your purposes, however this is not required. In fact, given two commands, you could easily build a console utility as follows:
+The Commis library utilizes a class-based interface for defining console utilities and commands. The primary usage is to subclass (extend) both the `ConsoleProgram` and the `Command` class for your purposes, however this is not required. In fact, given two commands, you could easily build a console utility as follows:
 
 ```python
 #!/usr/bin/env python
 
-from commis import ConsoleUtility
+from commis import ConsoleProgram
 from foo.console.commands import BuildCommand, ServeCommand
 
-app = ConsoleUtility(
+app = ConsoleProgram(
     description='my foo app',
     epilog='postscript',
     version='1.0'
@@ -100,7 +100,7 @@ app.register(ServeCommand)
 app.execute()
 ```
 
-The `ConsoleUtility.register` command takes a `Command` subclass, and registers it to the console utility, building the necessary parser and subparser classes that the `argparse` module requires. You cannot add a command to a console utility without calling `register`. While the register method is easy, it does not allow you to manage, extend, or reuse the utility for different purposes. Instead, I recommend extending `ConsoleUtility` and modifying it as follows.
+The `ConsoleProgram.register` command takes a `Command` subclass, and registers it to the console utility, building the necessary parser and subparser classes that the `argparse` module requires. You cannot add a command to a console utility without calling `register`. While the register method is easy, it does not allow you to manage, extend, or reuse the utility for different purposes. Instead, I recommend extending `ConsoleProgram` and modifying it as follows.
 
 ```python
 # foo.console.app
@@ -108,7 +108,7 @@ The `ConsoleUtility.register` command takes a `Command` subclass, and registers 
 
 import foo
 
-from commis import ConsoleUtility
+from commis import ConsoleProgram
 from foo.console.commands import *
 
 COMMANDS = [
@@ -116,7 +116,7 @@ COMMANDS = [
     ServeCommand,
 ]
 
-class FooApp(ConsoleUtility):
+class FooApp(ConsoleProgram):
 
     description = "my foo app"
     epilog      = "please submit any issues to the bug tracker"
@@ -253,4 +253,4 @@ This will ensure that you have both the default arguments as well as the foo arg
 
 ## Conclusion
 
-In this post we have seen how to build a console utility with Commis - a library designed for easy console programs included with much larger libraries. As you can see, Commis is mostly about code organization and reusability. Hopefully this package will allow you to quickly and easily create utilities of your own. I'm always interested in feedback, please feel free to submit pull requests to the Commis GitHub repository! 
+In this post we have seen how to build a console utility with Commis - a library designed for easy console programs included with much larger libraries. As you can see, Commis is mostly about code organization and reusability. Hopefully this package will allow you to quickly and easily create utilities of your own. I'm always interested in feedback, please feel free to submit pull requests to the Commis GitHub repository!
