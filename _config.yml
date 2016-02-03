@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Gems
+# Plugins
 gems:
     - jekyll-paginate
 
@@ -25,12 +25,14 @@ author:
     twitter:    bbengfort
 
 # Build settings
-markdown:       redcarpet
-highlighter:    pygments
+markdown:       kramdown
+highlighter:    rouge
+kramdown:
+    input: GFM
 
 # Custom Variables
 paginate:       10
 version:        1.0
 
 github:
-    repo:       https://github.com/bbengfort/bbengfort.github.io
+    repo:       https://github.com/bbengfort/bbengfort.github.io    
