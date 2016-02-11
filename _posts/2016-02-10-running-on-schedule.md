@@ -180,6 +180,9 @@ This post is the first in a series where I discuss &ldquo;software immortality: 
 ### Footnotes
 
 <a name="ros-footnote-1">1.</a> Stack Overflow asks: [How do I get a Cron like scheduler in Python](http://stackoverflow.com/questions/373335/how-do-i-get-a-cron-like-scheduler-in-python)
+
 <a name="ros-footnote-2">2.</a> Mac OS X Daemons and Services: [Scheduling Timed Jobs](https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/ScheduledJobs.html).
+
 <a name="ros-footnote-3">3.</a> See [Daemons and Agents](https://developer.apple.com/library/mac/technotes/tn2083/_index.html#//apple_ref/doc/uid/DTS10003794) from the Apple Developer Library for more.
+
 <a name="ros-footnote-4">4.</a> Schedule was inspired by Adam Wiggins' article, [Rethinking Cron](http://adam.herokuapp.com/past/2010/4/13/rethinking_cron/).
