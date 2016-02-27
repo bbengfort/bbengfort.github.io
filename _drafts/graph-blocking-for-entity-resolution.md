@@ -23,7 +23,7 @@ In this post we will look at a dataset of denormalized subject, predicate, objec
 
 Expresses the relationship between an entity labeled &ldquo;Benjamin Bengfort&rdquo; and a workshop, &ldquo;Introduction to Machine Learning&rdquo; &mdash; namely that I taught it. The dataset of triples form a social activity network: e.g. there is a relationship from the instructor and any person that registered for or took the workshop, through the workshop node by their associated triples.
 
-**Note**: This data set has been anonymized using the [Faker](http://www.joke2k.net/faker/) library to protect our students and instructors' personally identifying information.
+Participation at District Data Labs is tracked by collecting an _activity log_ of these types of SPOs. Just for the sake of terminology, we will say that the activity log maps a person entity (identified by name and email address) to a DDL detail (e.g. workshop, blog post, incubator, newsletter, etc.), via an activity (identified by a description and a date). The entire dataset is represented in CSV form as follows:
 
 ```
 Email,FullName,Action,Detail,ActionDate,IPAddress
@@ -37,10 +37,36 @@ cali.gibson@prohaskakub.com,Cali Gibson,Registered for workshop,Intro to Big Dat
 luke@bellweather.com,"BellWeather, Inc.",Registered for workshop,Intro to Big Data with Hadoop,4/10/2013,
 ```
 
+**Note**: This data set has been anonymized using the [Faker](http://www.joke2k.net/faker/) library to protect our students and instructors' personally identifying information. For more information on how the dataset was anonymized, see [Anonymizing User Profile Data with Faker](http://bbengfort.github.io/programmer/2016/02/25/anonymizing-profile-data.html).
+
+Because this data is merged from a variety of data sources and web forms, it quickly becomes apparent that there is ambiguity in both the person (subject) entities and the detail (object) entities. For example, is &ldquo;"Anthony Armstrong&rdquo; the same as &ldquo;Tony Armstrong&rdquo;? What if they have the same email address? What about two courses labeled &rdquo;Graph Analytics with Python&rdquo; but who have blocks of registrants with action dates a year apart? Worse, what about the following example:
+
+    John Smith <jsmith@example.com>
+    John Smith <john.f.smith@moonstar.edu>
+
+This is such a common name, are they the same or different people? Other data entries abound; even in the CSV data above, you can see that one person's name is a company: &ldquo;BellWeather, Inc.&rdquo;. In order to make decisions like these, either in an automatic fashion or by proposing pairs of records to a user, we first need some mechanism to expose likely similar matches, and weed out the obvious non-duplicates.
+
+However, if we make pairwise comparisons between every record in the dataset with no other processing, we will be left with $$c$$ comparisons as follows:
+
 $$
 c = \frac { n \left(n-1\right) } {2}
 $$
 
+For a relatively modest dataset of 1000 records, you're talking about having to make 499,500 pairwise comparisons. Given that similarity comparison is usually an expensive operation involving dynamic programming and other computing techniques, this clearly does not scale well. Through blocking techniques and rules, we can reduce the number of pairwise comparisons by eliminating pairs that will never match. For example, if we have a business listing dataset, we might only compare entities that have the same postal code in their street address. In the next section, we'll look at using a graph to to provide structure for blocking.
+
+## Analyzing Structure with Graphs
+
+Outline:
+
+- reading data from CSV
+- namedtuples for hashing into a graph
+- constructing a graph from triples
+- drawing the graph
+- computing # of pairwise comparisons
+- computing # of edge blocked comparisons 
+- printing info about the graph
+- performing similarity comparisons
+- fuzz blocking
 
 ## Conclusion
 
