@@ -44,7 +44,7 @@ Because this data is merged from a variety of data sources and web forms, it qui
     John Smith <jsmith@example.com>
     John Smith <john.f.smith@moonstar.edu>
 
-This is such a common name, are they the same or different people? Other data entries abound; even in the CSV data above, you can see that one person's name is a company: &ldquo;BellWeather, Inc.&rdquo;. In order to make decisions like these, either in an automatic fashion or by proposing pairs of records to a user, we first need some mechanism to expose likely similar matches, and weed out the obvious non-duplicates.
+This is such a common name, are they the same or different people? Other types of data errors abound; even in the CSV data above, you can see that one person's name is a company: &ldquo;BellWeather, Inc.&rdquo;. In order to make decisions like these, either in an automatic fashion or by proposing pairs of records to a user, we first need some mechanism to expose likely similar matches, and weed out the obvious non-duplicates.
 
 However, if we make pairwise comparisons between every record in the dataset with no other processing, we will be left with $$c$$ comparisons as follows:
 
@@ -52,9 +52,23 @@ $$
 c = \frac { n \left(n-1\right) } {2}
 $$
 
-For a relatively modest dataset of 1000 records, you're talking about having to make 499,500 pairwise comparisons. Given that similarity comparison is usually an expensive operation involving dynamic programming and other computing techniques, this clearly does not scale well. Through blocking techniques and rules, we can reduce the number of pairwise comparisons by eliminating pairs that will never match. For example, if we have a business listing dataset, we might only compare entities that have the same postal code in their street address. In the next section, we'll look at using a graph to to provide structure for blocking.
+For a relatively modest dataset of 1000 records, you're talking about having to make 499,500 pairwise comparisons. Given that similarity comparison is usually an expensive operation involving dynamic programming and other resource computing techniques, this clearly does not scale well. Through blocking techniques and rules, we can reduce the number of pairwise comparisons by eliminating pairs that will never match. For example, if we have a business listing dataset, we might only compare entities that have the same postal code in their street address. In the next section, we'll look at using a graph to to provide structure for blocking.
 
 ## Analyzing Structure with Graphs
+
+A graph is a computational and mathematical data structure composed of _nodes_ and _links_ (alternatively _vertices_ and _edges_). Graphs are used to model complex systems and relationships in the real world, for example communications networks, but also can be used generally in a variety of domains to structure data in a meaningful way<sup><small>[1](#gbfer-footnote-1)</small></sup>. The primary exercise of an analyst when it comes to graph is to determine what the edges and vertices are &mdash; once that is done, many different types of analyses and queries can be made on the structure alone without further information.   
+
+Graphs are computed upon by _traversal_, that is by following a path from node to node through their edges, collecting information along the way. The primary reason that graphs make computation simpler, therefore, is that at each step of computation only nodes that are _neighbors_ (connected via an edge) of the current node need to be analyzed. Traversal based computation means that distance is automatically encoded between nodes by the number of hops it takes to reach one to the other. Queries on graphs leverage distance for filtering or for search by looking only at the closest nodes in the graph.
+
+Hopefully it is clear that the graph structure provides important benefits when it comes to understanding and computing upon complex data. In this section we will explore how to construct and analyze our graph in preparation for deduplication and blocking. To do so we will use the Python NetworkX library, which you should install via `pip` as follows:
+
+    $ pip install networkx
+
+NetworkX is a comprehensive graph analytics package that allows you to load and store graphs in standard data formats, generate many types of graphs, analyze graph structure, and visualize them with `matplotlib` or `graphviz`. Note that these tools also must be installed in order to draw the graphs as we will below.
+
+### Constructing a Graph from a CSV
+
+We will construct our graph using the SPO triples already exposed in our dataset. The subject (person) and object (detail) are nodes that are connected by the predicate (action) edge. NetworkX graph classes require nodes to be hashable<sup><small>[2](#gbfer-footnote-2)</small></sup> Python objects.
 
 Outline:
 
@@ -63,10 +77,12 @@ Outline:
 - constructing a graph from triples
 - drawing the graph
 - computing # of pairwise comparisons
-- computing # of edge blocked comparisons 
+- computing # of edge blocked comparisons
 - printing info about the graph
 - performing similarity comparisons
 - fuzz blocking
+
+Our approach for blocking will be to eliminate pairs for comparison that share a detail node in its neighborhood. The idea is that since most detail objects require a monetary transaction (e.g. registering for a workshop), it is likely that two are different. However, if an two people register for two different workshops, then they might have done so using a different name or email.
 
 ## Conclusion
 
@@ -76,9 +92,16 @@ This project is part of the District Data Research Labs on Entity Resolution.
 
 ### Resources
 
-The repository for this post is at: [bbengfort/logbook-blocking](https://github.com/bbengfort/logbook-blocking).
+The repository for this post is at: [bbengfort/logbook-blocking](https://github.com/bbengfort/logbook-blocking). The dataset can be downloaded from: [ddl-activity-anonymized.csv.zip](http://bit.ly/1TK6UXv)
 
 #### Helpful Links
 
 - [Entity Resolution for Big Data](http://www.datacommunitydc.org/blog/2013/08/entity-resolution-for-big-data)
 - [A Primer on Entity Resolution](http://www.slideshare.net/BenjaminBengfort/a-primer-on-entity-resolution)
+
+#### Footnotes
+
+
+<a name="gbfer-footnote-1">1.</a> [On Graph Computing](http://markorodriguez.com/2013/01/09/on-graph-computing/) gives a more complete look at graphs and how to compute with them.
+
+<a name="gbfer-footnote-2">2.</a> [What do you mean by hashable in Python?](http://stackoverflow.com/questions/14535730/what-do-you-mean-by-hashable-in-python) asked on StackOverflow answers the question succinctly: any immutable or user defined object is hashable by default.
