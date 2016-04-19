@@ -86,7 +86,7 @@ from sklearn.datasets.base import Bunch
 
 def load_data(path, descr=None, target_index=-1):
     """
-    Returns a scklearn dataset Bunch which includes several important
+    Returns a sklearn dataset Bunch which includes several important
     attributes that are used in modeling:
 
         data: array of shape n_samples * n_features
@@ -97,18 +97,6 @@ def load_data(path, descr=None, target_index=-1):
         DESCR: contents of the readme
 
     This data therefore has the look and feel of the toy datasets.
-
-    Pass in a path usually just the name of the location in the data dir.
-    It will be joined with the result of `get_data_home`. The contents are:
-
-        path
-            - README.md     # The file to load into DESCR
-            - meta.json     # A file containing metadata to load
-            - dataset.txt   # The numpy loadtxt file
-
-    You can specify another descr, another feature_names, and whether or
-    not the dataset has a header row. You can also specify the index of the
-    target, which by default is the last item in the row (-1)
     """
 
     root          = os.path.join(get_data_home(), path)
