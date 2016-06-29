@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Visualizing Normal Distributions"
-date:   2016-06-27 08:27:07 -0400
+date:   2016-06-27 08:28:07 -0400
 categories: snippets
 ---
 
