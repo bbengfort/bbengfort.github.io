@@ -67,3 +67,11 @@ Make sure you insert the correct IP address and port! As quickly as you can, als
     $ ping -c 3600 1.2.3.4
 
 After about an hour, the dataset is sitting at your disposal ready to copy and paste into a text file. You can use the [ping_vs_echo.ipynb](https://github.com/bbengfort/orca-analysis/blob/master/notebooks/ping_vs_echo.ipynb) Jupyter Notebook to perform the analysis. It includes regular expressions to parse each type of line output and to aggregate them into the visualizations you saw above.
+
+## Local Subnet
+
+There are many reasons that ping could be faster than gRPC, not just the overhead of serializing and deserializing protocol buffers and HTTP transport. For example, ICMP could be given special routing, ICMP is handled closer to the kernel level, or the fact that ICMP frames are much, much smaller. In order to test this I ran the test from two machines on the same subnet; the violin plot for the distribution is below:
+
+![Local Area Distribution]({{site.base_url }}/assets/images/2016-11-02-ping-vs-echo-local-violinplot.png)
+
+Both ping and echo latencies are much smaller, by approximately the same amount. Because the gap between them is approximately the same percentage (though not fixed), I think this graph identifies clearly what is overhead and what is network latency. However, because the gap is also smaller, it shows that bandwidth and other message traffic may be having an influence in the disparity as well (e.g. that ping has preferential routes through wide area networks). 
