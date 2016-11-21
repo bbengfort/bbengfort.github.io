@@ -140,47 +140,47 @@ main(3)
 ```
 
 ```text
-    ---------------------------------------------------------------------------
+---------------------------------------------------------------------------
 
-    ValueError                                Traceback (most recent call last)
+ValueError                                Traceback (most recent call last)
 
-    <ipython-input-5-e46a77400742> in <module>()
-    ----> 1 main(3)
-
-
-    <ipython-input-4-03153844a5cc> in main(badstep, **kwargs)
-         12
-         13     # Execute each step one at a time.
-    ---> 14     step = first(step, badstep)
-         15     step = second(step, badstep)
-         16
+<ipython-input-5-e46a77400742> in <module>()
+----> 1 main(3)
 
 
-    <ipython-input-4-03153844a5cc> in first(step, badstep)
-         28
-         29     # Call sub steps in order
-    ---> 30     step = first_task_one(step, badstep)
-         31     step = first_task_two(step, badstep)
-         32
+<ipython-input-4-03153844a5cc> in main(badstep, **kwargs)
+     12
+     13     # Execute each step one at a time.
+---> 14     step = first(step, badstep)
+     15     step = second(step, badstep)
+     16
 
 
-    <ipython-input-4-03153844a5cc> in first_task_one(step, badstep)
-         44
-         45     # Call sub steps in order
-    ---> 46     step = first_task_one_subtask_one(step, badstep)
-         47
-         48     # Return the step that we're on
+<ipython-input-4-03153844a5cc> in first(step, badstep)
+     28
+     29     # Call sub steps in order
+---> 30     step = first_task_one(step, badstep)
+     31     step = first_task_two(step, badstep)
+     32
 
 
-    <ipython-input-4-03153844a5cc> in first_task_one_subtask_one(step, badstep)
-         56     # Check if this is a bad step
-         57     if badstep == step:
-    ---> 58         raise ValueError("Failed after {} steps".format(step))
-         59
-         60     # Return the step that we're on
+<ipython-input-4-03153844a5cc> in first_task_one(step, badstep)
+     44
+     45     # Call sub steps in order
+---> 46     step = first_task_one_subtask_one(step, badstep)
+     47
+     48     # Return the step that we're on
 
 
-    ValueError: Failed after 3 steps
+<ipython-input-4-03153844a5cc> in first_task_one_subtask_one(step, badstep)
+     56     # Check if this is a bad step
+     57     if badstep == step:
+---> 58         raise ValueError("Failed after {} steps".format(step))
+     59
+     60     # Return the step that we're on
+
+
+ValueError: Failed after 3 steps
 ```
 
 The way to read the traceback is to start at the very bottom. As you can see it indicates the type of the exception, followed by a colon, and then the message that was passed to the exception constructor. Often, this information is enough to figure out what is going wrong. However, if we're unsure where the problem occurred, we can step back through the traceback in a bottom to top fashion.
@@ -313,4 +313,4 @@ with open('path/to/file.txt', 'r') as fobj:
 
 The `with as` syntax implements context management. On `with`, a function called the `enter` function is called to do some work on behalf of the user (in this case open a file), and the return of that function is saved in the `fobj` variable. When this block is complete, the finally is called by implementing an `exit` function. (Note that the `except` part is not implemented in this particular code). In this way, we can ensure that the `try/finally` for opening and reading files is correctly implemented.
 
-Writing your own context managers is possible, but beyond the scope of this note. Suffice it to say, you should always use the `with/as` syntax for opening files!
+Writing your own context managers is possible, but beyond the scope of this note (though I may write something on it shortly). Suffice it to say, you should always use the `with/as` syntax for opening files!
