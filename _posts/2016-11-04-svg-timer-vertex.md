@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SVG Vertex with a Timer"
-date:   Fri Nov 04 10:30:29 2016 -0400
+date:   2016-11-04 10:30:29 -0400
 categories: snippets
 ---
 
