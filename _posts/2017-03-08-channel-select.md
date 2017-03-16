@@ -11,69 +11,8 @@ A common pattern for me has become to use a `select` to manage broadcasted work 
 
 The pattern code is below:
 
-TODO: Change to a Gist snippet.
-
-```go
-package main
-
-import (
-	"fmt"
-	"log"
-	"math/rand"
-	"time"
-)
-
-// Selects a random number of milliseconds to sleep then sends a message on
-// the wake up channel back to the initiator.
-func worker(idx int, wakeup chan<- string, echan chan<- error) {
-	delay := time.Duration(rand.Int63n(int64(8000))) * time.Millisecond
-	time.Sleep(delay)
-
-	msg := fmt.Sprintf("worker %d slept for %s", idx, delay)
-	wakeup <- msg
-}
-
-func main() {
-
-	// Create communication channels
-	ticker := time.NewTicker(time.Second * 1)
-	wakeup := make(chan string, 10)
-	echan := make(chan error)
-	workers := 10
-
-	// Launch 10 go routines
-	for i := 0; i < workers; i++ {
-		go worker(i+1, wakeup, echan)
-	}
-
-	var s string
-	var e error
-	var t time.Time
-
-	for {
-		// Select on timer, output, and error channels
-		select {
-		case t = <-ticker.C:
-            // Routine state update
-			fmt.Printf("tick at %s\n", t)
-		case s = <-wakeup:
-            // Handle output from a worker
-			fmt.Printf("%s\n", s)
-			workers--
-		case e = <-echan:
-            // If an error is received terminate
-			log.Fatal(e)
-		}
-
-        // If there are no more workers, break
-		if workers == 0 {
-			break
-		}
-	}
-
-}
-```
+<script src="https://gist.github.com/bbengfort/70c60a0c5fe89e0b6203e2d81e5a9aa2.js"></script>
 
 The `worker` function does not return anything (since it's a go routine) but instead takes as input an id, and two directional channels &mdash; meaning that the go routines can only send on the channel and not receive. The first channel is the output channel and the second is for errors. The worker pretends to work with a random sleep then just reports back that it has been awakened.
 
-The main function creates the output and error channels as well as a ticker, which has a timer channel on it. We then launch the go routines (keeping track of how many are running, similar to a `WaitGroup`). The `for` loop is basically `while True` &mdash; it loops until break or return. The `select` waits until a value comes in on one of the channels, at which point it handles that case and exits from that block (at which point we check if we should break, and if not we continue to block until we receive data on the channel). Even for long running processes, the ticker will cause the loop to iterate once per second, allowing us to manage our state or update the user. If an error occurs on any of the workers we kill the entire process rather than risk anything else. 
+The main function creates the output and error channels as well as a ticker, which has a timer channel on it. We then launch the go routines (keeping track of how many are running, similar to a `WaitGroup`). The `for` loop is basically `while True` &mdash; it loops until break or return. The `select` waits until a value comes in on one of the channels, at which point it handles that case and exits from that block (at which point we check if we should break, and if not we continue to block until we receive data on the channel). Even for long running processes, the ticker will cause the loop to iterate once per second, allowing us to manage our state or update the user. If an error occurs on any of the workers we kill the entire process rather than risk anything else.
