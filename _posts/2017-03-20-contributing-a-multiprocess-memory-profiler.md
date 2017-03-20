@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Multiprocess Memory Profiler"
+title:  "Contributing a Multiprocess Memory Profiler"
 date:   2017-03-20 11:42:58 -0400
 categories: observations
 ---
