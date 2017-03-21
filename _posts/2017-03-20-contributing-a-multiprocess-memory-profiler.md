@@ -31,9 +31,13 @@ In this post I wanted to catalog a contribution I made to the [memory profiler](
 
     The code review is a back and forth conversation between [@fabianp](https://github.com/fabianp) and I. He tests and runs the example code on his machine, and takes a look at the modifications I made specifically. Any changes or updates requested I can commit to my fork and they are automatically included in the pull request.
 
-- **TBD**: my submitted pull request is merged.
+- **March 21, 2017**: my submitted pull request is merged.
 
-- **TBD**: Stack Overflow question is finally answered!
+    We ended up going back and forth a few times, discussing the impact of multiprocessing on various components and a pickle error that cropped up. The conversation was very good and it led to quite a few updates to the code, and even a couple of changes from [@fabianp](https://github.com/fabianp). Throughout I became more confident since he was looking at the PR and testing it.
+
+- **TBD**: new release of memory_profiler on PyPI.
+
+    As soon as the release comes out, I can finally answer my original Stack Overflow question!
 
 So let me break down what happened here and do a bit of a post-mortem. First, I had a problem that I wanted to solve with an existing, popular, and well-used codebase (namely track the memory usage of child processes independently to the main process). I thought there must be a way to do this, and while there was a solution to a variant of my problem, there was no direct solution.
 
