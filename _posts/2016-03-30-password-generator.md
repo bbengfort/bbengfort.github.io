@@ -2,7 +2,7 @@
 layout: post
 title:  "Simple Password Generation"
 date:   2016-03-30 09:07:21 -0400
-categories: snippets
+categories: programmer
 ---
 
 I was talking with [@looselycoupled](https://github.com/looselycoupled) the other day about how we generate passwords for use on websites. We both agree that every single domain should have its own password (to prevent one crack ruling all your Internets). However, we've both evolved on the method over time, and I've written a simple script that allows me to generate passwords using methodologies discussed in this post.
@@ -77,4 +77,4 @@ This is a list of the sites that I have set up 2 factor authentication with, for
 - PayPal
 - Heroku
 - AWS
-- LinkedIn 
+- LinkedIn

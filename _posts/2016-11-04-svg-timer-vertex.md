@@ -2,7 +2,7 @@
 layout: post
 title:  "SVG Vertex with a Timer"
 date:   2016-11-04 10:30:29 -0400
-categories: snippets
+categories: tutorial
 ---
 
 In order to promote the use of graph data structures for data analysis, I've recently given talks on [dynamic graphs](https://youtu.be/RgixxVpfXDY): embedding time into graph structures to analyze change. In order to embed time into a graph there are two primary mechanisms: make time a graph element (a vertex or an edge) or have multiple subgraphs where each graph represents a discrete time step. By using either of these techniques, opportunities exist to perform a structural analysis using graph algorithms on time; for example - asking what time is most central to a particular set of relationships.

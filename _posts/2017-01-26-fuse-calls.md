@@ -2,7 +2,7 @@
 layout: post
 title:  "FUSE Calls on Go Writes"
 date:   2017-01-26 20:04:40 -0500
-categories: snippets
+categories: observations
 ---
 
 For close-to-open consistency, we need to be able to implement a file system that can detect atomic changes to a single file. Most programming languages implement `open()` and `close()` methods for files - but what they are really modifying is the access of a _handle_ to an open file that the operating system provides. Writes are buffered in an asynchronous fashion so that the operating system and user program don't have to wait for the spinning disk to figure itself out before carrying on. Additional file calls such as `sync()` and `flush()` give the user the ability to hint to the OS about what should happen relative to the state of data and the disk, but the OS provides no guarantees that will happen.
@@ -98,6 +98,6 @@ for i := 0; i < nbytes; i += chunks {
 }
 ```
 
-However, as shown in the graph, fsync was only called if it was directly called by the user code. Note that on our file system, it took between 6 and 10 seconds to write the 100MB file to disk. There was plenty of occasion for Go's routine functionality (garbage collection, etc.) to run during the processing of the file. 
+However, as shown in the graph, fsync was only called if it was directly called by the user code. Note that on our file system, it took between 6 and 10 seconds to write the 100MB file to disk. There was plenty of occasion for Go's routine functionality (garbage collection, etc.) to run during the processing of the file.
 
 For more information to experiment with different calls, check out the complete [write.go command](https://gist.github.com/bbengfort/3c0cdfc21050bc3eed06fc93b05f7cd9) on Gist.

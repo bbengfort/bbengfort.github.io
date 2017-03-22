@@ -2,7 +2,7 @@
 layout: post
 title:  "Secure gRPC with TLS/SSL"
 date:   2017-03-03 09:41:39 -0500
-categories: snippets
+categories: programmer
 ---
 
 One of the primary requirements for the systems we build is something we call the &ldquo;minimum security requirement&rdquo;. Although our systems are not designed specifically for high security applications, they must use minimum standards of encryption and authentication. For example, it seems obvious to me that a web application that [stores passwords](https://docs.djangoproject.com/en/1.10/topics/auth/passwords/) or [credit card information](https://www.pcisecuritystandards.org/) would encrypt their data on disk on a per-record basis with a [salted hash](https://www.codeproject.com/Articles/704865/Salted-Password-Hashing-Doing-it-Right). In the same way, a distributed system must be able to handle [encrypted blobs](https://www.usenix.org/legacy/event/osdi04/tech/full_papers/li_j/li_j.pdf), [encrypt all inter-node communication](http://blog.cloudera.com/blog/2013/03/how-to-set-up-a-hadoop-cluster-with-network-encryption/), and [authenticate and sign all messages](https://alexbilbie.com/2012/11/hawk-a-new-http-authentication-scheme/). This adds some overhead to the system but the cost of overhead is far smaller than the cost of a breach, and if minimum security is the baseline then the overhead is just an accepted part of doing business.

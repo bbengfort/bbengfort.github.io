@@ -2,7 +2,7 @@
 layout: post
 title:  "In-Memory File System with FUSE"
 date:   2017-01-30 16:17:26 -0500
-categories: snippets
+categories: programmer
 ---
 
 The [Filesystem in Userspace (FUSE)](https://en.wikipedia.org/wiki/Filesystem_in_Userspace) software interface allows developers to create file systems without editing kernel code. This is especially useful when creating replicated file systems, file protocols, backup systems, or other computer systems that require intervention for FS operations but not an entire operating system. FUSE works by running the FS code as a user process while FUSE provides a bridge through a request/response protocol to the kernel.

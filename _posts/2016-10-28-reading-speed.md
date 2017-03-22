@@ -2,7 +2,7 @@
 layout: post
 title:  "Computing Reading Speed"
 date:   2016-10-28 13:16:24 -0400
-categories: snippets
+categories: observations
 ---
 
 Ashley and I have been going over the [District Data Labs Blog](http://blog.districtdatalabs.com/) trying to figure out a method to make it more accessible both to readers (who are at various levels) and to encourage writers to contribute. To that end, she's been exploring other blogs to see if we can put multiple forms of content up; long form tutorials (the bulk of what's there) and shorter idea articles, possibly even as short as the posts I put on my dev journal. One interesting suggestion she had was to mark the reading time of each post, something that [ the Longreads Blog](http://bit.ly/2ePtm3z) does. This may help give readers a better sense of the time committment and be able to engage more easily.

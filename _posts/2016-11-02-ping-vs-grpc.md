@@ -2,7 +2,7 @@
 layout: post
 title:  "Message Latency: Ping vs. gRPC"
 date:   2016-11-02 15:46:31 -0400
-categories: snippets
+categories: observations
 ---
 
 Building distributed systems means passing messages between devices over a network connection. My research specifically considers networks that have extremely variable latencies or that can be partition prone. This led me to the natural question, &ldquo;how variable are real world networks?&rdquo; In order to get real numbers, I built a simple echo protocol using Go and gRPC called [Orca](https://github.com/bbengfort/orca).
@@ -74,4 +74,4 @@ There are many reasons that ping could be faster than gRPC, not just the overhea
 
 ![Local Area Distribution]({{site.base_url }}/assets/images/2016-11-02-ping-vs-echo-local-violinplot.png)
 
-Both ping and echo latencies are much smaller, by approximately the same amount. Because the gap between them is approximately the same percentage (though not fixed), I think this graph identifies clearly what is overhead and what is network latency. However, because the gap is also smaller, it shows that bandwidth and other message traffic may be having an influence in the disparity as well (e.g. that ping has preferential routes through wide area networks). 
+Both ping and echo latencies are much smaller, by approximately the same amount. Because the gap between them is approximately the same percentage (though not fixed), I think this graph identifies clearly what is overhead and what is network latency. However, because the gap is also smaller, it shows that bandwidth and other message traffic may be having an influence in the disparity as well (e.g. that ping has preferential routes through wide area networks).

@@ -5,7 +5,9 @@ date:   2017-03-20 11:42:58 -0400
 categories: observations
 ---
 
-In this post I wanted to catalog a contribution I made to the [memory profiler](https://pypi.python.org/pypi/memory_profiler/) Python library by [Fabian Pedregosa](http://fseoane.net/) and [Philippe Gervais](https://github.com/pgervais). It's a quick story to tell but took over a year to complete, and I think may be revealing about how I had to grapple with an open source contribution. First a timeline:
+In this post I wanted to catalog the process of an open source contribution I was a part of, which added a feature to the [memory profiler](https://pypi.python.org/pypi/memory_profiler/) Python library by [Fabian Pedregosa](http://fseoane.net/) and [Philippe Gervais](https://github.com/pgervais). It's a quick story to tell but took over a year to complete, and I learned a lot from the process. I hope that the story is revealing, particularly to first time contributors and shows that even folks that have been doing this for a long time still have to find ways to positively approach collaboration in an open source environment. I also think it's a fairly standard example of how contributions work in practice and perhaps this story will help us all think about how to better approach the pull request process.
+
+The bottom line is that a feature that was relatively quick to prototype took a long time to get included into the main code, even though there was a lot of interest. The hangup involved all the normal excuses (too busy, worried the code wasn't good enough, etc.) but in the end it was effective, clear, and positive communication that finally made things come together. Here's how it went down in timeline form:
 
 - **July 13, 2016**: asked a Stack Overflow question: _[How to profile multiple subprocesses using Python multiprocessing and memory_profiler?](http://stackoverflow.com/questions/38358881/how-to-profile-multiple-subprocesses-using-python-multiprocessing-and-memory-pro)_
 
@@ -35,9 +37,12 @@ In this post I wanted to catalog a contribution I made to the [memory profiler](
 
     We ended up going back and forth a few times, discussing the impact of multiprocessing on various components and a pickle error that cropped up. The conversation was very good and it led to quite a few updates to the code, and even a couple of changes from [@fabianp](https://github.com/fabianp). Throughout I became more confident since he was looking at the PR and testing it.
 
-- **TBD**: new release of memory_profiler on PyPI.
+- **March 22, 2017**: new release of memory_profiler on PyPI.
 
-    As soon as the release comes out, I can finally answer my original Stack Overflow question!
+    The release was posted on PyPI along with a [nice thank you on Twitter](https://twitter.com/fpedregosa/status/844492791048814594). I can finally answer my own question on Stack Overflow!
+
+    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thanks to <a href="https://twitter.com/bbengfort">@bbengfort</a> memory_profiler can now separately track memory usage of forked processes <a href="https://t.co/LCOMLgNzM8">https://t.co/LCOMLgNzM8</a> <a href="https://t.co/Lc46lf0xs8">pic.twitter.com/Lc46lf0xs8</a></p>&mdash; Fabian Pedregosa (@fpedregosa) <a href="https://twitter.com/fpedregosa/status/844492791048814594">March 22, 2017</a></blockquote>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 So let me break down what happened here and do a bit of a post-mortem. First, I had a problem that I wanted to solve with an existing, popular, and well-used codebase (namely track the memory usage of child processes independently to the main process). I thought there must be a way to do this, and while there was a solution to a variant of my problem, there was no direct solution.
 
@@ -63,6 +68,7 @@ Maybe I thought Fabian would go checkout my fork or maybe I let the list of barr
 I haven't fully implemented all of my changes to the code base (again, for the reasons outlined above) but now, if you run:
 
 ```
+$ pip install -U memory_profiler
 $ mprof run -M python examples/multiprocessing_example.py
 $ mprof plot
 ```
