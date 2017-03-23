@@ -140,9 +140,9 @@ The transpiled code comes in at a whopping 255 lines of code, so I'll not show i
 
 So in terms of code, we have the following characteristics:
 
-![Lines of Code Comparison]({{site.base_url }}/assets/images/2017-03-23-grumpy-lines-of-code.png)
+[![Lines of Code Comparison]({{site.base_url }}/assets/images/2017-03-23-grumpy-lines-of-code.png)]({{site.base_url }}/assets/images/2017-03-23-grumpy-lines-of-code.png)
 
-But frankly that's fair &mdash; Grumpy has to do a lot of work to bring over the sys package from Python, handle exceptions in the try/except, handle the builtins and deal with objects and function definitions. I actually think Grumpy is doing pretty well in the LOC translation.
+But frankly that's fair &mdash; Grumpy has to do a lot of work to bring over the sys package from Python, handle exceptions in the try/except, handle the builtins and deal with objects and function definitions. I actually think Grumpy is doing pretty well in the translation in terms of LOC.
 
 ## Benchmarking
 
@@ -156,9 +156,9 @@ $ time python fib.py 40
 
 Because the recursive fibonacci implementation does not use memoization or dynamic programming, the computational time increases exponentially as the index gets higher. Therefore the benchmarks are several runs at moderately high indices to push the performance. In order to operationalize this, I wrote a small Python script to execute the benchmarks. You can find the [benchmark script on Gist](https://gist.github.com/bbengfort/e048b647ae8c94dc1d6465342d7ba34d) (it is a bit too large to include in this post).
 
-> I hope that I have provided everything needed to repeat these benchmarks. If you find a hole in the methodology or different results, I'd certainly be interested.
+**NOTE**: I hope that I have provided everything needed to repeat these benchmarks. If you find a hole in the methodology or different results, I'd certainly be interested.
 
-After the timing benchmarks I also wanted to run resource usage benchmarks. Since the fibonacci implementation currently doesn't use multiple threads, I can't compare run times across increasing number of processes (TODO!). Instead, using the [memory profiler](https://pypi.python.org/pypi/memory_profiler) library I simply measured memory usage. In the results section, I run each process using `mprof` independently in order to precisely track what is running where. However, using the new multiprocess feature you could create a bash script as follows:
+After the timing benchmarks I also wanted to run resource usage benchmarks. Since the fibonacci implementation currently doesn't use multiple threads, I can't compare run times across increasing number of processes (TODO!). Instead, using the [memory profiler](https://pypi.python.org/pypi/memory_profiler) library I simply measured memory usage. In the results section, I run each process using `mprof` independently in order to precisely track what is running where. However, using the new multiprocess feature of the memory profiler library you could create a bash script as follows:
 
 ```bash
 #!/bin/bash
@@ -176,7 +176,33 @@ $ mprof run -M ./fibmem.sh 40
 $ mprof plot
 ```
 
-This will background each of the processes so that they are plotted as child processes of the main bash script. Unfortunately they are plotted by index, so I believe that child 0 is the go implementation, child 1 is the transpiled implementation, and child 2 is the Python implementation, but I'm not sure of that. Ok, so after that long description of methods, let's get into findings.
+This will background each of the processes so that they are plotted as child processes of the main bash script. Unfortunately they are plotted by index, so it's hard to know which child is which, but I believe that child 0 is the go implementation, child 1 is the transpiled implementation, and child 2 is the Python implementation. Ok, so after that long description of methods, let's get into findings.
 
 <a name="2017-03-23-benchmarks"></a>
 ## Results
+
+For 20 runs of each executable for fibonacci arguments 25, 30, 35, and 40, I recorded the following average times for the various executables shown in the next figure. Note that the amount of time for the next argument increases exponentially, opening up the performance gap between executables.
+
+[![Executable Run Times]({{site.base_url }}/assets/images/2017-03-23-fib-executable-runtimes.png)]({{site.base_url }}/assets/images/2017-03-23-fib-executable-runtimes.png)
+
+Unsurprisingly, the pure Go implementation was blazing fast, about 42 times faster than the Python implementation on average. The real surprise, however, is that the transpiled Go was actually _1.5 times slower_ than the Python implementation. I actually cannot explain why this might be &mdash; I'm hugely curious if anyone has an answer.
+
+In order to give a clearer picture, here are the log scaled results with a fifth timing for the 45th fibonacci number computation:
+
+[![Log Scaled Executable Run Times]({{site.base_url }}/assets/images/2017-03-23-fib-executable-runtimes-log-scale.png)]({{site.base_url }}/assets/images/2017-03-23-fib-executable-runtimes-log-scale.png)
+
+In order to track memory usage, I used `mprof` to track memory for each executable ran independently in it's own process, here are the results:
+
+[![Memory Usage]({{site.base_url }}/assets/images/2017-03-23-fib-memory-usage.png)]({{site.base_url }}/assets/images/2017-03-23-fib-memory-usage.png)
+
+And so that you can actually see the pure Go implementation as well as memory usage initialization and start up, here is a zoomed in version to the first few milliseconds of execution:
+
+[![Memory Usage Zoomed]({{site.base_url }}/assets/images/2017-03-23-fib-memory-usage-zoomed.png)]({{site.base_url }}/assets/images/2017-03-23-fib-memory-usage-zoomed.png)
+
+The memory usage profiling reveals yet another surprise, not only does the transpiled version take longer to execute, but it also uses more memory. Meanwhile, the pure go implementation is so lightweight as to blow away with a stiff breeze.
+
+## Conclusions
+
+Transpiling is hard.
+
+Grumpy is still only experimental, and there does seem to be some real promise particularly with concurrency gains. However, I'm not sold on transpiling as an approach to squeezing more performance out of a system. 
