@@ -5,7 +5,7 @@ date:   2017-03-23 08:47:04 -0400
 categories: observations
 ---
 
-On Wednesday evening I attended a [Django District meetup](https://www.meetup.com/django-district/events/238128100/) on [Grumpy](https://github.com/google/grumpy), a [transpiler](https://www.stevefenton.co.uk/2012/11/compiling-vs-transpiling/) from Python to Go. Because it was a Python meetup, the talk naturally focused on introducing Go to a Python audience, and because it was a Django meetup, we also focused on web services. The premise for Grumpy, as discussed in the announcing [Google blog post](https://opensource.googleblog.com/2017/01/grumpy-go-running-python.html), is also a web focused one &mdash; to take YouTube's API that's primarily written in Python and transpile it to Go to improve the overall performance and stability of YouTube's front-end services.
+On Tuesday evening I attended a [Django District meetup](https://www.meetup.com/django-district/events/238128100/) on [Grumpy](https://github.com/google/grumpy), a [transpiler](https://www.stevefenton.co.uk/2012/11/compiling-vs-transpiling/) from Python to Go. Because it was a Python meetup, the talk naturally focused on introducing Go to a Python audience, and because it was a Django meetup, we also focused on web services. The premise for Grumpy, as discussed in the announcing [Google blog post](https://opensource.googleblog.com/2017/01/grumpy-go-running-python.html), is also a web focused one &mdash; to take YouTube's API that's primarily written in Python and transpile it to Go to improve the overall performance and stability of YouTube's front-end services.
 
 While still in experimental mode, they show [a benchmarking graph](https://lh6.googleusercontent.com/AJtJgMwyxN3KWnDrHW5JhersJGuf1SsR_lhhQoUY5gSMBjhV-BJo-vWh4JztqD7qq9pcr0JYT-niwehvDqvCmM8ZhCUAkgZFpviWnNKah5xGJCNGuMAGBdhYYhT3ZbN-HDfw_Fs3) in the blog post that shows as the number of threads increases, the number of Grumpy transpiled operations per second also increases linearly, whereas the  CPython ops/sec actually decreases to a floor. This is fascinating stuff and actually kind of makes sense; potentially the opportunities for concurrency in Go defeat the GIL in Python and can give Python code deployable scalability.
 
@@ -62,6 +62,8 @@ In order to benchmark the code for time I want to compare three executables:
 1. A Python 2.7 implementation with recursion (fib.py)
 2. A pure Go implementation with similar characteristics (fib.go)
 3. The transpiled Python implementation (fibpy.go)
+
+**Note**: Obligatory Py2/3 comment: Grumpy is about making the YouTube API better, which is written in Python 2.7; so tough luck Python 3 folks, I guess. 
 
 The hypothesis is that the Python implementation will be the slowest, the transpiled one slightly faster and the Go implementation will blaze. For reference, here are my implementations:
 
