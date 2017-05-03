@@ -94,7 +94,7 @@ def make_data(uniques=10, length=10000):
     ]
 ```
 
-The actual test protocol ran on datasets whose length went from 10 to 1,000,000 items by a factor of ten each time (e.g. 10, 100, 1000, etc.). The test also factored different numbers of unique values from 1 to 40 by 5. Each dataset was then benchmarked as a `list` and an `array` against the three `_unique` methods for a total of 324 total benchmarks.
+The actual test protocol ran on datasets whose length went from 10 to 100,000 items by a factor of ten each time (e.g. 10, 100, 1000, etc.). The test also factored different numbers of unique values from 1 to 40 by 5. Each dataset was then benchmarked as a `list` and an `array` against the three `_unique` methods for a total of 324 total benchmarks.
 
 As you can see, the amount of time per operation increases exponentially as the length of the dataset increases:
 
