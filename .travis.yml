@@ -1,0 +1,14 @@
+language: ruby
+
+rvm:
+    - 2.1
+
+script: "bundle exec jekyll build"
+
+notifications:
+    email:
+        recipients:
+            - benjamin@bengfort.com
+
+        on_success: change
+        on_failure: always
