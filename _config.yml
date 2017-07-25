@@ -12,14 +12,14 @@ gems:
 # Site settings
 title:          Libelli
 tagline:        If it were easy, everyone would do it.
-baseurl:        "/"
+baseurl:        "https://github.com/bbengfort/"
 url:            http://bbengfort.github.io
 description: >
     The development journal of <a href="https://twitter.com/bbengfort">@bbengfort</a>
     including notes and ramblings from his various programming activities.
 
 author:
-    name:       'Benjamin Bengfort'
+    name:       "Benjamin Bengfort"
     url:        https://github.com/bbengfort
     github:     bbengfort
     twitter:    bbengfort
@@ -35,4 +35,4 @@ paginate:       10
 version:        1.0
 
 github:
-    repo:       https://github.com/bbengfort/bbengfort.github.io    
+    repo:       https://github.com/bbengfort/bbengfort.github.io
