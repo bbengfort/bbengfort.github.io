@@ -5,7 +5,7 @@ date:   2017-07-21 06:28:45 -0400
 categories: snippets
 ---
 
-The event dispatcher pattern is extremely common in software design, particularly in languages like JavaScript that are primarily used for user interface work. The dispatcher is an object (usually a mixin to other objects) that can _register_ callback functions for particular events. Then when a _dispatch_ method is called with an event, the dispatcher calls each callback function in order of their registration and passes them a copy of the event.  In this snippet, I'm presenting a version in Go that has been incredibly stable and useful in my code.
+The event dispatcher pattern is extremely common in software design, particularly in languages like JavaScript that are primarily used for user interface work. The dispatcher is an object (usually a mixin to other objects) that can _register_ callback functions for particular events. Then when a _dispatch_ method is called with an event, the dispatcher calls each callback function in order of their registration and passes them a copy of the event. In fact, I've already written a version of this pattern in Python: [Implementing Observers with Events]({% post_url 2016-02-16-observer-pattern %})  In this snippet, I'm presenting a version in Go that has been incredibly stable and useful in my code.
 
 There are three types in the snippet below:
 
@@ -52,4 +52,4 @@ So this works very well but there are a copule of key points:
 
 - When dispatching the event, a single error terminates all event handling. It might be better to create a specific error type that terminates event handling (e.g. do not propagate) and then collect all other errors into a slice and return them from the dispatcher.
 - The event can technically be modified by callback functions since it's a pointer. It might be better to pass by value to guarantee that all callbacks see the original event.
-- Callback handling is in order of registration, which gets to point number one about canceling event propagation. An alternative is to do all the callbacks concurrently using Go routines; which is something I want to investigate further. 
+- Callback handling is in order of registration, which gets to point number one about canceling event propagation. An alternative is to do all the callbacks concurrently using Go routines; which is something I want to investigate further.
