@@ -21,7 +21,7 @@ BenchmarkNonBlocking-8   	10000000	       140 ns/op
 
 Apparently, putting a float on a channel, even a buffered channel, incurs some overhead that is more expensive than simply incrementing and summing a few integers and floats. I will present both methods here, but note that the _first_ method (blocking update) should be implemented in production.
 
-> You can find this code at [github.com/bbengfort/x/stats](https://github.com/bbengfort/x/stats) if you would like to use it in your work.
+> You can find this code at [github.com/bbengfort/x/stats](https://godoc.org/github.com/bbengfort/x/stats) if you would like to use it in your work.
 
 ## Online Descriptive Statistics (Blocking)
 
