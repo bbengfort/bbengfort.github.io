@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rapid FS Walks with ErrGroup"
-date:   2017-09-04 15:33:35 -0400
+date:   2017-08-18 15:33:35 -0400
 categories: snippets
 ---
 
