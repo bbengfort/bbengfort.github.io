@@ -19,7 +19,7 @@ So which of these does Go implement? According to the documentation:
 
 > If a goroutine holds a RWMutex for reading and another goroutine might call Lock, no goroutine should expect to be able to acquire a read lock until the initial read lock is released. In particular, this prohibits recursive read locking. This is to ensure that the lock eventually becomes available; a blocked Lock call excludes new readers from acquiring the lock. [&mdash; godoc](https://golang.org/pkg/sync/#RWMutex)
 
-This seems to indicate that Go implements write-preferring mutexes. However, this does not seem to be the behavior that I'm observing.
+My initial read of this made me think  that Go implements write-preferring mutexes. However, this was not the behavior that I observed.
 
 Consider the following locker:
 
@@ -210,4 +210,4 @@ Given the loop issuing 22 read locks that sleep only a quarter of the time of th
 2017/09/08 12:43:45 101 read after 6.29457923s
 ```
 
-This leads me to believe that what Go implements is actually something else: read locks can only be acquired _so long as the original read lock is maintained_. As soon as the first read lock is released, then the queued write-lock gets priority. The first read lock lasts approximately 500ms; this means that there is enough time for between 4-5 other locks to acquire a read lock, as soon as the first read lock completes, the write is given priority. 
+What Go implements is actually something else: read locks can only be acquired _so long as the original read lock is maintained_ (the word &ldquo;initial&rdquo; being critical in the documentation). As soon as the first read lock is released, then the queued write-lock gets priority. The first read lock lasts approximately 500ms; this means that there is enough time for between 4-5 other locks to acquire a read lock, as soon as the first read lock completes, the write is given priority.
