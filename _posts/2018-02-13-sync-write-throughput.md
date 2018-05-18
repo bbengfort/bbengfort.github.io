@@ -52,7 +52,7 @@ Throughput benchmarks are conducted by running `t` threads, each of which run `n
 
 Note that the y-axis is on a logarithm scale, and because of the magnitude of in-memory writes, the chart is a bit difficult to read. Therefore the next chart shows the percentage of the theoretical throughput (as computed by `w`) the real system achieves:
 
-![Percentage of Theoretical]({{site.base_url }}assets/images/2018-02-03-percent-theoretical.png)
+![Percentage of Theoretical]({{site.base_url }}/assets/images/2018-02-03-percent-theoretical.png)
 
 
 ## Observations
