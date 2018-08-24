@@ -6,6 +6,25 @@ icon: list
 
 <div id="messages"></div>
 
+<!-- Quick Links -->
+<ul class="list-unstyled list-inline">
+    <li>
+        <a href="https://kahu.bengfort.com">
+            <i class="fa fa-globe"></i> Kahu
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/bbengfort/alia">
+            <i class="fa fa-github"></i> Alia
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/bbengfort/printing-press">
+            <i class="fa fa-book"></i> LaTeX
+        </a>
+    </li>
+</ul>
+
 This scoreboard lists my current progress towards completion of my **dissertation**. The current tasks status is as follows:
 
 <!-- Big numbers status with counts -->

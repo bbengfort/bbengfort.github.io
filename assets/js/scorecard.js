@@ -30,7 +30,7 @@ function updateIssues(data, status, xhr) {
 
     // Make the list link item to add to the page.
     var ref = $("<a>")
-      .attr("href", item.url)
+      .attr("href", item.html_url)
       .text(item.title);
     var li = $("<li>").append(ref);
 

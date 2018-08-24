@@ -52,3 +52,13 @@
 }
 
 .taskList ul {}
+
+ul.list-unstyled {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul.list-inline li {
+    display: inline-block;
+}
