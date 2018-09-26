@@ -44,4 +44,6 @@ Now we're getting 30,000 puts per second, which is closer to what I would expect
 
 The complete implementation of Blast and the server can be found at [github.com/bbengfort/speedmap](https://github.com/bbengfort/speedmap/tree/server-blast) in the `server-blast` branch in the `server` folder.
 
+Note that I just found [strest-grpc](https://hub.docker.com/r/buoyantio/strest-grpc/), which I'm interested in figuring out how it matches up with this assesment and blog post. 
+
 In a later post, I'll discuss how we implement sustained throughput - where we have multiple clients continuously writing to the system and we measure throughput server-side.
