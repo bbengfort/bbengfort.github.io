@@ -10,7 +10,7 @@ Ok, now that we've got that out of the way, the question becomes, how do we embe
 
 Unfortunately, there is no standard answer for this because there are a lot of questions including connection management for performance; size and frequency of queries, etc. Each use case has it's own optimization. Therefore, I'd like to look at a simple wrapper for a Query, as shown in the Gist below and discussed after the code.
 
-<script src="https://gist.github.com/bbengfort/db78948df3ef87091aac.js"></script>
+{{< gist bbengfort db78948df3ef87091aac >}}
 
 As you can see from the example, we have a routine query where we want to get the orders between a particular time range for a customer identified by their email. Presumably this query will be executed many times in the course of our program, so the factory gives us the ability to run many different queries simultaneously.
 

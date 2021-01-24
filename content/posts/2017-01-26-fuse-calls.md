@@ -10,7 +10,7 @@ We use the FUSE library provided by [bazil.org/fuse](https://github.com/bazil/fu
 
 To answer this question, we wrote a Go program that wrote random data to a file. There are many ways to [write to a file](https://gobyexample.com/writing-files), as explained by Go by Example. So we implemented several methods (discussed below). We then ran the data writer program into a file on an in-memory FUSE server that logged different calls. The results are shown below:
 
-![FUSE Calls]({{site.base_url }}/assets/images/2017-01-26-fuse-calls.png)
+![FUSE Calls](/images/2017-01-26-fuse-calls.png)
 
 The bottom line is that `Fsync()` is on called when the user program calls it - essential for Vim and Emacs, but a hint only. `Flush()` is always called at close, and `Write()` is called many times from open to close. The names on the Y-axis describe the various methods of writing to a file I will discuss next.
 

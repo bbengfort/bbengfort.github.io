@@ -62,7 +62,7 @@ In order to benchmark the code for time I want to compare three executables:
 2. A pure Go implementation with similar characteristics (fib.go)
 3. The transpiled Python implementation (fibpy.go)
 
-**Note**: Obligatory Py2/3 comment: Grumpy is about making the YouTube API better, which is written in Python 2.7; so tough luck Python 3 folks, I guess. 
+**Note**: Obligatory Py2/3 comment: Grumpy is about making the YouTube API better, which is written in Python 2.7; so tough luck Python 3 folks, I guess.
 
 The hypothesis is that the Python implementation will be the slowest, the transpiled one slightly faster and the Go implementation will blaze. For reference, here are my implementations:
 
@@ -141,7 +141,7 @@ The transpiled code comes in at a whopping 255 lines of code, so I'll not show i
 
 So in terms of code, we have the following characteristics:
 
-[![Lines of Code Comparison]({{site.base_url }}/assets/images/2017-03-23-grumpy-lines-of-code.png)]({{site.base_url }}/assets/images/2017-03-23-grumpy-lines-of-code.png)
+[![Lines of Code Comparison](/images/2017-03-23-grumpy-lines-of-code.png)](/images/2017-03-23-grumpy-lines-of-code.png)
 
 But frankly that's fair &mdash; Grumpy has to do a lot of work to bring over the sys package from Python, handle exceptions in the try/except, handle the builtins and deal with objects and function definitions. I actually think Grumpy is doing pretty well in the translation in terms of LOC.
 
@@ -184,21 +184,21 @@ This will background each of the processes so that they are plotted as child pro
 
 For 20 runs of each executable for fibonacci arguments 25, 30, 35, and 40, I recorded the following average times for the various executables shown in the next figure. Note that the amount of time for the next argument increases exponentially, opening up the performance gap between executables.
 
-[![Executable Run Times]({{site.base_url }}/assets/images/2017-03-23-fib-executable-runtimes.png)]({{site.base_url }}/assets/images/2017-03-23-fib-executable-runtimes.png)
+[![Executable Run Times](/images/2017-03-23-fib-executable-runtimes.png)](/images/2017-03-23-fib-executable-runtimes.png)
 
 Unsurprisingly, the pure Go implementation was blazing fast, about 42 times faster than the Python implementation on average. The real surprise, however, is that the transpiled Go was actually _1.5 times slower_ than the Python implementation. I actually cannot explain why this might be &mdash; I'm hugely curious if anyone has an answer.
 
 In order to give a clearer picture, here are the log scaled results with a fifth timing for the 45th fibonacci number computation:
 
-[![Log Scaled Executable Run Times]({{site.base_url }}/assets/images/2017-03-23-fib-executable-runtimes-log-scale.png)]({{site.base_url }}/assets/images/2017-03-23-fib-executable-runtimes-log-scale.png)
+[![Log Scaled Executable Run Times](/images/2017-03-23-fib-executable-runtimes-log-scale.png)](/images/2017-03-23-fib-executable-runtimes-log-scale.png)
 
 In order to track memory usage, I used `mprof` to track memory for each executable ran independently in it's own process, here are the results:
 
-[![Memory Usage]({{site.base_url }}/assets/images/2017-03-23-fib-memory-usage.png)]({{site.base_url }}/assets/images/2017-03-23-fib-memory-usage.png)
+[![Memory Usage](/images/2017-03-23-fib-memory-usage.png)](/images/2017-03-23-fib-memory-usage.png)
 
 And so that you can actually see the pure Go implementation as well as memory usage initialization and start up, here is a zoomed in version to the first few milliseconds of execution:
 
-[![Memory Usage Zoomed]({{site.base_url }}/assets/images/2017-03-23-fib-memory-usage-zoomed.png)]({{site.base_url }}/assets/images/2017-03-23-fib-memory-usage-zoomed.png)
+[![Memory Usage Zoomed](/images/2017-03-23-fib-memory-usage-zoomed.png)](/images/2017-03-23-fib-memory-usage-zoomed.png)
 
 The memory usage profiling reveals yet another surprise, not only does the transpiled version take longer to execute, but it also uses more memory. Meanwhile, the pure go implementation is so lightweight as to blow away with a stiff breeze.
 
@@ -206,4 +206,4 @@ The memory usage profiling reveals yet another surprise, not only does the trans
 
 Transpiling is hard.
 
-Grumpy is still only experimental, and there does seem to be some real promise particularly with concurrency gains. However, I'm not sold on transpiling as an approach to squeezing more performance out of a system. 
+Grumpy is still only experimental, and there does seem to be some real promise particularly with concurrency gains. However, I'm not sold on transpiling as an approach to squeezing more performance out of a system.

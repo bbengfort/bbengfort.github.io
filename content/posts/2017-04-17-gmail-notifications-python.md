@@ -34,7 +34,7 @@ I've also used YAML configuration, dotenv files, and all sorts of other configur
 
 And here is a command line version of the script that wraps the `notify()` function. Note that it's basic functionality is to send a simple alert and maybe attach some log or results files to the email, not to routinely send large amounts of HTML formatted messages!
 
-<script src="https://gist.github.com/bbengfort/089bbb73f072838ae8d1b0ac859299ff.js"></script>
+{{< gist bbengfort 089bbb73f072838ae8d1b0ac859299ff >}}
 
 ## Usage
 
@@ -50,4 +50,4 @@ Or you can edit the subject and message with a few attachments:
 $ notify.py -r jdoe@example.com -s "computation complete" results.csv
 ```
 
-Future versions of this script will allow you to pipe the message in via stdin so that you can chain the emailer along the command line. I also plan to do a better configuration, similar to how AWS CLI configures itself in a simple file in the home directory. 
+Future versions of this script will allow you to pipe the message in via stdin so that you can chain the emailer along the command line. I also plan to do a better configuration, similar to how AWS CLI configures itself in a simple file in the home directory.

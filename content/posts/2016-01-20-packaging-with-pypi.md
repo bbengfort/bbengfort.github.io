@@ -83,7 +83,7 @@ Honestly, I hate that these repos grow to such massive sizes, but honestly, this
 
 The first step is to configure your project with the necessary setup and meta data files. The first and most important of these is the `setup.py` file which will use the other meta files in the project. Basically, I just copy and paste the following file into all my projects and modify as needed. Apparently this is just a thing Python developers do.
 
-<script src="https://gist.github.com/bbengfort/76d45a80af5494908c95.js"></script>
+{{< gist bbengfort 76d45a80af5494908c95 >}}
 
 So there is a lot going on here, but you can see that the basic meta information is right at the top. I hoped to top load this file so that copy and paste would be as easy as possible. A couple of notes:
 
@@ -213,7 +213,7 @@ Also you should probably remove that `site` folder created by the documentation 
 
 ## Conclusion
 
-Hopefully this post makes your life easier by giving you a simple guide to push new packages to PyPI. I know I shoot fast and loose with some of the stuff, but the post was super long anyway. If you're really looking for awesome integrations, checkout [How to Travis-CI Deploy](http://5minutes.youkidea.com/howto-deploy-python-package-on-pypi-with-github-and-travis.html) for automatic deployment after testing. 
+Hopefully this post makes your life easier by giving you a simple guide to push new packages to PyPI. I know I shoot fast and loose with some of the stuff, but the post was super long anyway. If you're really looking for awesome integrations, checkout [How to Travis-CI Deploy](http://5minutes.youkidea.com/howto-deploy-python-package-on-pypi-with-github-and-travis.html) for automatic deployment after testing.
 
 ### Very Helpful Links
 

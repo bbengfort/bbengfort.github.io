@@ -6,7 +6,7 @@ title: Synchronization in Write Throughput
 
 This post serves as a reminder of how to perform benchmarks when accounting for synchronized writing in Go. The normal benchmarking process involves running a command a large number of times and determining the average amount of time that operation took. When threads come into play, we consider _throughput_ - that is the number of operations that can be conducted per second. However, in order to successfully measure this without duplicating time, the throughput must be measured from the server's perspective.
 
-![Time in Multiple Threads]({{site.base_url }}/assets/images/2018-02-13-syncwrite-overlapping.png)
+![Time in Multiple Threads](/images/2018-02-13-syncwrite-overlapping.png)
 
 Let `w` be the amount of time a single operation takes and `n` be the number of operations per thread. Given `t` threads, the cost for each operation from the perspective of the client thread will be `t*w` because the server is synchronizing writes as shown in the figure above, e.g. the thread has to wait for `t-1` other writes to complete before conducting it's write. This means that each thread returns a latency of `n*t*w` from it's perspective. If this is aggregated, the total time is computed `n*w*t^2`, even though the real time that has passed is actually `n*t*w` as shown in the single threaded case.
 
@@ -47,11 +47,11 @@ Writing to the in-memory log is by far the fastest, while writing to the LevelDB
 
 Throughput benchmarks are conducted by running `t` threads, each of which run `n` actions and returns the amount of time it takes _all threads_ to run `n*t` actions. As the `t` increases, the workload stays static, e.g. `n` becomes smaller to keep `n*t` constant. The throughput is the number of operations divided by the duration in seconds.
 
-![Sync Write Throughput with Increasing # of Threads]({{site.base_url }}/assets/images/2018-02-13-sync-write-throughput.png)
+![Sync Write Throughput with Increasing # of Threads](/images/2018-02-13-sync-write-throughput.png)
 
 Note that the y-axis is on a logarithm scale, and because of the magnitude of in-memory writes, the chart is a bit difficult to read. Therefore the next chart shows the percentage of the theoretical throughput (as computed by `w`) the real system achieves:
 
-![Percentage of Theoretical]({{site.base_url }}/assets/images/2018-02-03-percent-theoretical.png)
+![Percentage of Theoretical](/images/2018-02-03-percent-theoretical.png)
 
 
 ## Observations

@@ -8,7 +8,7 @@ I'm starting to get serious about programming in Go, trying to move from an inte
 
 Based on Ewan Cheslack-Postava's [Iterators in Go](https://ewencp.org/blog/golang-iterators/) post, I created iteration functions for line-by-line reading of a file (`Readlines`), including the channel method, a method using callbacks, and a stateful iterator method that uses a struct to keep track of iteration (for funsies, I also added a Python implementation). Without further ado, here are the results:
 
-![Memory Profiling of Readlines Iteration for a 3.9G Text File]({{site.base_url }}/assets/images/2016-12-23-memory-profile-readlines.png)
+![Memory Profiling of Readlines Iteration for a 3.9G Text File](/images/2016-12-23-memory-profile-readlines.png)
 
 I used an external process to sample the memory of the readlines process every 0.01 seconds, using [mprof](https://pypi.python.org/pypi/memory_profiler) by Fabian Pedregosa and Philippe Gervais. The four readlines implementations opened a large text file (3.9GB) with 900,002 lines of text containing random lengths of "fizz buzz foo bar baz" words, counting the total number of characters by summing the length of each line.
 
@@ -28,4 +28,4 @@ BenchmarkChallbackReadlinesLarge-8          1000       2198904 ns/op
 BenchmarkIteratorReadlinesLarge-8           1000       2229104 ns/op
 ```
 
-As a result I'll probably be using the stateful iterator approach more often in my code, reserving the channel method only when performance is not required, but a clear API is. Stay tuned for a post on writing stateful iterators. 
+As a result I'll probably be using the stateful iterator approach more often in my code, reserving the channel method only when performance is not required, but a clear API is. Stay tuned for a post on writing stateful iterators.

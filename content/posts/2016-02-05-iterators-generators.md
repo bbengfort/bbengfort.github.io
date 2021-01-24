@@ -12,7 +12,7 @@ Iterable objects are constructed by the built-in function, `iter`, which takes a
 
 The `__iter__` method must return an iterable object, which if it is the same object, can simply return `self`. Iterable objects must have a `next` method that is called on every pass of the loop. When iteration is complete, the `next` method should raise `StopIteration`. Here is an example of a Dealer iterator that shuffles a deck of cards on `iter` then deals out cards on each call of next, until there are no more cards left in the deck:
 
-<script src="https://gist.github.com/bbengfort/b0596990db96b6a7aa82.js"></script>
+{{< gist bbengfort b0596990db96b6a7aa82 >}}
 
 The thing to note here is that the object keeps track of its own state, through it's own pointer value (the "shoe"). This means that the iterable can be "exhausted" without returning any more data. Try the following and see what happens:
 
@@ -129,4 +129,4 @@ class BlinkerEnvironment(object):
 
 As you can see in this code, the blinkers dictionary is a list of blinkers keyed to the time value that they are supposed to be called again. The environment keeps track of the current timestamp, and initializes 4 blinkers that are offset so that the blinkers aren't all blinking at the same time.
 
-The `run` method is passed an `until` argument, which limits how long the simulation goes on. If the current timestamp is in the blinkers schedule, then we go and fetch all the generators for the now value, then call their next method. We reschedule the blinker based on the timeout number that it yields to us, then we increment now by the next scheduled blink to take place (skipping over time steps that don't matter is what gives discrete event simulation its desired properties). And voila, we've implemented a simple simulation using generators! 
+The `run` method is passed an `until` argument, which limits how long the simulation goes on. If the current timestamp is in the blinkers schedule, then we go and fetch all the generators for the now value, then call their next method. We reschedule the blinker based on the timeout number that it yields to us, then we increment now by the next scheduled blink to take place (skipping over time steps that don't matter is what gives discrete event simulation its desired properties). And voila, we've implemented a simple simulation using generators!

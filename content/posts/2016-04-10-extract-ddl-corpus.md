@@ -14,8 +14,8 @@ By having everything in one place, as Markdown, I don't have to do a search or a
 
 In the end, I figured rendering the Markdown to HTML with Python would probably provide the best corpus result. I've created a tool that takes a directory of Markdown files, renders them as HTML or text and then creates the corpus organized directory expected by NLTK. Nicely, this also works with Jekyll! Here is the code:
 
-<script src="https://gist.github.com/bbengfort/d8bc35265861f57c4058ef5b2873b31d.js"></script>
+{{< gist bbengfort d8bc35265861f57c4058ef5b2873b31d >}}
 
 Sorry that was so long, I tried to cut it down a bit, but the `argparse` stuff really does make it quite verbose.  Still the basic methodology is to loop through all the files (recursively going down subdirectories) looking for `*.md` or `*.markdown` files. I then use the Python [Markdown](https://pythonhosted.org/Markdown/) library with the `markdown.extensions.extra` package to render HTML, and to render the text from the HTML, I'm currently using [BeautifulSoup `get_text`](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#get-text).
 
-Note also that this tool writes a README with information about the extraction. You can now use the `nltk.PlainTextCorpusReader` to get access to this text! 
+Note also that this tool writes a README with information about the extraction. You can now use the `nltk.PlainTextCorpusReader` to get access to this text!

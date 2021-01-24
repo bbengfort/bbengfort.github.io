@@ -10,6 +10,6 @@ My current plan is to initialize thread-safe resources in a main thread, then pa
 
 As a reminder how to do this, here is a simple example:
 
-<script src="https://gist.github.com/bbengfort/2b3f03e1b3c5a2efe05179158dd4d5d3.js"></script>
+{{< gist bbengfort 2b3f03e1b3c5a2efe05179158dd4d5d3 >}}
 
-Basically the main function acts as the main thread here, initializing the error channel, then running 10 bomb threads who create random delays. Whichever bomb goes off first sends the error on the channel and the entire process quits. Simple! 
+Basically the main function acts as the main thread here, initializing the error channel, then running 10 bomb threads who create random delays. Whichever bomb goes off first sends the error on the channel and the entire process quits. Simple!

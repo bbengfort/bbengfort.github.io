@@ -10,7 +10,7 @@ The [Actor Model](https://en.wikipedia.org/wiki/Actor_model) is a solution for r
 
 In the next few posts, I'll explore implementing the Actor model in Go for a simple distributed system that allows clients to make requests and periodically synchronizes its state to its peers. The model is shown below:
 
-![The Actor Model]({{site.base_url }}/assets/images/2018-08-03-actor-model.png)
+![The Actor Model](/images/2018-08-03-actor-model.png)
 
 ## Actors
 
@@ -50,7 +50,7 @@ const (
     IdentityRequest
     SyncTimeout
     SyncRequest
-    SyncReply    
+    SyncReply
 )
 
 // String names of event types
@@ -87,7 +87,7 @@ The `Source` of the event is the actor that is dispatching the event, and we'll 
 There are a lot of different types of actors including:
 
 - Actors that run for the duration of the program
-- Actors that generate events but do not receive them  
+- Actors that generate events but do not receive them
 - Actors that exist ephemerally to handle one or few events
 
 As a result it is difficult to describe an interface that handles all of these types generically. Instead we'll focus on the central actor of our application (called the "Local Actor" in the diagram above), which fulfills the first role (runs the duration of the program) and most completely describes the actor design.
@@ -147,7 +147,7 @@ func (a *ActorServer) Handle(e Event) error {
 }
 ```
 
-The `Dispatch` method allows other actors to send events to the actor, by simply putting the event on the channel. When other go routines call `Dispatch` they won't be blocked, waiting for the actor to handle the event because of the buffer &hellip; unless the actor has been backed up so the buffer is full.  
+The `Dispatch` method allows other actors to send events to the actor, by simply putting the event on the channel. When other go routines call `Dispatch` they won't be blocked, waiting for the actor to handle the event because of the buffer &hellip; unless the actor has been backed up so the buffer is full.
 
 ```go
 func (a *ActorServer) Dispatch(e Event) error {
@@ -156,7 +156,7 @@ func (a *ActorServer) Dispatch(e Event) error {
 }
 ```
 
-## Next Steps  
+## Next Steps
 
 In the next post (or two) we'll hook up a gRPC server to the actor so that it can serve identity requests to clients as well as send and respond to synchronization requests for remote actors. We'll also create a second go routine next to the actor process that issues synchronization timeouts on a periodic interval. Together, the complete system will be able to issue monotonically increasing identities in an eventually consistent fashion.
 
@@ -181,7 +181,7 @@ One of the biggest questions I had was whether or not the actor model introduced
 - **Actor**: Uses the buffered channel actor model as described in this post.
 - **Locker**: Implements the actor interface but instead of a buffered channel uses a mutex to serialize events.
 
-![Actor Throughput]({{site.base_url }}/assets/images/2018-08-03-actor-throughput.png)
+![Actor Throughput](/images/2018-08-03-actor-throughput.png)
 
 As you can see from the above benchmark, it does not appear that the actor model described in these posts adds overhead that penalizes performance.
 

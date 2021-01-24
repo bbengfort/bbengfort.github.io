@@ -26,7 +26,7 @@ Apparently, putting a float on a channel, even a buffered channel, incurs some o
 
 To track statistics in an online fashion, you need to keep track of the various aggregates that are used to compute the final descriptives statistics of the distribution. For simple statistics such as the minimum, maximum, standard deviation, and mean you need to track the number of samples, the sum of samples, and the sum of the squares of all samples (along with the minimum and maximum value seen). Here is how you do that:
 
-<script src="https://gist.github.com/bbengfort/d730797778d26259b2a0ad3e72ca52c9.js"></script>
+{{< gist bbengfort d730797778d26259b2a0ad3e72ca52c9 >}}
 
 I use this data structure as a lightweight mechanism to keep track of online statistics for experimental results or latency. It gives a good overall view of incoming values at very little expense.
 
@@ -34,6 +34,6 @@ I use this data structure as a lightweight mechanism to keep track of online sta
 
 In an attempt to improve the performance of this method, I envisioned a mechanism where I could simply dump values into a [buffered channel](https://tour.golang.org/concurrency/3) then run an `updater` go routine to collect values and perform the online computation. The updater function can simply `range` over the channel, and the channel can be closed to stop the goroutine and finalize anything still on the channel. This is written as follows:
 
-<script src="https://gist.github.com/bbengfort/3059589e61639b9ca4932fd8dff01bfd.js"></script>
+{{< gist bbengfort 3059589e61639b9ca4932fd8dff01bfd >}}
 
 The lesson was that this is actually less performant, no matter how large the buffer is. I increased the buffer size to 10000001 to ensure that the sender could not block, but I still received 116 ns/op benchmarks. Generally, this style is what I use when the function being implemented is actually pretty heavy (e.g. writes to disk). In this case, the function was too lightweight to matter!

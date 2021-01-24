@@ -12,6 +12,6 @@ This is a pretty big chunk of code, but it creates a `Client` object that wraps 
 
 The `Send()` method fires off a message then uses a `zmq.Poller` with a timeout to keep checking if a message has been received in that time limit. If it was successful, then great! Otherwise we decrement our retries and try again. If we're out of retries there is nothing to do but return an error. The code is here:
 
-<script src="https://gist.github.com/bbengfort/7fa15777320cfb27599567a5585f3ba8.js"></script>
+{{< gist bbengfort 7fa15777320cfb27599567a5585f3ba8 >}}
 
-This code is fairly lengthy, but as it turns out, most of the content for both clients and servers on either side of REQ/REP have similar wrapper code for context, socket, and connection/bind wrapping. So far it's been very reliable in my code to allow servers to drop out and fail without blocking clients or other nodes in the network. 
+This code is fairly lengthy, but as it turns out, most of the content for both clients and servers on either side of REQ/REP have similar wrapper code for context, socket, and connection/bind wrapping. So far it's been very reliable in my code to allow servers to drop out and fail without blocking clients or other nodes in the network.

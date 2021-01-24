@@ -25,13 +25,13 @@ First, we're not doing a simple write - we're appending to a write-ahead log tha
 
 So there is a bit more work here than simply throwing data at disk. We can see in the following graph that the performance of the machine (CPU, Memory, and Disk) plays a huge role in determining the performance of these operations in terms of the number of these writes the machine is able to do per second:
 
-[![Write Throughput (ops/sec)]({{site.base_url }}/assets/images/2017-08-03-logtp-buf.png)]({{site.base_url }}/assets/images/2017-08-03-logtp-buf.png)
+[![Write Throughput (ops/sec)](/images/2017-08-03-logtp-buf.png)](/images/2017-08-03-logtp-buf.png)
 
 In the above graph, Hyperion and Lagoon are Dell Optiplex servers and Antigua, Curacao, and Nevis are Intel NUCs. They all have different processors and SSDs, but all have 16GB memory. For throughput, bigger is better (you can do more operations per second). As you can see on all of the servers, there is about a 1.6x increase in throughput using unbuffered writes to the file over buffered writes to the file.
 
 We can inspect the distribution of the latency of each individual operation as follows (with latency, smaller is better &mdash; you're doing operations faster):
 
-[![Operation Latency Distribution]({{site.base_url }}/assets/images/2017-08-03-write-latency-buf.png)]({{site.base_url }}/assets/images/2017-08-03-write-latency-buf.png)
+[![Operation Latency Distribution](/images/2017-08-03-write-latency-buf.png)](/images/2017-08-03-write-latency-buf.png)
 
 The boxplot shows the distribution of latency such that the box is between the 25th and 75th percentile (with a bisecting line at the median) - the lines are from the 5th to the 95th percentile, and anything outside the lines are considered outliers and are visualized as diamonds.
 
@@ -148,4 +148,4 @@ func (l *Log) Append(entries ...*Entry) (size int64, err error) {
 }
 ```
 
-We get the performance benefit as shown above. Now, I'm not sure if this is obvious or not; but I do know that it's commonly taught to wrap the file object with the buffer; the unbuffered approach may be simpler and faster but it may also be less safe, it depends on your use case. 
+We get the performance benefit as shown above. Now, I'm not sure if this is obvious or not; but I do know that it's commonly taught to wrap the file object with the buffer; the unbuffered approach may be simpler and faster but it may also be less safe, it depends on your use case.

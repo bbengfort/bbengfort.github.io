@@ -23,7 +23,7 @@ STANFORD = os.path.join("models", "stanford-corenlp-full-2018-02-27")
 # Create the server
 server = CoreNLPServer(
    os.path.join(STANFORD, "stanford-corenlp-3.9.1.jar"),
-   os.path.join(STANFORD, "stanford-corenlp-3.9.1-models.jar"),    
+   os.path.join(STANFORD, "stanford-corenlp-3.9.1-models.jar"),
 )
 
 # Start the server in the background
@@ -41,7 +41,7 @@ parser = CoreNLPParser()
 parse = next(parser.raw_parse("I put the book in the box on the table."))
 ```
 
-![Syntax Parse]({{site.base_url }}/assets/images/2018-06-22-syntax-parse.png)
+![Syntax Parse](/images/2018-06-22-syntax-parse.png)
 
 If you're in a Jupyter notebook, the tree will be drawn as above. Note that the `CoreNLPParser` can take a URL to the CoreNLP server, so if you're deploying this in production, you can run the server in a docker container, etc. and access it for multiple parses. The `raw_parse` method expects a single sentence as a string; you can also use the `parse` method to pass in tokenized and tagged text using other NLTK methods. Parses are also handy for identifying questions:
 
@@ -49,7 +49,7 @@ If you're in a Jupyter notebook, the tree will be drawn as above. Note that the 
 next(parser.raw_parse("What is the longest river in the world?"))
 ```
 
-![Question Syntax Parse]({{site.base_url }}/assets/images/2018-06-22-syntax-parse-question.png)
+![Question Syntax Parse](/images/2018-06-22-syntax-parse-question.png)
 
 Note the `SBARQ` representing the question; this data can be used to create a classifier that can detect what type of question is being asked, which can then in turn be used to transform the question into a database query!
 
@@ -64,7 +64,7 @@ parser = CoreNLPDependencyParser()
 parse = next(parser.raw_parse("I put the book in the box on the table."))
 ```
 
-![Dependency Parse]({{site.base_url }}/assets/images/2018-06-22-dependency-parse.svg)
+![Dependency Parse](/images/2018-06-22-dependency-parse.svg)
 
 Once you're done parsing, don't forget to stop the server!
 

@@ -6,7 +6,7 @@ title: Aggregating Reads from a Go Channel
 
 Here's the scenario: we have a buffered channel that's being read by a single Go routine and is written to by multiple go routines. For simplicity, we'll say that the channel accepts events and that the other routines generate events of specific types, `A`, `B`, and `C`. If there are more of one type of event generator (or some producers are faster than others) we may end up in the situation where there are a series of the same events on the buffered channel. What we would like to do is read _all_ of the same type of event that is on the buffered channel at once, handling them all simultaneously; e.g. aggregating the read of our events.
 
-![Event Stream]({{site.base_url }}/assets/images/2018-08-25-event_channel.png)
+![Event Stream](/images/2018-08-25-event_channel.png)
 
 An initial solution is composed of two loops; the first loop has a select that performs a blocking read of either the `msgs` or a `done` channel to determine when to exit the go routine. If a `msg` is received a second loop labeled grouper is initiated with a non blocking read of the `msgs` channel. The loop keeps track of a `current` and `next` value. If `next` and `current` are the same, it continues reading off the channel, until they are different or there is nothing to read at which point it handles both `next` and `current`.
 

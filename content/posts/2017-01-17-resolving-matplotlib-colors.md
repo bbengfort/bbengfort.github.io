@@ -123,7 +123,7 @@ ax1.scatter(X[:,0], X[:,1], c=yc, cmap='inferno')
 ax2.scatter(X[:,0], X[:,1], c=yd, cmap='Set1')
 ```
 
-![Output of Colormap Method]({{site.base_url }}/assets/images//2017-01-17-output_7_1.png)
+![Output of Colormap Method](/images//2017-01-17-output_7_1.png)
 
 
 Alternatively, the colors can be directly assigned by creating a list of colors. This brings us to our larger problem - how do we create a list of colors in a meaningful way to assign our colormap appropriately? One solution is to use the `matplotlib.colors.ListedColormap` object which takes a list of colors and can convert a dataset to that list as follows:
@@ -152,7 +152,7 @@ cmap = col.ListedColormap([
 ax2.scatter(X[:,0], X[:,1], c=cmap(yd), cmap='Set1')
 ```
 
-![Output of ListedColormap Method]({{site.base_url }}/assets/images/2017-01-17-output_9_1.png)
+![Output of ListedColormap Method](/images/2017-01-17-output_9_1.png)
 
 
 Note that in the above function, the indices 1-3 are used (not the 0 index) since the classes were 1-ordered.

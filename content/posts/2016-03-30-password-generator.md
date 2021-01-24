@@ -60,7 +60,7 @@ I'm sure there are more issues here as well.
 
 However, I'm hoping this is good enough when combined with 2FA, this password is just a first step, and gives me the ability to reproduce the sequence of characters for crucial sites in case the pwSafe database is corrupted. For most sites, I'll simply use a randomly generated password and rely on the "forgot password" link.
 
-<script src="https://gist.github.com/bbengfort/02fa5be3413d494e282bf3ddb0e3f3a5.js"></script>
+{{< gist bbengfort 02fa5be3413d494e282bf3ddb0e3f3a5 >}}
 
 ## Conclusion
 

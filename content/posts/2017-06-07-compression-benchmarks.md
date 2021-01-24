@@ -26,37 +26,37 @@ The following results were recorded on the following platform:
 
 As always, performance measurements are determined by a number of factors, use these results as a guide rather than as strict truth!
 
-[![Compression Time by Original Size]({{site.base_url }}/assets/images/2017-06-07-compress-time.png)]({{site.base_url }}/assets/images/2017-06-07-compress-time.png)
+[![Compression Time by Original Size](/images/2017-06-07-compress-time.png)](/images/2017-06-07-compress-time.png)
 
 In the first chart we explore the amount of time it takes to compress a large directory. There is linear relationship between the size of the directory and the amount of time it takes to compress it, which makes sense. BZip2 takes the longest, and Zip and GZip are comparable in terms of the overall amount of time.
 
-[![Extraction Time by Original Size]({{site.base_url }}/assets/images/2017-06-07-extract-time.png)]({{site.base_url }}/assets/images/2017-06-07-extract-time.png)
+[![Extraction Time by Original Size](/images/2017-06-07-extract-time.png)](/images/2017-06-07-extract-time.png)
 
 We get a similar result for extraction time, though clearly extraction is much faster than compression. BZip2 is once again the slowest, but although Zip and GZip are still comparable at lower file sizes, GZip appears to be taking an advantage at the larger archives. We'll have to explore this more with much larger archives.
 
-[![Compression to Extraction Time Ratio]({{site.base_url }}/assets/images/2017-06-07-compress-to-extract-ratio.png)]({{site.base_url }}/assets/images/2017-06-07-compress-to-extract-ratio.png)
+[![Compression to Extraction Time Ratio](/images/2017-06-07-compress-to-extract-ratio.png)](/images/2017-06-07-compress-to-extract-ratio.png)
 
 Compression to extraction times appear to have a nearly linear relationship. When plotted against each other, we can see that indeed the slope of Zip is slightly larger than that of GZip and in fact there will be a measurable difference for larger file sizes!
 
-[![Compression vs. Extraction Time by Original Size]({{site.base_url }}/assets/images/2017-06-07-compress-vs-extract.png)]({{site.base_url }}/assets/images/2017-06-07-compress-vs-extract.png)
+[![Compression vs. Extraction Time by Original Size](/images/2017-06-07-compress-vs-extract.png)](/images/2017-06-07-compress-vs-extract.png)
 
 The above graph simply shows both the compression and extraction times and their relationship to each other.
 
-[![Compression Ratio]({{site.base_url }}/assets/images/2017-06-07-compression-ratio.png)]({{site.base_url }}/assets/images/2017-06-07-compression-ratio.png)
+[![Compression Ratio](/images/2017-06-07-compression-ratio.png)](/images/2017-06-07-compression-ratio.png)
 
 Looking at how much we've compressed, we can compute the compression ratio: plotting the size of the original data to the archive size. This is a log-log scale, and we can see that BZip2 creates smaller archives at the cost of the time performance hit. BZip2 appears to be parallel with GZip, but GZip appears to have a slightly larger slope than Zip, doing better at smaller archive sizes and may eventually do even better at much larger file sizes.
 
-[![Percentage Reduction by Algorithm]({{site.base_url }}/assets/images/2017-06-07-reduction-percent.png)]({{site.base_url }}/assets/images/2017-06-07-reduction-percent.png)
+[![Percentage Reduction by Algorithm](/images/2017-06-07-reduction-percent.png)](/images/2017-06-07-reduction-percent.png)
 
 All compression algorithms of course reduce huge amounts of dataset space when reducing text, around 80% reductions for Zip and GZip and over 90% reduction for BZip2.
 
-Because of this result, it's clear that instead of compressing the entire directory, we should instead compress each individual file, extracting them only as necessary as we need to read them in. 
+Because of this result, it's clear that instead of compressing the entire directory, we should instead compress each individual file, extracting them only as necessary as we need to read them in.
 
 ## Method
 
 The goal of this benchmark was to explore compression and extraction of a directory containing many small files (similar to the corpus dataset we are dealing with). The files in question are text, json, or html, which compress pretty well. Therefore I created a dataset generation script that used the [lorem](https://pypi.python.org/pypi/lorem) package to create random text files of various sizes (1MiB and 2MiB files to start).
 
-Each directory contained 8 subdirectories with `n` files in each directory, which determines the total size of the dataset. For example, the 64MiB dataset of 1MiB files contained 8 files per subdirectory. The benchmark script first walked the data directory to get an exact file size, then compressed it using the specified tool. It computed the archive size to get the percent compression, then extracted the file to a temporary directory. Both compression and extraction was timed.  
+Each directory contained 8 subdirectories with `n` files in each directory, which determines the total size of the dataset. For example, the 64MiB dataset of 1MiB files contained 8 files per subdirectory. The benchmark script first walked the data directory to get an exact file size, then compressed it using the specified tool. It computed the archive size to get the percent compression, then extracted the file to a temporary directory. Both compression and extraction was timed.
 
 For more details, please see the script used to generate test data sets and run benchmarks on Gist: [zipbench.py](https://gist.github.com/bbengfort/9ca2821d66e2a0f1316f3986fbcef8e5).
 

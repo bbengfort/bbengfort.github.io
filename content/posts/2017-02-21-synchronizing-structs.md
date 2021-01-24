@@ -12,7 +12,7 @@ Channels are made to implement [CSP](https://en.wikipedia.org/wiki/Communicating
 
 Consider an operation that is not [commutative](https://en.wikipedia.org/wiki/Commutative_property) or not [associative](https://en.wikipedia.org/wiki/Associative_property) (operations that are can be implemented with [CRDTs](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)), for example concatenating data to a buffer. This operation must be synchronized because the original state must be preserved during the operation. A simple explanation of this is the `+=` which (for the purpose of our discussion) fetches the original value of the variable, performs the operation and stores the result back to the value. If two processes attempt to `+=` concurrently a [race condition](https://en.wikipedia.org/wiki/Race_condition) occurs because whichever process is first to complete will have its answer overridden. In the following example, the final result of the variable will be `"hello Bob"` or `"hello Alice"` depending on which process gets there last, an undesirable state (the second operation may have preferred the concatenation to be `"hello Bob and Alice"` or `"hello Alice and Bob"`).
 
-[![Race Condition]({{site.base_url }}/assets/images/2017-02-21-race-condition.png)]({{site.base_url }}/assets/images/2017-02-21-race-condition.png)
+[![Race Condition](/images/2017-02-21-race-condition.png)](/images/2017-02-21-race-condition.png)
 
 The solution is to lock the variable whenever the first process accesses it and then release it when it's done, that way the process is guaranteed the state of the variable for the duration of the operation. Here's how I implement this with a `struct` in Go:
 
@@ -95,4 +95,4 @@ BenchmarkUnsafeConcat-8   	 1000000	     47287 ns/op
 BenchmarkSafeConcat-8     	 1000000	     53170 ns/op
 ```
 
-Clearly having locks adds some overhead and if you're not going to do any concurrent programming, then the 6 microseconds it takes to lock and unlock is probably not worth it. On the other hand, if there is the chance that you'll have any concurrency at all - using the `sync.Mutex` embedding is a very clear and understandable way to go about things. 
+Clearly having locks adds some overhead and if you're not going to do any concurrent programming, then the 6 microseconds it takes to lock and unlock is probably not worth it. On the other hand, if there is the chance that you'll have any concurrency at all - using the `sync.Mutex` embedding is a very clear and understandable way to go about things.

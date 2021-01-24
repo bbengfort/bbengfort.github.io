@@ -4,7 +4,7 @@ date: "2016-05-11T09:52:13Z"
 title: Creating a Microservice in Go
 ---
 
-![The Mora Architecture Diagram]({{ site.base_url }}/assets/images/2016-05-10-mora-architecture.png)
+![The Mora Architecture Diagram](/images/2016-05-10-mora-architecture.png)
 
 Yesterday I built my first [microservice](http://martinfowler.com/articles/microservices.html) (a RESTful API) using [Go](https://golang.org/), and I wanted to collect a few of my thoughts on the experience here before I forgot them. The project, [Scribo](https://github.com/bbengfort/scribo), is intended to aid in my research by collecting data about a specific network that I'm looking to build distributed systems for. I do have [something running](https://mora-scribo.herokuapp.com/), which will need to evolve a lot, and it could be helpful to know where it started.
 

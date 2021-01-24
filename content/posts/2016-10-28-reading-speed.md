@@ -34,6 +34,6 @@ We ran each of these WPM speeds against published articles in the DDL corpus and
 
 We'd be happy to have any feedback on if these times look correct or not. The code to produce the table follows:
 
-<script src="https://gist.github.com/bbengfort/1fadc447c45bff18bbde5ff3d59a08ee.js"></script>
+{{< gist bbengfort 1fadc447c45bff18bbde5ff3d59a08ee >}}
 
 Of course this is a straight count of words and does not take into account the number of sections or whether or not there are any code blocks. In the future, I hope to do an HTML version of this that takes into account the number of paragraphs, the density of each paragraph and the length of sentences, as well as the frequency of vocabulary words etc. I'll need to gather feedback for a supervised learning algorithm though to train actual WPM on these features!

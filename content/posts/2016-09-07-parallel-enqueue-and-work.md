@@ -19,8 +19,7 @@ For example, consider the construction of a bloom filter from a list of multiple
 
 I've had to reuse a bit of code from a few places, and this is untested, but I think it demonstrates what is happening:
 
-<script src="https://gist.github.com/bbengfort/09192d108a4998c1cbcb009861bd8e29.js"></script>
-
+{{< gist bbengfort 09192d108a4998c1cbcb009861bd8e29 >}}
 
 The `enqueue` function takes a path to a csv file as well as a synchronized queue (that uses locks to ensure only one process has access to the queue at a time). It reads each row from the CSV file, parses it, and puts it onto the queue. This type of work is similar to the `map` phase of MapReduce.
 
@@ -28,4 +27,4 @@ The `worker` function sits and watches an input queue, and attempts to get value
 
 The `parallelize` function is the primary process and coordinates both the enqueuing and the workers. It first sets up the two queues, the tasks (parsed rows) and results. It then creates a pool for the enqueue processes and uses `map_async` which will call the callback once all processes are complete. At that point, we simply put the `'STOP'` semaphore into the queue so that the workers know there are no more rows. We then create each worker, not using a pool, but just creating direct processes to watch the input queue and do other work. We then join on all these process to wait until they've terminated.
 
-For simple tasks this workflow can get you a lot of raw performance for free, though if this is more routine type workflow, you may want to consider a language with concurrency built in -- like Go. 
+For simple tasks this workflow can get you a lot of raw performance for free, though if this is more routine type workflow, you may want to consider a language with concurrency built in -- like Go.

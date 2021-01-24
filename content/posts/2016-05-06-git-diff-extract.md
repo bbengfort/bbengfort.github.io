@@ -24,7 +24,7 @@ What I'm looking for in this example is the change for every single file through
 
 This pretty straight forward analysis will allow us to build a graph model of how users and files interact inside of a particular project. So here's the snippet:
 
-<script src="https://gist.github.com/bbengfort/7a7e40930275f1d5633c3c59afc93f5d.js"></script>
+{{< gist bbengfort 7a7e40930275f1d5633c3c59afc93f5d >}}
 
 The result from this snippet is a generator that yields dictionaries that look something like:
 
@@ -42,4 +42,4 @@ The result from this snippet is a generator that yields dictionaries that look s
 }
 ```
 
-This can be used to create a history of file changes, or to create a graph of files that are commonly changed together. 
+This can be used to create a history of file changes, or to create a graph of files that are commonly changed together.

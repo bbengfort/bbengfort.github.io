@@ -8,7 +8,7 @@ As I'm moving deeper into my PhD, I'm getting into more Go programming for the s
 
 Today's problem involves getting a go routine to execute a function on an interval, say every 5 seconds or something like that. The foreground process will presumably be working until finished, and we want to make sure it can gracefully shutdown the background process without a delay. In order to communicate between threads in Go, you have to use a channel. I've put together the work from [Timer Routines And Graceful Shutdowns In Go](https://www.goinggo.net/2013/09/timer-routines-and-graceful-shutdowns.html) into a single snippet to remind myself how to do this:
 
-<script src="https://gist.github.com/bbengfort/277b8647a626684fa993cde6f0add81c.js"></script>
+{{< gist bbengfort 277b8647a626684fa993cde6f0add81c >}}
 
 The end result is a program that looks like this:
 

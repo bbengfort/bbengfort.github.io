@@ -16,7 +16,7 @@ Throughput is measured by pushing the server to a steady-state of requests. Each
 
 In the first round of experiments, each client is writing to its own key, meaning that there is no conflict on the server end. I utilized the [Horvitz Research Cluster](https://www.cs.umd.edu/faq/horvitz/) to create 25 clients and a single server with low latency connections. Each client runs for 30 seconds sending as many messages sequentially as it possibly can. The throughput is measured as the number of messages divided by the latency of the RPC (and does not include the latency of creating or handling messages at the client end).
 
-[![Average Client-Side Throughput]({{site.base_url }}/assets/images/2017-04-28-client-throughput.png)]({{site.base_url }}/assets/images/2017-04-28-client-throughput.png)
+[![Average Client-Side Throughput](/images/2017-04-28-client-throughput.png)](/images/2017-04-28-client-throughput.png)
 
 The first results, displayed in the figure above, show the average client throughput as the number of clients increases. This graph met my expectations, in that as the number of clients increases, the throughput goes down. However, when I showed this graph to my advisor, his first response was that it was off in two ways:
 
@@ -25,7 +25,7 @@ The first results, displayed in the figure above, show the average client throug
 
 To the first point, I noted that the server was on a VM, potentially the resource scheduling at the hypervisor layer was causing the throughput to be artificially less than a typical server environment. To test this, I ran a client and server as separate processes on the same machine, connecting over the local loopback address to minimize the noise of network constraints. I then compared the VM (bbc29) to a box in my office (lagoon).
 
-[![Throughput for a Single Client on VMs and Metal]({{site.base_url }}/assets/images/2017-04-28-vms-vs-metal.png)]({{site.base_url }}/assets/images/2017-04-28-vms-vs-metal.png)
+[![Throughput for a Single Client on VMs and Metal](/images/2017-04-28-vms-vs-metal.png)](/images/2017-04-28-vms-vs-metal.png)
 
 Clearly my advisor was right on the money. On the hardware, the application (with the exact same configuration) performs slightly under 10x better than on the virtual machine. I also tested to see if trace messages (print statements that log connections) affected performance, and they do (blue is without trace, green is with trace) &mdash; but not to the amount that can be reconciled with the difference between virtual and hardware performance.
 
@@ -33,8 +33,8 @@ This was a surprise, and made me question whether or not I should rethink using 
 
 To the second point, the first graph is actually measuring latency at the client, not at the server. So although the server is actually sitting around with spare capacity when there are fewer clients, the throughput can only go as fast as the client does. I think the first graph does show that until about 9 clients or so the performance is plateaued, meaning that the server has capacity to handle all clients at their particular rates. After 9 clients, however, the server is no longer primarily waiting for requests, but is constantly handling requests, and the locks become a factor.
 
-[![Log Regression of Server-Side Throughput]({{site.base_url }}/assets/images/2017-04-28-server-throughput.png)]({{site.base_url }}/assets/images/2017-04-28-server-throughput.png)
+[![Log Regression of Server-Side Throughput](/images/2017-04-28-server-throughput.png)](/images/2017-04-28-server-throughput.png)
 
 In order to explore this, I instead measured throughput at the server-side. The server records the timestamp of the first message it receives, then maintains the timestamp of the last message it receives, counting the number of messages. It then divides the number of messages by the delta of the last message to the first. The graph above shows the measurements back in the virtual machine cluster of the server-side throughput. This graph is the familiar one, the one it's &ldquo;supposed to be&rdquo; &mdash; as the number of clients increases, the throughput increases linearly, until about 9 clients or so when the capacity plateaus at around 16,000 writes per second.
 
-Latency variability, message ordering, and other factors can come into play in a geographic environment &mdash; and it is certainly my intention to explore those factors in detail. However, I think it was an important systems lesson to learn the expected shape of baseline environments, so that I will be able to immediately compare graphs I'm getting with the expected form. 
+Latency variability, message ordering, and other factors can come into play in a geographic environment &mdash; and it is certainly my intention to explore those factors in detail. However, I think it was an important systems lesson to learn the expected shape of baseline environments, so that I will be able to immediately compare graphs I'm getting with the expected form.

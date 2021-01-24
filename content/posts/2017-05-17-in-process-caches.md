@@ -8,7 +8,7 @@ I have had some recent discussions regarding cacheing to improve application per
 
 So here are the tools I consider when implementing cacheing, in a hierarchy from single process to distributed processes:
 
-[![Cacheing Hierarchy]({{site.base_url }}/assets/images/2017-05-17-cacheing-hierarchy.png)]({{site.base_url }}/assets/images/2017-05-17-cacheing-hierarchy.png)
+[![Cacheing Hierarchy](/images/2017-05-17-cacheing-hierarchy.png)](/images/2017-05-17-cacheing-hierarchy.png)
 
 In a later post, I may review embedded, multi-threaded, or external multi-process cacheing. In this post, however, I'm focused on component based single thread cacheing. But before we discuss that let&rsquo;s review why cacheing is important. A definition:
 

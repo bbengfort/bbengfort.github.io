@@ -35,7 +35,7 @@ def wait(delay, func):
 
 You can cancel the timer, and even pass both positional and keyword arguments directly to the object. This gives us the ability to easily wait a delay then call the function. However, what if you want to run the function multiple times on an interval? The simple answer is have your function, when run, create a new timer object. However, your main thread then loses control of its hook to the timer object, which means that you can't cancel the interval (and your program will never terminate)! My method is personalized from an answer to the Stack Overflow question: &ldquo;[Run certain code every n seconds](http://stackoverflow.com/questions/3393612/run-certain-code-every-n-seconds)&rdquo; and is as follows:
 
-<script src="https://gist.github.com/bbengfort/a7d46013f39cf367daa5.js"></script>
+{{< gist bbengfort a7d46013f39cf367daa5 >}}
 
 My special sauce is the use of `functools.partial` to create a closure and the `__call__` override, which allows me to actually _interrupt_ the interval and execute the function ahead of time, resetting the interval. As you can see, the elapsed time gets printed out every `n` seconds, without blocking the code waiting for user input (in this case, a `KeyboardInterrupt`).
 
@@ -43,6 +43,6 @@ So how might you use this in practice? Well, I originally was thinking about thi
 
 > Disclaimer: this is not the best method for memory profiling, there are definitely way better tools out there for this!
 
-<script src="https://gist.github.com/bbengfort/63f3e14b3693d695ef8b.js"></script>
+{{< gist bbengfort 63f3e14b3693d695ef8b >}}
 
-Here you can see that every 5 seconds, the memory usage is written to a CSV file, without interrupting the main code execution! Although this is a simple way to add a lot of rich features to your code; take care - the threading module can be tricky! Note that if you don't stop the interval, then your program won't stop! So make sure on exit you do the work of cleaning these things up! 
+Here you can see that every 5 seconds, the memory usage is written to a CSV file, without interrupting the main code execution! Although this is a simple way to add a lot of rich features to your code; take care - the threading module can be tricky! Note that if you don't stop the interval, then your program won't stop! So make sure on exit you do the work of cleaning these things up!

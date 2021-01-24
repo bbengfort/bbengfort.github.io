@@ -8,6 +8,6 @@ Let's face it, most of the Python programs we write are going to be used from th
 
 Sometimes though, you just want a simple CLI script. These days we use the standard library `argparse` module to parse commands off the command line. Here is my basic script that I use for most of my projects:
 
-<script src="https://gist.github.com/bbengfort/1884936b3a7efbf364f0.js"></script>
+{{< gist bbengfort 1884936b3a7efbf364f0 >}}
 
 So how do you use this? Well essentially you just add subcommand parsers and their associated helper functions. Generally speaking you should do most of the work in the module and simply import that work to be executed here; only the command line context should be managed from your helper functions.

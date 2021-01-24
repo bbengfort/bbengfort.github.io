@@ -90,7 +90,7 @@ ts = parse_timestamp(ts)
 
 Let's go to the benchmarks:
 
-![Benchmark for/else vs. function date parsing]({{site.base_url }}/assets/images/2018-05-17-benchmark.png)
+![Benchmark for/else vs. function date parsing](/images/2018-05-17-benchmark.png)
 
 So basically, there is no meaningful difference, but depending on the context of implementation, using `for/else` may be a bit more meaningful or easy to test than having to implement another function.
 

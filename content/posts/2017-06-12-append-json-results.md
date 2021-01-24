@@ -21,6 +21,6 @@ The headers problem is really the biggest problem, since I need future me to be 
 
 This is becoming so common in my Go code, here is a simple function that takes a path to append to as input as well as the JSON value (the interface) and appends the marshaled data to disk:
 
-<script src="https://gist.github.com/bbengfort/4c7a46540bf89aced9b8864d884d0b4c.js"></script>
+{{< gist bbengfort 4c7a46540bf89aced9b8864d884d0b4c >}}
 
 Now my current worry is atomic appends from multiple processes (is this possible?!) I was hoping that the file system would lock the file between writes, but I'm not sure it does: [Is file append atomic in UNIX?](https://stackoverflow.com/questions/1154446/is-file-append-atomic-in-unix). Anyway, more on that later.

@@ -77,7 +77,7 @@ bbengfort.github.io/_site/
 
 Ok, that's a lot, so it was snipped for brevity, but you get the picture: here's the code:
 
-<script src="https://gist.github.com/bbengfort/81c4766a46c9ad2ec847473b1ce6678d.js"></script>
+{{< gist bbengfort 81c4766a46c9ad2ec847473b1ce6678d >}}
 
 
-Enjoy this code snippet brought to you by procrastination and coffee; also me skipping lunch. 
+Enjoy this code snippet brought to you by procrastination and coffee; also me skipping lunch.

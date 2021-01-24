@@ -38,7 +38,7 @@ So, that's actually a lot of files! Maybe I should put myself into copy-and-past
 
 I use a `Makefile`. I won't apologize. I just like it. I wish there was [something similar](http://stackoverflow.com/questions/1407837/is-there-a-rake-equivalent-in-python) to [rake](http://martinfowler.com/articles/rake.html) for Python. There I said it.
 
-<script src="https://gist.github.com/bbengfort/17de016d6a51ce487a0f.js"></script>
+{{< gist bbengfort 17de016d6a51ce487a0f >}}
 
 So this `Makefile` essentially shows how I clean up after myself and run tests, as well as publish to GitHub Pages if I have a subdirectory with HTML for that environment. The requirements are just requirements that I have in basically every single project that I create.
 
@@ -46,7 +46,7 @@ So this `Makefile` essentially shows how I clean up after myself and run tests, 
 
 Python modules should be well versioned, especially as I prefer to have good numbering for GitHub releases. Occasionally I will create an actual `version.py` in the root of my module, but more often than not, I just stick it into the `__init__.py` of the module.
 
-<script src="https://gist.github.com/bbengfort/a6d0253982b36bac0049.js"></script>
+{{< gist bbengfort a6d0253982b36bac0049 >}}
 
 To &ldquo;version bump&rdquo; as it were, I simply modify the information in `__version_info__` by updating the release numbers. I also think that someday there is probably also a way to do this automatically or with a version bump script.
 
@@ -54,7 +54,7 @@ To &ldquo;version bump&rdquo; as it were, I simply modify the information in `__
 
 I like to use a combination of [Travis-CI](https://travis-ci.org/) and [Coveralls](https://coveralls.io/) to get pretty badges on my `README.md` file. Here are my basic test cases and a .travis.yml file.
 
-<script src="https://gist.github.com/bbengfort/8b58e1ed538a92f44f4e.js"></script>
+{{< gist bbengfort 8b58e1ed538a92f44f4e >}}
 
 Note that these files are named for easy location in Gist, not the names of the actual files in the Repository.
 
@@ -85,6 +85,6 @@ Pull requests will be reviewed when the Travis-CI tests pass, so including tests
 
 And finally, here is some Markdown that I typically use for the README:
 
-<script src="https://gist.github.com/bbengfort/778adad3917291e64213.js"></script>
+{{< gist bbengfort 778adad3917291e64213 >}}
 
 Ok, that's all the project templates for now!

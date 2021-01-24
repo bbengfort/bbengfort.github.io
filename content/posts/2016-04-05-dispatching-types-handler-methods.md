@@ -17,8 +17,8 @@ However, when you're programming -- you're basically naming things. So the quest
 
 So the strategy is to create _types_ (classes for the point of this discussion) that can be identified by name. Then create a dispatcher that uses that name, automatically looks up the appropriate handler based on that name, and calls it. The code to do so is as follows:
 
-<script src="https://gist.github.com/bbengfort/6e2de9abe41ac02ee827a94c1ff3e6a9.js"></script>
+{{< gist bbengfort 6e2de9abe41ac02ee827a94c1ff3e6a9 >}}
 
 Ok, so there are a couple of extra things here, specifically the need to do things in [PEP8 naming style](https://www.python.org/dev/peps/pep-0008/#descriptive-naming-styles). The type names should be in [`CamelCase`](https://en.wikipedia.org/wiki/CamelCase) while the method names should be in [`snake_case`](https://en.wikipedia.org/wiki/Snake_case). It's not trivial to put together helper functions to transform strings to camel case, or to snake case. You can use generators, string processing, regular expressions, transformers, and more.
 
-In the snippet I've included the methods that I prefer (using regular expressions that are compiled in advance for performance). Moreover, since this is so common to add to code, I've not only included a downloadable Gist of the code, but also tests so that you can easily add it to your code base. 
+In the snippet I've included the methods that I prefer (using regular expressions that are compiled in advance for performance). Moreover, since this is so common to add to code, I've not only included a downloadable Gist of the code, but also tests so that you can easily add it to your code base.

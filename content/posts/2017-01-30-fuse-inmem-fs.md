@@ -34,9 +34,9 @@ Unfortunately due to vagaries in the build process with Postgres, Apache Httpd, 
 
 The workload code can be found at [github.com/bbengfort/compile-workload](https://github.com/bbengfort/compile-workload) along with a [benchmark.sh](https://github.com/bbengfort/compile-workload/blob/master/benchmark.sh) script that executes the full test-suite. Here are the time results for the OS X  file system (OS X) vs. MemFS for both cloning and compiling:
 
-![MemFS vs. Disk Clone Times]({{site.base_url }}/assets/images/2017-01-30-clone-time.png)
+![MemFS vs. Disk Clone Times](/images/2017-01-30-clone-time.png)
 
-![MemFS vs. Disk Build Times]({{site.base_url }}/assets/images/2017-01-30-build-time.png)
+![MemFS vs. Disk Build Times](/images/2017-01-30-build-time.png)
 
 As you can see from the graphs, git clone is _horribly_ slow on MemFS. Further investigation revealed that git is writing 4107 bytes of data at a time as it downloads its compressed pack file. This means approximately 255 times more calls to the `Write()` FUSE method than other file writing mechanisms which typically write 1MB at a time. Because each call to `Write()` must be handled by the FUSE server and responded to by MemFS (which is allocating an byte slice under the hood), the more calls to `Write()` the exponentially worse the system is.
 
@@ -44,7 +44,7 @@ Compiling, on the other hand, is supposed to be more representative of a workloa
 
 Memory usage for MemFS is currently atrocious, however:
 
-![MemFS vs. Disk Memory Usage]({{site.base_url }}/assets/images/2017-01-30-mprof-memfs.png)
+![MemFS vs. Disk Memory Usage](/images/2017-01-30-mprof-memfs.png)
 
 The dotted lines are the maximum file usage on disk according to a recursive stat of each file. The solid lines are the memory usage of MemFS during clone and build. Although some extra memory overhead is expected to maintain the journal and references to the file system tree, the amount of overhead necessary seems completely out of whack compared to the storage requirements. Some investigation about freeing data is necessary.
 

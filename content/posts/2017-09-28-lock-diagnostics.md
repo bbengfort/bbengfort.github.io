@@ -56,7 +56,7 @@ Calling `outer()` will return something like `main.outer` &mdash; the function t
 
 With that in hand we can simply create a `map[string]int64` and increment any calls by caller name before `Lock()` and decrement any calls by caller name after `Unlock()`. Here is the example:
 
-<script src="https://gist.github.com/bbengfort/9388bd2806d3692baeb8c5c2749cc739.js"></script>
+{{< gist bbengfort 9388bd2806d3692baeb8c5c2749cc739 >}}
 
 But &hellip; that's actually a little more complicated than I let on!
 

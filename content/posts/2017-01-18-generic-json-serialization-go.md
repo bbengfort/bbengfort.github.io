@@ -9,19 +9,19 @@ This post is just a reminder as I work through handling JSON data with Go. Go pr
 ```go
 type Person struct {
     Name   string `json:"name,omitempty"`
-    Age    int    `json:"age,omitempty"` 
-    Salary int    `json:"-"` 
+    Age    int    `json:"age,omitempty"`
+    Salary int    `json:"-"`
 }
 
-op := &Person{"John Doe", 42} 
-data, _ := json.Marshal(op) 
+op := &Person{"John Doe", 42}
+data, _ := json.Marshal(op)
 
-var np Person 
-json.Unmarshall(data, &np) 
+var np Person
+json.Unmarshall(data, &np)
 ```
 
-So this is all well and good, until you start wanting to just send around arbirtray data. Luckly the `json` package will allow you to do that using reflection to load data into a `map[string]interface{}`, e.g. a dictionary whose keys are strings and whose values are any arbitrary type (anything that implements the null interface, that is has zero or more methods, which all Go types do). So you might see code like this:  
+So this is all well and good, until you start wanting to just send around arbirtray data. Luckly the `json` package will allow you to do that using reflection to load data into a `map[string]interface{}`, e.g. a dictionary whose keys are strings and whose values are any arbitrary type (anything that implements the null interface, that is has zero or more methods, which all Go types do). So you might see code like this:
 
-<script src="https://gist.github.com/bbengfort/a06c87f6cdea029eda5e432be0242978.js"></script>
+{{< gist bbengfort a06c87f6cdea029eda5e432be0242978 >}}
 
-Did you catch the surprise? That's right, the age `int` got deserialized as a `float64`! Anyway, this whole post is about how long it took me to figure out that brand of reflection and how to avoid errors in the future. 
+Did you catch the surprise? That's right, the age `int` got deserialized as a `float64`! Anyway, this whole post is about how long it took me to figure out that brand of reflection and how to avoid errors in the future.

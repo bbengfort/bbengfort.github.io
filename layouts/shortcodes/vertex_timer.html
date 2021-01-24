@@ -1,0 +1,108 @@
+<style type="text/css">
+
+    svg#timer-vertex {
+        width: 100%;
+        height: 120px;
+    }
+
+    svg .vertex text {
+      text-anchor: middle;
+      dominant-baseline: central;
+      text-align: center;
+      fill: #FEFEFE;
+    }
+
+    svg .vertex circle {
+        fill: #003F87;
+    }
+
+    svg .vertex path {
+      fill: none;
+      stroke: #CF0000;
+    }
+
+
+</style>
+
+<svg id="timer-vertex"></svg>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+    var SVG = function(tag) {
+        return $(document.createElementNS('http://www.w3.org/2000/svg', tag));
+    };
+
+    var ARC_WIDTH = 6;
+
+    function circleCoord(frac, cx, cy, r) {
+        var radians = 2 * Math.PI * (0.75 + frac);
+        return {
+            x: cx + r * Math.cos(radians),
+            y: cy + r * Math.sin(radians),
+        };
+    }
+
+    function arcSpec(spec, fraction) {
+        var radius = spec.r + ARC_WIDTH/2;
+        var end = circleCoord(fraction, spec.cx, spec.cy, radius);
+        var s = ['M', spec.cx, ',', spec.cy - radius];
+
+        if (fraction > 0.5) {
+            s.push('A', radius, ',', radius, '0 0,1', spec.cx, spec.cy + radius);
+            s.push('M', spec.cx, ',', spec.cy + radius);
+        }
+        s.push('A', radius, ',', radius, '0 0,1', end.x, end.y);
+        return s.join(' ');
+    }
+
+    function updateArcTimer(elems, spec, current) {
+        var amt = current - 0.015;
+        if (amt < 0) {
+            amt = 1.0;
+        }
+
+        elems.attr('d', arcSpec(spec, amt));
+        setTimeout(function() { updateArcTimer(elems, spec, amt) }, 100);
+    }
+
+    $(document).ready(function() {
+
+        var svg = $("#timer-vertex");
+
+        vertexSpec = {
+            cx: svg.width() / 2,
+            cy: svg.height() / 2,
+            r: 36,
+        }
+
+        // Create the vertex
+        svg.append(
+            SVG('g')
+                .attr('id', 'vertex-1')
+                .attr('class', 'vertex')
+                .append(SVG('a')
+                    .append(SVG('circle')
+                                .attr('class', 'background')
+                                .attr(vertexSpec))
+                    .append(SVG('path')
+                                .attr('class', 'timer-arc')
+                                .attr('style', 'stroke-width: ' + ARC_WIDTH)
+                                .attr('d', arcSpec(vertexSpec, 1.0)))
+                )
+                .append(SVG('text')
+                            .attr('class', 'vlabel')
+                            .text('v1')
+                            .attr({x: vertexSpec.cx, y: vertexSpec.cy}))
+        );
+
+        // Animate the timer
+        updateArcTimer($(".timer-arc"), vertexSpec, 1.0);
+
+    });
+
+</script>

@@ -33,7 +33,7 @@ func (r *Remote) messenger() {
         }
 
         // Send the message on the remote stream
-        if err = r.stream.Send(msg); err != nil {			
+        if err = r.stream.Send(msg); err != nil {
             out.Warn(
                 "dropped %s message to %s (%s): could not send: %s",
                 msg.Type, r.Name, r.Endpoint(), err.Error()
@@ -78,11 +78,11 @@ func (r *Remote) listener() {
 }
 ```
 
-This does much better in terms of performance, however there is a race condition on the access to `r.online` before the access to `r.stream` which may be made nil by `messenger` routine closing.  
+This does much better in terms of performance, however there is a race condition on the access to `r.online` before the access to `r.stream` which may be made nil by `messenger` routine closing.
 
 To test this, I ran a benchmark, sending 5000 messages each in their own go routine and waiting until all responses were dispatched before computing the throughput. The *iorder* mode is to prove that even when in `async` if the messages are sent one at a time (e.g. not in a go routine) the order is preserved.
 
-![Throughput]({{site.base_url }}/assets/images/2018-09-11-streaming-remote-throughput.png)
+![Throughput](/images/2018-09-11-streaming-remote-throughput.png)
 
 At first, I thought the size of the message buffer might be causing the bottleneck (hence the x-axis). The buffer prevents back-pressure from the message sender, and it does appear to have some influence on sync and async mode (but less of an impact in iorder mode). From these numbers, however, it's clear that we need to run the listener in its own routine.
 

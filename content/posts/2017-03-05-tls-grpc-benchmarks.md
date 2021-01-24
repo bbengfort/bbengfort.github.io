@@ -6,7 +6,7 @@ title: Benchmarking Secure gRPC
 
 A natural question to ask after the previous post is &ldquo;how much overhead does security add?&rdquo; So I've benchmarked the three methods discussed; mutual TLS, server-side TLS, and no encryption. The results are below:
 
-[![Secure gRPC Benchmarks]({{site.base_url }}/assets/images/2017-03-05-benchmark.png)]({{site.base_url }}/assets/images/2017-03-05-benchmark.png)
+[![Secure gRPC Benchmarks](/images/2017-03-05-benchmark.png)](/images/2017-03-05-benchmark.png)
 
 Here are the numeric results for one of the runs:
 

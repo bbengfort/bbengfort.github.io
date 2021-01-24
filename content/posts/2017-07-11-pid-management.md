@@ -47,7 +47,7 @@ Using the PID file within a program requires a bit of forethought. Where do you 
 
 Some of these questions are addressed by my initial implementation of the PID file in the [github.com/bbengfort/x/pid](https://godoc.org/github.com/bbengfort/x/pid) package. The stub of that implementation is as follows:
 
-<script src="https://gist.github.com/bbengfort/9120ee6ba5ee5badda578f2072e17c5a.js"></script>
+{{< gist bbengfort 9120ee6ba5ee5badda578f2072e17c5a >}}
 
 This implementation stores both the PID and the parent PID (if the process forks) in the PID file in JSON format. JSON is not necessarily required, but it does make the format a bit simpler to understand and also allows the addition of other process information.
 

@@ -10,7 +10,7 @@ A common pattern for me has become to use a `select` to manage broadcasted work 
 
 The pattern code is below:
 
-<script src="https://gist.github.com/bbengfort/70c60a0c5fe89e0b6203e2d81e5a9aa2.js"></script>
+{{< gist bbengfort 70c60a0c5fe89e0b6203e2d81e5a9aa2 >}}
 
 The `worker` function does not return anything (since it's a go routine) but instead takes as input an id, and two directional channels &mdash; meaning that the go routines can only send on the channel and not receive. The first channel is the output channel and the second is for errors. The worker pretends to work with a random sleep then just reports back that it has been awakened.
 

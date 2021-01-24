@@ -22,7 +22,7 @@ class ScatterVisualizer(Visualizer):
 
 **NOTE**: a related question is how can we determine a continuous vector `y` (a regression problem) from a categorical vector `y` (a classification problem) automatically? This allows us to assign a sequential vs. discrete colors to the target variable.
 
-To make a short story even shorter, when I reviewed the above code, my response was: &ldquo;isn't something like `np.unique` faster?&rdquo;. I was returned a simple &ldquo;yep, sure is&rdquo; answer, and the code was changed to `np.unique` &mdash; job done, right? When the commit was pushed, a few tests didn't pass; it looked like there was an issue converting a Python data type into the numpy data type to pass to the unique function (turns out this was not the issue), but that caused me to investigate the input type to the uniqueness method. Using `set` vs. `np.unique` depends on if the input type is a Python `list` or a Numpy `array`, as we'll see shortly.  
+To make a short story even shorter, when I reviewed the above code, my response was: &ldquo;isn't something like `np.unique` faster?&rdquo;. I was returned a simple &ldquo;yep, sure is&rdquo; answer, and the code was changed to `np.unique` &mdash; job done, right? When the commit was pushed, a few tests didn't pass; it looked like there was an issue converting a Python data type into the numpy data type to pass to the unique function (turns out this was not the issue), but that caused me to investigate the input type to the uniqueness method. Using `set` vs. `np.unique` depends on if the input type is a Python `list` or a Numpy `array`, as we'll see shortly.
 
 So let's get into results. We proposed three methods of getting the unique items from our target vector:
 
@@ -49,7 +49,7 @@ The first converts a Python `set` into a `list` and returns the _unsorted_ list 
 
 Before getting into the benchmarking methodology, the results are as follow:
 
-[![Average Time per Method by Input Type]({{site.base_url }}/assets/images/2017-05-02-time-per-op-by-input.png)]({{site.base_url }}/assets/images/2017-05-02-time-per-op-by-input.png)
+[![Average Time per Method by Input Type](/images/2017-05-02-time-per-op-by-input.png)](/images/2017-05-02-time-per-op-by-input.png)
 
 The results in the above figure show that by far the fastest unique computation is using `set` on a Python list. This is especially surprising given the fact that numpy arrays are C implementations, and are therefore guaranteed to be blazingly fast. Using `np.unique` is on average faster than everything else, and it certainly gives the best performance on `array` data structures out of all the methods. It does slightly worse with Python lists, but not as badly as Python does with `array` structures. Scikit-Learn clearly adds some overhead, especially when it comes to Python lists, but performs fairly well for `array` structs.
 
@@ -97,10 +97,10 @@ The actual test protocol ran on datasets whose length went from 10 to 100,000 it
 
 As you can see, the amount of time per operation increases exponentially as the length of the dataset increases:
 
-[![Average Time with Increasing Input Size by Method]({{site.base_url }}/assets/images/2017-05-02-time-per-length-by-method.png)]({{site.base_url }}/assets/images/2017-05-02-time-per-length-by-method.png)
+[![Average Time with Increasing Input Size by Method](/images/2017-05-02-time-per-length-by-method.png)](/images/2017-05-02-time-per-length-by-method.png)
 
 And it appears (as expected) that the number of unique values per dataset does not have a meaningful impact on the operation time:
 
-[![Average Time with Increasing Uniques by Method]({{site.base_url }}/assets/images/2017-05-02-time-per-unique-by-method.png)]({{site.base_url }}/assets/images/2017-05-02-time-per-unique-by-method.png)
+[![Average Time with Increasing Uniques by Method](/images/2017-05-02-time-per-unique-by-method.png)](/images/2017-05-02-time-per-unique-by-method.png)
 
-Hopefully these timing numbers and approach to benchmarking seem valid. They certainly work to highlight interesting places where our coding assumptions might fail us. 
+Hopefully these timing numbers and approach to benchmarking seem valid. They certainly work to highlight interesting places where our coding assumptions might fail us.

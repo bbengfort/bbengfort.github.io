@@ -61,7 +61,7 @@ The interact plot shows every experiment, which is a grid of max simulation time
 
 The code to reproduce the data and the experiment is as follows:
 
-<script src="https://gist.github.com/bbengfort/f950dbc0ac9b7d3d4c32caf1d26dbcc5.js"></script>
+{{< gist bbengfort f950dbc0ac9b7d3d4c32caf1d26dbcc5 >}}
 
 The code does contain some cloudscope utilities, but they're not large and can be found in the [cloudscope repository](https://github.com/bbengfort/cloudscope).
 

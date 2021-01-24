@@ -40,8 +40,7 @@ The bottom line is that a feature that was relatively quick to prototype took a 
 
     The release was posted on PyPI along with a [nice thank you on Twitter](https://twitter.com/fpedregosa/status/844492791048814594). I can finally answer my own question on Stack Overflow!
 
-    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thanks to <a href="https://twitter.com/bbengfort">@bbengfort</a> memory_profiler can now separately track memory usage of forked processes <a href="https://t.co/LCOMLgNzM8">https://t.co/LCOMLgNzM8</a> <a href="https://t.co/Lc46lf0xs8">pic.twitter.com/Lc46lf0xs8</a></p>&mdash; Fabian Pedregosa (@fpedregosa) <a href="https://twitter.com/fpedregosa/status/844492791048814594">March 22, 2017</a></blockquote>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    {{< tweet 844492791048814594 >}}
 
 So let me break down what happened here and do a bit of a post-mortem. First, I had a problem that I wanted to solve with an existing, popular, and well-used codebase (namely track the memory usage of child processes independently to the main process). I thought there must be a way to do this, and while there was a solution to a variant of my problem, there was no direct solution.
 
@@ -74,6 +73,6 @@ $ mprof plot
 
 You'll get a figure that looks something similar to:
 
-[![Memory Profiler Multiprocessing Example]({{site.base_url }}/assets/images/2017-03-20-mprof-multiprocessing-plot.png)]({{site.base_url }}/assets/images/2017-03-20-mprof-multiprocessing-plot.png)
+[![Memory Profiler Multiprocessing Example](/images/2017-03-20-mprof-multiprocessing-plot.png)](/images/2017-03-20-mprof-multiprocessing-plot.png)
 
 This is great news for an oft-requested feature of a library that is well used and well maintained. For reference, if you'd like to see an example of my proof of concept, you can check out my fork, or see my version of the `mprof` script [on Gist](https://gist.github.com/bbengfort/574e0b5acf0068527f74bba897538dcb). However, you don't have to worry about that gist, and can instead simply `pip install memory_profiler` to get access to this feature!

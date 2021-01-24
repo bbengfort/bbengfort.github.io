@@ -12,7 +12,7 @@ XKCD also did a [color survey](https://blog.xkcd.com/2010/05/03/color-survey-res
 
 So you need something like the colormap in order to actually use these things. Therefore, for descrete values, I give you the `ColorMap`:
 
-<script src="https://gist.github.com/bbengfort/1973e6b017eefe39e041990451f9643a.js"></script>
+{{< gist bbengfort 1973e6b017eefe39e041990451f9643a >}}
 
 So how do you use this tool? First you instantiate the object with either a list of colors or one of the names I provided in the script (and expand your script with your own names!). You then have a callable object that you can get the color for any hashable object. The `ColorMap` retains the color information and raises an exception if you ask for more colors than you have in the map.
 

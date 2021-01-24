@@ -45,7 +45,7 @@ This initializes the `DirectoryWatcher` dispatcher with the source as the watche
 
 The dispatcher code is as follows:
 
-<script src="https://gist.github.com/bbengfort/0e2493ea678a8b86978b28b921d98c48.js"></script>
+{{< gist bbengfort 0e2493ea678a8b86978b28b921d98c48 >}}
 
 So this works very well but there are a copule of key points:
 

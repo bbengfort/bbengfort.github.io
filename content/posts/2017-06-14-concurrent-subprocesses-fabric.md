@@ -154,7 +154,7 @@ proc 46145: task 4 lasted 4.05 seconds
 
 Sweet! Things are happening concurrently and we can specify any arbitrary commands with their arguments on the command line! Win! The complete listing of the pproc script is as follows:
 
-<script src="https://gist.github.com/bbengfort/6b66fceb73dff58edd21e49967c0a07f.js"></script>
+{{< gist bbengfort 6b66fceb73dff58edd21e49967c0a07f >}}
 
 ## Experiments
 

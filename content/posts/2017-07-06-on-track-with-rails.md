@@ -4,7 +4,7 @@ date: "2017-07-06T08:15:13Z"
 title: On the Tracks with Rails
 ---
 
-[![Kahu Screenshot]({{site.base_url }}/assets/images/2017-07-06-kahu-screenshot.png)]({{site.base_url }}/assets/images/2017-07-06-kahu-screenshot.png)
+[![Kahu Screenshot](/images/2017-07-06-kahu-screenshot.png)](/images/2017-07-06-kahu-screenshot.png)
 
 I'm preparing to move into a new job when I finish my dissertation hopefully later this summer. The new role involves web application development with Rails and so I needed to get up to speed. I had a web application requirement for my research so I figured I'd knock out two birds with one stone and build that [app with Rails](https://github.com/bbengfort/kahu) (a screenshot of the app is above, though of course this is just a front-end and doesn't really tell you it was built with Rails).
 

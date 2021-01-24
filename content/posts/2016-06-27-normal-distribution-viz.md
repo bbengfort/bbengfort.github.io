@@ -10,7 +10,7 @@ I wanted to be able to quickly and easily predict what would happen as I varied 
 
 Remembering that &plusmn;3&sigma; from the mean captures most of the data from the random generator, I set up creating a visual way to inspect the properties and behaviors of the normal generators I was creating. In particular, my goal is to visually inspect the range of the data, as well as the density of results. This helps debug issues in simulations. Therefore, I give you a normal distribution simulation:
 
-<script src="https://gist.github.com/bbengfort/99413d0e48c4188b8076534e0dcfb835.js"></script>
+{{< gist bbengfort 99413d0e48c4188b8076534e0dcfb835 >}}
 
 By running this simply Python script:
 
@@ -20,7 +20,7 @@ $ python norm.py 12.0 2.0
 
 You end up with visuals as follows:
 
-![Normal curve with a mean of 12 and a standard deviation of 2]({{ site.base_url }}/assets/images/2016-06-27-small-sigma-curve.png)
+![Normal curve with a mean of 12 and a standard deviation of 2](/images/2016-06-27-small-sigma-curve.png)
 
 Shifting the mean and increasing the standard deviation gives you the following:
 
@@ -30,6 +30,6 @@ $ python norm.py 14 12.4
 
 Which, as you can see, definitely changes the scale of the domain of the random number generator!
 
-![Normal curve with a mean of 14 and a standard deviation of 12.4]({{ site.base_url }}/assets/images/2016-06-27-big-sigma-curve.png)
+![Normal curve with a mean of 14 and a standard deviation of 12.4](/images/2016-06-27-big-sigma-curve.png)
 
 It may be hard to see - but check out the domains of both axes to get a feel for the magnitude of that change! Now you have a simple and effective way to reason about how &mu; and &sigma; might change the way that random numbers are selected!

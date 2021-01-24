@@ -6,7 +6,7 @@ title: Extracting a TOC from Markup
 
 In today's addition of &ldquo;really simple things that come in handy all the time&rdquo; I present a simple script to extract the table of contents from markdown or asciidoc files:
 
-<script src="https://gist.github.com/bbengfort/6ab36e0f518fe3e0f92bce6f53bdd80f.js"></script>
+{{< gist bbengfort 6ab36e0f518fe3e0f92bce6f53bdd80f >}}
 
 So this is pretty simple, just use regular expressions to look for lines that start with one or more `"#"` or `"="` (for markdown and asciidoc, respectively) and print them out with an indent according to their depth (e.g. indent `##` heading 2 one block). Because this script goes from top to bottom, you get a quick view of the document structure without creating a nested data structure under the hood. I've also implemented some simple type detection using common extensions to decide which regex to use.
 

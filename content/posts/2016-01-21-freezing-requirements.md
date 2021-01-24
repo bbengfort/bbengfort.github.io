@@ -4,7 +4,7 @@ date: "2016-01-21T10:23:06Z"
 title: Freezing Package Requirements
 ---
 
-I have a minor issue with freezing requirements, and so I put together a very complex solution. One that is documented here. Not 100% sure why this week is all about packaging, but there you go. 
+I have a minor issue with freezing requirements, and so I put together a very complex solution. One that is documented here. Not 100% sure why this week is all about packaging, but there you go.
 
 First up, what is a [requirement file](https://pip.readthedocs.org/en/stable/user_guide/#requirements-files)? Basically they are a list of items that can be installed with `pip` using the following command:
 
@@ -56,7 +56,7 @@ wsgiref==0.1.2
 
 Like I said, a minor beef. If you've added or upgraded a package, then you have to manually deal with all the commented dependencies. Therefore I created a script to help me with this issue as follows.
 
-<script src="https://gist.github.com/bbengfort/597b73f5304528f7bef8.js"></script>
+{{< gist bbengfort 597b73f5304528f7bef8 >}}
 
 Basically I've stuck this file into `~/bin/requires` and now I can simply do the following to get my requirements:
 

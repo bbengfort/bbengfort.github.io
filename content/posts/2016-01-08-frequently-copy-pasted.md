@@ -18,6 +18,6 @@ In fact there are two massive pieces of code that need to be made into a library
 
 However, there is also a whole host of stuff that we use in our utilities, like the famous `Timer` class that we got from (somewhere?) and use _all the time_.
 
-<script src="https://gist.github.com/bbengfort/bd5be18d00c9e982a032.js"></script>
+{{< gist bbengfort bd5be18d00c9e982a032 >}}
 
 But you know, hunting for Gists is hard, hunting for code in other repositories is hard. So you know what? I'm just going to put it all here. Quick and dirty in the hopes that I'll have a one stop shop for copy and paste. Plus embedding those Gists is very, very handy.

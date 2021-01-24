@@ -12,7 +12,7 @@ So, how do you do this type of authentication in the terminal? Basically, the co
 
 The Calendar API quickstart provided several functions for this, first looking to see if the token was cached on disk in a specific place in the user's home directory; and then if not available, performed the web authentication and cached the token locally. There are, however, a lot of moving parts to this including the configuration for where to store the cached token, as well as the application credentials stored in a file called `client_secret.json`. Rather than hardcode these things, I created an `Authentication` struct that managed all aspects of authentication and token gathering, and I present it to you here:
 
-<script src="https://gist.github.com/bbengfort/ee6d3bda44b8cc8d10a26f66be9ced70.js"></script>
+{{< gist bbengfort ee6d3bda44b8cc8d10a26f66be9ced70 >}}
 
 The primary entry point to this struct is the `auth.Token()` method, which retrieves the token from the cache, or starts the web authentication process to cache the token if it doesn't exist. This revolves around the key `auth.CachePath()` and `auth.ConfigPath()` that compute the default locations for the token cache and the `client_secret.json` file in a hidden directory in the user's home directory. The `Authentication` struct also provides `Load()`, `Save()` and `Delete()` functions for managing the cache directly.
 

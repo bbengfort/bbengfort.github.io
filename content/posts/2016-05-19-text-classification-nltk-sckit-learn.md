@@ -25,7 +25,7 @@ The heart of building machine learning tools with Scikit-Learn is the `Pipeline`
 
 Pipelines allow developers to combine a sequential DAG of transformers with an estimator, to ensure that the feature extraction process is associated with the predictive process. This is especially important for text, where raw data is usually in the form of documents on disk or a list of strings. While Sckit-Learn does provide some text based feature extraction mechanisms, actually NLTK is far better suited for this type of text processing. As a result, most of my text processing pipelines have something like this at its core:
 
-[![NLTK Scikit-Learn Text Pipeline]({{ site.base_url }}/assets/images/2016-05-19-nltk-sklearn-text-pipeline.png)]({{ site.base_url }}/assets/images/2016-05-19-nltk-sklearn-text-pipeline.png)
+[![NLTK Scikit-Learn Text Pipeline](/images/2016-05-19-nltk-sklearn-text-pipeline.png)](/images/2016-05-19-nltk-sklearn-text-pipeline.png)
 
 The `CorpusReader` reads files one at a time off a structured corpus (usually zipped) on disk and acts as the source of the data (I also usually include special methods to make sure that I can also get a vector of targets as well). The tokenizer splits raw text into sentences, words and punctuation, then tags their part of speech and lemmatizes them using the WordNet lexicon. The vectorizer encodes the tokens in the document as a feature vector, for example as a TF-IDF vector. Finally the classifier is fit to the documents and their labels, pickled to disk and used to make predictions in the future.
 
@@ -319,7 +319,7 @@ This seems to make a lot of sense!
 
 ## Conclusion
 
-There are great tools for doing machine learning, topic modeling, and text analysis with Python: Scikit-Learn, Gensim, and NLTK respectively. Unfortunately in order to combine these tools in meaningful ways, you often have to jump through some hoops because they overlap. My approach was to leverage the API model of Scikit-Learn to build Pipelines of transformers that took advantage of other libraries. 
+There are great tools for doing machine learning, topic modeling, and text analysis with Python: Scikit-Learn, Gensim, and NLTK respectively. Unfortunately in order to combine these tools in meaningful ways, you often have to jump through some hoops because they overlap. My approach was to leverage the API model of Scikit-Learn to build Pipelines of transformers that took advantage of other libraries.
 
 ### Helpful Links
 

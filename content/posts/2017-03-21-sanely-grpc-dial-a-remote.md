@@ -34,7 +34,7 @@ You will get a lot of log messages in the form of:
 
 And by a lot, I mean ... a lot; they will continue to spew for a while (probably at least 30 seconds). So to tackle that issue, we'll turn off the logging by creating a noop (nop, no-op) logger that doesn't do anything, and set it as the logger for `grpclog`. First the logger:
 
-<script src="https://gist.github.com/bbengfort/b9345330339dee7fc04d6153b1a2eb91.js"></script>
+{{< gist bbengfort b9345330339dee7fc04d6153b1a2eb91 >}}
 
 As you can see, this logger meets the interface for a `SetLogger()` function, and we can set the grpc logger in our library's init as follows:
 
@@ -55,7 +55,7 @@ Ok, onto the next two problems that are both solved with context. First, the cal
 conn, err := grpc.Dial(addr, grpc.WithInsecure(), grpc.WithBlock())
 ```
 
-Now it's up to you to handle concurrency with the connections. Of course blocking doesn't make a whole lot of sense until you limit it. And in fact, no `err` will be returned from the function unless you cause it to error with a timeout.  
+Now it's up to you to handle concurrency with the connections. Of course blocking doesn't make a whole lot of sense until you limit it. And in fact, no `err` will be returned from the function unless you cause it to error with a timeout.
 
 ```go
 conn, err := grpc.Dial(

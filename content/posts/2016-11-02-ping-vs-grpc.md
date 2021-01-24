@@ -17,11 +17,11 @@ but the ease of use of protocol buffers comes at a cost!
 
 The results of the two pings are as follows:
 
-![Range of Latencies]({{ site.base_url }}/assets/images/2016-11-02-ping-vs-echo-boxplot.png)
+![Range of Latencies](/images/2016-11-02-ping-vs-echo-boxplot.png)
 
 This above figure shows a box plot of the dataset with outliers trimmed using the z-score method and 2 passes. The ends of the bar represent the 5th and 95th percentile respectively, and data points outside the 95th percentile are plotted individually. The box goes from the first to the third quartile and the middle line is the median. As you can see from this plot, there is no overlap from the high percentile of the ping protocol to the lower percentile of the echo protocol. Moreover, the majority of the ping points are in a much smaller range than the majority of the echo protocol points.
 
-![Distribution of Latencies]({{ site.base_url }}/assets/images/2016-11-02-ping-vs-echo-violinplot.png)
+![Distribution of Latencies](/images/2016-11-02-ping-vs-echo-violinplot.png)
 
 This second image shows the violin plot - such that the curve represents the kernel density estimate (KDE) of the histogram of the data. It then similarly shows the median and the first and third quartiles inside of the violin. Both distributions are significantly right skewed, but the ping distribution has a much steeper curve than the more variable echo protocol.
 
@@ -71,6 +71,6 @@ After about an hour, the dataset is sitting at your disposal ready to copy and p
 
 There are many reasons that ping could be faster than gRPC, not just the overhead of serializing and deserializing protocol buffers and HTTP transport. For example, ICMP could be given special routing, ICMP is handled closer to the kernel level, or the fact that ICMP frames are much, much smaller. In order to test this I ran the test from two machines on the same subnet; the violin plot for the distribution is below:
 
-![Local Area Distribution]({{site.base_url }}/assets/images/2016-11-02-ping-vs-echo-local-violinplot.png)
+![Local Area Distribution](/images/2016-11-02-ping-vs-echo-local-violinplot.png)
 
 Both ping and echo latencies are much smaller, by approximately the same amount. Because the gap between them is approximately the same percentage (though not fixed), I think this graph identifies clearly what is overhead and what is network latency. However, because the gap is also smaller, it shows that bandwidth and other message traffic may be having an influence in the disparity as well (e.g. that ping has preferential routes through wide area networks).

@@ -8,12 +8,12 @@ One large issue that I encounter in development with machine learning is the nee
 
 Moreover, we need to be able to structure more and varied datasets as most projects aren't dedicated to building a single classifier, but rather _lots_ of them. Data is extracted and written to disk through SQL queries, then models are written back into the database. All of these fixtures (for building models) as well as the extraction method, and meta data need to be versioned so that we can have a repeatable process (for science). The workflow is as follows:
 
-![ML Data Management Workflow]({{ site.base_url }}/assets/images/2016-04-19-ml-data-management-workflow.png)
+![ML Data Management Workflow](/images/2016-04-19-ml-data-management-workflow.png)
 
 This post is largely concerned with the &ldquo;Data Directory&rdquo; and the &ldquo;Load and Transform Data&rdquo; highlighted processes in the flow chart. The first step is to structure a fixtures directory with our data code. The fixtures directory will contain _named_ subdirectories where each name is related to a dataset we want to load. These directories will contain the following files.
 
 - `query.sql`: a sql file that can be executed against the database to extract and wrangle the dataset.
-- `dataset.txt`: a numpy whitespace delimited file containing either a dense or sparse matrix of numeric data to pass to the model fit process. (This can be easily adapted to a CSV file of raw data if needed).  
+- `dataset.txt`: a numpy whitespace delimited file containing either a dense or sparse matrix of numeric data to pass to the model fit process. (This can be easily adapted to a CSV file of raw data if needed).
 - `README.md`: a markdown file containing information about the dataset and attribution. Will be exposed by the DESCR attribute.
 - `meta.json`: a helper file that contains machine readable information about the dataset like target_names and feature_names.
 

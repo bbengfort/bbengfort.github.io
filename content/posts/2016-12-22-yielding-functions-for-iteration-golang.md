@@ -10,7 +10,7 @@ Now that I'm programming in Go, I often want to apply the same pattern, but iter
 
 Consider the following example that implements similar (but simple) functionality as Python's `xrange` iterator, allowing us to loop over the numbers from zero to the limit stepping by 1:
 
-<script src="https://gist.github.com/bbengfort/26667087df733029b51b088acf397633.js"></script>
+{{< gist bbengfort 26667087df733029b51b088acf397633 >}}
 
 The function returns a channel of integers, to which `range` can be applied. We give up the execution context of our inner loop by running the loop in a goroutine, which sends its results to the caller using the channel as a synchronization mechanism. So long as _we ensure to close the channel after iteration_ - this function works as expected:
 
@@ -24,7 +24,7 @@ This pattern speaks to me, it is exactly how I think about constructing iterable
 
 I do have some questions about this though, that I hope to answer in the future. Consider the following function for reading a file line by line:
 
-<script src="https://gist.github.com/bbengfort/4d51fc91876adde38502b7189df05d20.js"></script>
+{{< gist bbengfort 4d51fc91876adde38502b7189df05d20 >}}
 
 This is very common utility code for me, pass in a path, open the file, and read the file one line at a time, buffering in memory only the line of text. Particularly for reading large files, we need to ensure that we minimize the amount of memory we use. The way that I use this function is as follows:
 
