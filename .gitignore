@@ -1,15 +1,12 @@
-_site
-.sass-cache
-.jekyll-metadata
-_gh_pages
-.ruby-version
+# Hugo default output directory
+/public
 
-.DS_Store
+## OS Files
+# Windows
 Thumbs.db
-._*
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-Gemfile.lock
-*.gem
-.bundle/
-.ruby-version
-.ruby-gemset
+# OSX
+.DS_Store
