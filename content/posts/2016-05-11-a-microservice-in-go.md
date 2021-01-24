@@ -1,6 +1,11 @@
 ---
+aliases:
+- /programmer/2016/05/11/a-microservice-in-go.html
 categories: programmer
-date: "2016-05-11T09:52:13Z"
+date: '2016-05-11T09:52:13Z'
+draft: false
+showtoc: false
+slug: a-microservice-in-go
 title: Creating a Microservice in Go
 ---
 

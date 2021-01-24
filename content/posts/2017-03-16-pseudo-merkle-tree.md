@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/03/16/pseudo-merkle-tree.html
 categories: snippets
-date: "2017-03-16T12:23:21Z"
+date: '2017-03-16T12:23:21Z'
+draft: false
+showtoc: false
+slug: pseudo-merkle-tree
 title: Pseudo Merkle Tree
 ---
 

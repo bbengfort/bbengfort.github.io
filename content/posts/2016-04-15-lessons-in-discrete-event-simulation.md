@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2016/04/15/lessons-in-discrete-event-simulation.html
 categories: observations
-date: "2016-04-15T06:26:42Z"
+date: '2016-04-15T06:26:42Z'
+draft: false
+showtoc: false
+slug: lessons-in-discrete-event-simulation
 title: Lessons in Discrete Event Simulation
 ---
 

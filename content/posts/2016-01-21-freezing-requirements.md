@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/01/21/freezing-requirements.html
 categories: snippets
-date: "2016-01-21T10:23:06Z"
+date: '2016-01-21T10:23:06Z'
+draft: false
+showtoc: false
+slug: freezing-requirements
 title: Freezing Package Requirements
 ---
 

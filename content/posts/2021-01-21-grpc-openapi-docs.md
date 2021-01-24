@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2021/01/21/grpc-openapi-docs.html
 categories: snippets
-date: "2021-01-21T17:45:35Z"
+date: '2021-01-21T17:45:35Z'
+draft: false
+showtoc: false
+slug: grpc-openapi-docs
 title: Documenting a gRPC API with OpenAPI
 ---
 

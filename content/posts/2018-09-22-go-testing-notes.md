@@ -1,6 +1,11 @@
 ---
+aliases:
+- /programmer/2018/09/22/go-testing-notes.html
 categories: programmer
-date: "2018-09-22T09:58:12Z"
+date: '2018-09-22T09:58:12Z'
+draft: false
+showtoc: false
+slug: go-testing-notes
 title: Go Testing Notes
 ---
 

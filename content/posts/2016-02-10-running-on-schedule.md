@@ -1,6 +1,11 @@
 ---
+aliases:
+- /programmer/2016/02/10/running-on-schedule.html
 categories: programmer
-date: "2016-02-10T09:50:33Z"
+date: '2016-02-10T09:50:33Z'
+draft: false
+showtoc: false
+slug: running-on-schedule
 title: Running on Schedule
 ---
 

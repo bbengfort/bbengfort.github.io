@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2018/02/13/sync-write-throughput.html
 categories: observations
-date: "2018-02-13T07:10:06Z"
+date: '2018-02-13T07:10:06Z'
+draft: false
+showtoc: false
+slug: sync-write-throughput
 title: Synchronization in Write Throughput
 ---
 

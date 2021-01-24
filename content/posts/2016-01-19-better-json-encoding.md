@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/01/19/better-json-encoding.html
 categories: snippets
-date: "2016-01-19T14:26:27Z"
+date: '2016-01-19T14:26:27Z'
+draft: false
+showtoc: false
+slug: better-json-encoding
 title: Better JSON Encoding
 ---
 

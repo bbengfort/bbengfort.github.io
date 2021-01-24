@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/08/28/online-distribution.html
 categories: snippets
-date: "2017-08-28T12:49:46Z"
+date: '2017-08-28T12:49:46Z'
+draft: false
+showtoc: false
+slug: online-distribution
 title: Online Distribution
 ---
 

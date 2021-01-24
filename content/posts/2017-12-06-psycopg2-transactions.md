@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2017/12/06/psycopg2-transactions.html
 categories: observations
-date: "2017-12-06T13:58:16Z"
+date: '2017-12-06T13:58:16Z'
+draft: false
+showtoc: false
+slug: psycopg2-transactions
 title: Transaction Handling with Psycopg2
 ---
 

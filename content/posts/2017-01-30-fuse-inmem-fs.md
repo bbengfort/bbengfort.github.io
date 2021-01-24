@@ -1,6 +1,11 @@
 ---
+aliases:
+- /programmer/2017/01/30/fuse-inmem-fs.html
 categories: programmer
-date: "2017-01-30T16:17:26Z"
+date: '2017-01-30T16:17:26Z'
+draft: false
+showtoc: false
+slug: fuse-inmem-fs
 title: In-Memory File System with FUSE
 ---
 

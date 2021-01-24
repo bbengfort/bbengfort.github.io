@@ -1,6 +1,11 @@
 ---
+aliases:
+- /tutorials/2016/11/21/exception-handling.html
 categories: tutorials
-date: "2016-11-21T12:53:30Z"
+date: '2016-11-21T12:53:30Z'
+draft: false
+showtoc: false
+slug: exception-handling
 title: Exception Handling
 ---
 

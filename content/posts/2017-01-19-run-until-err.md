@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/01/19/run-until-err.html
 categories: snippets
-date: "2017-01-19T11:00:40Z"
+date: '2017-01-19T11:00:40Z'
+draft: false
+showtoc: false
+slug: run-until-err
 title: Run Until Error with Go Channels
 ---
 

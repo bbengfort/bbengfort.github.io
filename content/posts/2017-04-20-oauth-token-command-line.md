@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/04/20/oauth-token-command-line.html
 categories: snippets
-date: "2017-04-20T10:26:32Z"
+date: '2017-04-20T10:26:32Z'
+draft: false
+showtoc: false
+slug: oauth-token-command-line
 title: OAuth Tokens on the Command Line
 ---
 

@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/01/11/logging-mixin.html
 categories: snippets
-date: "2016-01-11T08:15:05Z"
+date: '2016-01-11T08:15:05Z'
+draft: false
+showtoc: false
+slug: logging-mixin
 title: Wrapping the Logging Module
 ---
 

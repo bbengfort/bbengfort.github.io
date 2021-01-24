@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/01/12/codetime-and-clock.html
 categories: snippets
-date: "2016-01-12T17:02:51Z"
+date: '2016-01-12T17:02:51Z'
+draft: false
+showtoc: false
+slug: codetime-and-clock
 title: The codetime and clock Commands
 ---
 

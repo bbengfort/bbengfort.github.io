@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/04/17/gmail-notifications-python.html
 categories: snippets
-date: "2017-04-17T12:26:55Z"
+date: '2017-04-17T12:26:55Z'
+draft: false
+showtoc: false
+slug: gmail-notifications-python
 title: Gmail Notifications with Python
 ---
 

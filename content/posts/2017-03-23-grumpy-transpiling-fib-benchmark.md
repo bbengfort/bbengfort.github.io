@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2017/03/23/grumpy-transpiling-fib-benchmark.html
 categories: observations
-date: "2017-03-23T08:47:04Z"
+date: '2017-03-23T08:47:04Z'
+draft: false
+showtoc: false
+slug: grumpy-transpiling-fib-benchmark
 title: A Benchmark of Grumpy Transpiling
 ---
 

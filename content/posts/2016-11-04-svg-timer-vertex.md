@@ -1,6 +1,11 @@
 ---
+aliases:
+- /tutorials/2016/11/04/svg-timer-vertex.html
 categories: tutorials
-date: "2016-11-04T10:30:29Z"
+date: '2016-11-04T10:30:29Z'
+draft: false
+showtoc: false
+slug: svg-timer-vertex
 title: SVG Vertex with a Timer
 ---
 

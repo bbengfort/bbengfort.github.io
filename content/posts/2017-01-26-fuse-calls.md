@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2017/01/26/fuse-calls.html
 categories: observations
-date: "2017-01-26T20:04:40Z"
+date: '2017-01-26T20:04:40Z'
+draft: false
+showtoc: false
+slug: fuse-calls
 title: FUSE Calls on Go Writes
 ---
 

@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2017/08/03/buffered-writes.html
 categories: observations
-date: "2017-08-03T09:48:19Z"
+date: '2017-08-03T09:48:19Z'
+draft: false
+showtoc: false
+slug: buffered-writes
 title: Buffered Write Performance
 ---
 

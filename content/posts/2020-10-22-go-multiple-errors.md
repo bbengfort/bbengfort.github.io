@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2020/10/22/go-multiple-errors.html
 categories: snippets
-date: "2020-10-22T11:45:41Z"
+date: '2020-10-22T11:45:41Z'
+draft: false
+showtoc: false
+slug: go-multiple-errors
 title: Managing Multi-Errors in Go
 ---
 

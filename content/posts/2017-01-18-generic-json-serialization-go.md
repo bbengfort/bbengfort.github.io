@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/01/18/generic-json-serialization-go.html
 categories: snippets
-date: "2017-01-18T11:31:06Z"
+date: '2017-01-18T11:31:06Z'
+draft: false
+showtoc: false
+slug: generic-json-serialization-go
 title: Generic JSON Serialization with Go
 ---
 

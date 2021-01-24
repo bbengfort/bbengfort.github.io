@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/04/04/class-variables.html
 categories: snippets
-date: "2016-04-04T19:52:46Z"
+date: '2016-04-04T19:52:46Z'
+draft: false
+showtoc: false
+slug: class-variables
 title: Class Variables
 ---
 

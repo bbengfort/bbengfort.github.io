@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/07/11/pid-management.html
 categories: snippets
-date: "2017-07-11T09:10:44Z"
+date: '2017-07-11T09:10:44Z'
+draft: false
+showtoc: false
+slug: pid-management
 title: PID File Management
 ---
 

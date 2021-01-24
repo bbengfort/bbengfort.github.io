@@ -1,6 +1,11 @@
 ---
+aliases:
+- /programmer/2017/03/03/secure-grpc.html
 categories: programmer
-date: "2017-03-03T09:41:39Z"
+date: '2017-03-03T09:41:39Z'
+draft: false
+showtoc: false
+slug: secure-grpc
 title: Secure gRPC with TLS/SSL
 ---
 

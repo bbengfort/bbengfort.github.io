@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2018/03/08/prediction-balance.html
 categories: snippets
-date: "2018-03-08T09:18:37Z"
+date: '2018-03-08T09:18:37Z'
+draft: false
+showtoc: false
+slug: prediction-balance
 title: Predicted Class Balance
 ---
 

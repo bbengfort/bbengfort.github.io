@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/02/21/synchronizing-structs.html
 categories: snippets
-date: "2017-02-21T10:48:24Z"
+date: '2017-02-21T10:48:24Z'
+draft: false
+showtoc: false
+slug: synchronizing-structs
 title: Synchronizing Structs for Safe Concurrency in Go
 ---
 

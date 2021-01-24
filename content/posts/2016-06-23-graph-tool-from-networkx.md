@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/06/23/graph-tool-from-networkx.html
 categories: snippets
-date: "2016-06-23T19:21:58Z"
+date: '2016-06-23T19:21:58Z'
+draft: false
+showtoc: false
+slug: graph-tool-from-networkx
 title: Converting NetworkX to Graph-Tool
 ---
 

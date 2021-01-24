@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/04/11/nltk-corpus-reader.html
 categories: snippets
-date: "2016-04-11T21:03:18Z"
+date: '2016-04-11T21:03:18Z'
+draft: false
+showtoc: false
+slug: nltk-corpus-reader
 title: NLTK Corpus Reader for Extracted Corpus
 ---
 

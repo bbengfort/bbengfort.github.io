@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2018/09/26/blast-throughput.html
 categories: snippets
-date: "2018-09-26T17:06:24Z"
+date: '2018-09-26T17:06:24Z'
+draft: false
+showtoc: false
+slug: blast-throughput
 title: Blast Throughput
 ---
 

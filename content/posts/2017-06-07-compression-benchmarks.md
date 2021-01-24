@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2017/06/07/compression-benchmarks.html
 categories: observations
-date: "2017-06-07T10:45:35Z"
+date: '2017-06-07T10:45:35Z'
+draft: false
+showtoc: false
+slug: compression-benchmarks
 title: Compression Benchmarks
 ---
 

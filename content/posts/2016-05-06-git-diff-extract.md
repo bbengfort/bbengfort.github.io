@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/05/06/git-diff-extract.html
 categories: snippets
-date: "2016-05-06T08:43:29Z"
+date: '2016-05-06T08:43:29Z'
+draft: false
+showtoc: false
+slug: git-diff-extract
 title: Extracting Diffs from Git with Python
 ---
 

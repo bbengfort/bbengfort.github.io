@@ -1,6 +1,11 @@
 ---
+aliases:
+- /programmer/2016/02/05/iterators-generators.html
 categories: programmer
-date: "2016-02-05T22:47:15Z"
+date: '2016-02-05T22:47:15Z'
+draft: false
+showtoc: false
+slug: iterators-generators
 title: Iterators and Generators
 ---
 

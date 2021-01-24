@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/06/14/concurrent-subprocesses-fabric.html
 categories: snippets
-date: "2017-06-14T15:56:24Z"
+date: '2017-06-14T15:56:24Z'
+draft: false
+showtoc: false
+slug: concurrent-subprocesses-fabric
 title: Concurrent Subprocesses and Fabric
 ---
 

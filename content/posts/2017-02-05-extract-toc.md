@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/02/05/extract-toc.html
 categories: snippets
-date: "2017-02-05T09:11:27Z"
+date: '2017-02-05T09:11:27Z'
+draft: false
+showtoc: false
+slug: extract-toc
 title: Extracting a TOC from Markup
 ---
 

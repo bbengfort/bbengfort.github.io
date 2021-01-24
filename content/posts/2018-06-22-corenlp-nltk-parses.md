@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2018/06/22/corenlp-nltk-parses.html
 categories: snippets
-date: "2018-06-22T14:38:21Z"
+date: '2018-06-22T14:38:21Z'
+draft: false
+showtoc: false
+slug: corenlp-nltk-parses
 title: Syntax Parsing with CoreNLP and NLTK
 ---
 

@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2016/10/28/reading-speed.html
 categories: observations
-date: "2016-10-28T13:16:24Z"
+date: '2016-10-28T13:16:24Z'
+draft: false
+showtoc: false
+slug: reading-speed
 title: Computing Reading Speed
 ---
 

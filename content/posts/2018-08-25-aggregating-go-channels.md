@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2018/08/25/aggregating-go-channels.html
 categories: snippets
-date: "2018-08-25T08:28:59Z"
+date: '2018-08-25T08:28:59Z'
+draft: false
+showtoc: false
+slug: aggregating-go-channels
 title: Aggregating Reads from a Go Channel
 ---
 

@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/06/26/background-work-goroutines-timer.html
 categories: snippets
-date: "2016-06-26T06:52:38Z"
+date: '2016-06-26T06:52:38Z'
+draft: false
+showtoc: false
+slug: background-work-goroutines-timer
 title: Background Work with Goroutines on a Timer
 ---
 

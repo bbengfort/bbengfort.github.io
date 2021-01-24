@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2018/05/17/continuing-outer-loops-for-else.html
 categories: snippets
-date: "2018-05-17T09:02:43Z"
+date: '2018-05-17T09:02:43Z'
+draft: false
+showtoc: false
+slug: continuing-outer-loops-for-else
 title: Continuing Outer Loops with for/else
 ---
 

@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/02/02/intervals-with-threads.html
 categories: snippets
-date: "2016-02-02T20:43:07Z"
+date: '2016-02-02T20:43:07Z'
+draft: false
+showtoc: false
+slug: intervals-with-threads
 title: On Interval Calls with Threading
 ---
 

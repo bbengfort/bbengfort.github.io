@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2015/12/25/one-big-gift.html
 categories: snippets
-date: "2015-12-25T11:54:12Z"
+date: '2015-12-25T11:54:12Z'
+draft: false
+showtoc: false
+slug: one-big-gift
 title: One Big Gift Selection Algorithm
 ---
 

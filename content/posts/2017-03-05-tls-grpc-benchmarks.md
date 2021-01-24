@@ -1,6 +1,11 @@
 ---
+aliases:
+- /programmer/2017/03/05/tls-grpc-benchmarks.html
 categories: programmer
-date: "2017-03-05T17:26:24Z"
+date: '2017-03-05T17:26:24Z'
+draft: false
+showtoc: false
+slug: tls-grpc-benchmarks
 title: Benchmarking Secure gRPC
 ---
 

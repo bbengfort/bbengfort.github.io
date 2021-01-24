@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/03/08/channel-select.html
 categories: snippets
-date: "2017-03-08T10:52:39Z"
+date: '2017-03-08T10:52:39Z'
+draft: false
+showtoc: false
+slug: channel-select
 title: Using Select in Go
 ---
 

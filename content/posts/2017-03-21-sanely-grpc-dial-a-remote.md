@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/03/21/sanely-grpc-dial-a-remote.html
 categories: snippets
-date: "2017-03-21T16:27:39Z"
+date: '2017-03-21T16:27:39Z'
+draft: false
+showtoc: false
+slug: sanely-grpc-dial-a-remote
 title: Sanely gRPC Dial a Remote
 ---
 

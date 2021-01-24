@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2018/09/11/streaming-remote-throughput.html
 categories: observations
-date: "2018-09-11T15:19:17Z"
+date: '2018-09-11T15:19:17Z'
+draft: false
+showtoc: false
+slug: streaming-remote-throughput
 title: Streaming Remote Throughput
 ---
 

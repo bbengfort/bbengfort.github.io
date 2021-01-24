@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2018/01/06/cli-editor-app.html
 categories: snippets
-date: "2018-01-06T09:30:58Z"
+date: '2018-01-06T09:30:58Z'
+draft: false
+showtoc: false
+slug: cli-editor-app
 title: Git-Style File Editing in CLI
 ---
 

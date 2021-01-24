@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/03/08/git-version-id.html
 categories: snippets
-date: "2016-03-08T13:57:56Z"
+date: '2016-03-08T13:57:56Z'
+draft: false
+showtoc: false
+slug: git-version-id
 title: Adding a Git Commit to Header Comments
 ---
 

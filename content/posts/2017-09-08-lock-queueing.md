@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/09/08/lock-queueing.html
 categories: snippets
-date: "2017-09-08T11:31:19Z"
+date: '2017-09-08T11:31:19Z'
+draft: false
+showtoc: false
+slug: lock-queueing
 title: Lock Queuing in Go
 ---
 

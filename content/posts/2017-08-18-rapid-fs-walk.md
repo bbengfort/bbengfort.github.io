@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/08/18/rapid-fs-walk.html
 categories: snippets
-date: "2017-08-18T15:33:35Z"
+date: '2017-08-18T15:33:35Z'
+draft: false
+showtoc: false
+slug: rapid-fs-walk
 title: Rapid FS Walks with ErrGroup
 ---
 

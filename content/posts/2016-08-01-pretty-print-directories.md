@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/08/01/pretty-print-directories.html
 categories: snippets
-date: "2016-08-01T12:17:47Z"
+date: '2016-08-01T12:17:47Z'
+draft: false
+showtoc: false
+slug: pretty-print-directories
 title: Pretty Print Directories
 ---
 

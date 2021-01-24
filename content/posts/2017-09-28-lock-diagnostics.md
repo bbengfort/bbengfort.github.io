@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/09/28/lock-diagnostics.html
 categories: snippets
-date: "2017-09-28T10:44:30Z"
+date: '2017-09-28T10:44:30Z'
+draft: false
+showtoc: false
+slug: lock-diagnostics
 title: Lock Diagnostics in Go
 ---
 

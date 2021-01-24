@@ -1,6 +1,11 @@
 ---
+aliases:
+- /tutorials/2019/10/09/launch-jupyterhub-server.html
 categories: tutorials
-date: "2019-10-09T16:40:08Z"
+date: '2019-10-09T16:40:08Z'
+draft: false
+showtoc: false
+slug: launch-jupyterhub-server
 title: Launching a JupyterHub Instance
 ---
 

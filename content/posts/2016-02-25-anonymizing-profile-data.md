@@ -1,6 +1,11 @@
 ---
+aliases:
+- /programmer/2016/02/25/anonymizing-profile-data.html
 categories: programmer
-date: "2016-02-25T12:32:54Z"
+date: '2016-02-25T12:32:54Z'
+draft: false
+showtoc: false
+slug: anonymizing-profile-data
 title: Anonymizing User Profile Data with Faker
 ---
 

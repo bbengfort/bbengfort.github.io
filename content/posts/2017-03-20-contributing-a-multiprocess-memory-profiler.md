@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2017/03/20/contributing-a-multiprocess-memory-profiler.html
 categories: observations
-date: "2017-03-20T11:42:58Z"
+date: '2017-03-20T11:42:58Z'
+draft: false
+showtoc: false
+slug: contributing-a-multiprocess-memory-profiler
 title: Contributing a Multiprocess Memory Profiler
 ---
 

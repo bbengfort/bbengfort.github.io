@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/09/09/serialize-graphml.html
 categories: snippets
-date: "2016-09-09T17:13:13Z"
+date: '2016-09-09T17:13:13Z'
+draft: false
+showtoc: false
+slug: serialize-graphml
 title: Serializing GraphML
 ---
 

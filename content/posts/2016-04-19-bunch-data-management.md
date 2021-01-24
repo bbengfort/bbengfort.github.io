@@ -1,6 +1,11 @@
 ---
+aliases:
+- /programmer/2016/04/19/bunch-data-management.html
 categories: programmer
-date: "2016-04-19T11:29:30Z"
+date: '2016-04-19T11:29:30Z'
+draft: false
+showtoc: false
+slug: bunch-data-management
 title: 'Scikit-Learn Data Management: Bunches'
 ---
 

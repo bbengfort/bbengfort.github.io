@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2017/05/02/python-unique-benchmark.html
 categories: observations
-date: "2017-05-02T14:24:18Z"
+date: '2017-05-02T14:24:18Z'
+draft: false
+showtoc: false
+slug: python-unique-benchmark
 title: 'Unique Values in Python: A Benchmark'
 ---
 

@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/04/10/extract-ddl-corpus.html
 categories: snippets
-date: "2016-04-10T06:44:28Z"
+date: '2016-04-10T06:44:28Z'
+draft: false
+showtoc: false
+slug: extract-ddl-corpus
 title: Extracting the DDL Blog Corpus
 ---
 

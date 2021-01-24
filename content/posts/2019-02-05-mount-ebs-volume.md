@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2019/02/05/mount-ebs-volume.html
 categories: snippets
-date: "2019-02-05T12:48:18Z"
+date: '2019-02-05T12:48:18Z'
+draft: false
+showtoc: false
+slug: mount-ebs-volume
 title: Mount an EBS volume
 ---
 

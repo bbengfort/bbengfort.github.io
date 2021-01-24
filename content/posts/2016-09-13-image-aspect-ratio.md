@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/09/13/image-aspect-ratio.html
 categories: snippets
-date: "2016-09-13T14:19:14Z"
+date: '2016-09-13T14:19:14Z'
+draft: false
+showtoc: false
+slug: image-aspect-ratio
 title: Modifying an Image's Aspect Ratio
 ---
 

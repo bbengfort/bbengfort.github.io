@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2018/09/05/future-date.html
 categories: snippets
-date: "2018-09-05T17:42:50Z"
+date: '2018-09-05T17:42:50Z'
+draft: false
+showtoc: false
+slug: future-date
 title: Future Date Script
 ---
 

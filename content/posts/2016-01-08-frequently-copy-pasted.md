@@ -1,6 +1,11 @@
 ---
+aliases:
+- /programmer/2016/01/08/frequently-copy-pasted.html
 categories: programmer
-date: "2016-01-08T23:14:57Z"
+date: '2016-01-08T23:14:57Z'
+draft: false
+showtoc: false
+slug: frequently-copy-pasted
 title: Frequently Copied and Pasted
 ---
 

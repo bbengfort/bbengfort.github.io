@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/06/27/normal-distribution-viz.html
 categories: snippets
-date: "2016-06-27T08:28:07Z"
+date: '2016-06-27T08:28:07Z'
+draft: false
+showtoc: false
+slug: normal-distribution-viz
 title: Visualizing Normal Distributions
 ---
 

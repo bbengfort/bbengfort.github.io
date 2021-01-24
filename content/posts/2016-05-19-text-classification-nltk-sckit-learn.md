@@ -1,6 +1,11 @@
 ---
+aliases:
+- /tutorials/2016/05/19/text-classification-nltk-sckit-learn.html
 categories: tutorials
-date: "2016-05-19T08:06:40Z"
+date: '2016-05-19T08:06:40Z'
+draft: false
+showtoc: false
+slug: text-classification-nltk-sckit-learn
 title: Text Classification with NLTK and Scikit-Learn
 ---
 

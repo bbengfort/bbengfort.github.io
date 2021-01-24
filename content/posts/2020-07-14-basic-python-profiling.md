@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2020/07/14/basic-python-profiling.html
 categories: snippets
-date: "2020-07-14T18:01:08Z"
+date: '2020-07-14T18:01:08Z'
+draft: false
+showtoc: false
+slug: basic-python-profiling
 title: Basic Python Profiling
 ---
 

@@ -145,8 +145,10 @@ def update(args):
                     print(f"unhandled category in '{path}'")
                     continue
 
+                datepath = f.pathdate.strftime("%Y/%m/%d")
+
                 fm["aliases"] = [
-                    f"/{category}/{f.pathdate.year}/{f.pathdate.month}/{f.pathdate.day}/{f.pathslug}.html"
+                    os.path.join("/", category, datepath, f"{f.pathslug}.html"),
                 ]
 
             f.frontmatter = fm

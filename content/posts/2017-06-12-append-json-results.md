@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/06/12/append-json-results.html
 categories: snippets
-date: "2017-06-12T16:04:24Z"
+date: '2017-06-12T16:04:24Z'
+draft: false
+showtoc: false
+slug: append-json-results
 title: Appending Results to a File
 ---
 

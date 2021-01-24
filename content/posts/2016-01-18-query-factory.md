@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/01/18/query-factory.html
 categories: snippets
-date: "2016-01-18T10:52:00Z"
+date: '2016-01-18T10:52:00Z'
+draft: false
+showtoc: false
+slug: query-factory
 title: Simple SQL Query Wrapper
 ---
 

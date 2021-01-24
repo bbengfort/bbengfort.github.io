@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2020/07/27/read-mprofile-into-pandas.html
 categories: snippets
-date: "2020-07-27T18:16:50Z"
+date: '2020-07-27T18:16:50Z'
+draft: false
+showtoc: false
+slug: read-mprofile-into-pandas
 title: Read mprofile Output into Pandas
 ---
 

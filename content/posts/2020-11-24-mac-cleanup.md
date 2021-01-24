@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2020/11/24/mac-cleanup.html
 categories: snippets
-date: "2020-11-24T14:26:25Z"
+date: '2020-11-24T14:26:25Z'
+draft: false
+showtoc: false
+slug: mac-cleanup
 title: OS X Cleanup
 ---
 

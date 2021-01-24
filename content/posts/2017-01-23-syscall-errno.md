@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/01/23/syscall-errno.html
 categories: snippets
-date: "2017-01-23T14:29:50Z"
+date: '2017-01-23T14:29:50Z'
+draft: false
+showtoc: false
+slug: syscall-errno
 title: Error Descriptions for System Calls
 ---
 

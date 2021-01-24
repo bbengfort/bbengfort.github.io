@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/02/16/observer-pattern.html
 categories: snippets
-date: "2016-02-16T07:24:04Z"
+date: '2016-02-16T07:24:04Z'
+draft: false
+showtoc: false
+slug: observer-pattern
 title: Implementing the Observer Pattern with an Event System
 ---
 

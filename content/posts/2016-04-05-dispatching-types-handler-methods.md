@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/04/05/dispatching-types-handler-methods.html
 categories: snippets
-date: "2016-04-05T08:58:32Z"
+date: '2016-04-05T08:58:32Z'
+draft: false
+showtoc: false
+slug: dispatching-types-handler-methods
 title: Dispatching Types to Handler Methods
 ---
 

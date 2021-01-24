@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2020/08/20/zipfiles-json.html
 categories: snippets
-date: "2020-08-20T11:41:14Z"
+date: '2020-08-20T11:41:14Z'
+draft: false
+showtoc: false
+slug: zipfiles-json
 title: Writing JSON into a Zip file with Python
 ---
 

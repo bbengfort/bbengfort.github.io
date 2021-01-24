@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2016/11/02/ping-vs-grpc.html
 categories: observations
-date: "2016-11-02T15:46:31Z"
+date: '2016-11-02T15:46:31Z'
+draft: false
+showtoc: false
+slug: ping-vs-grpc
 title: 'Message Latency: Ping vs. gRPC'
 ---
 

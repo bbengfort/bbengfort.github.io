@@ -1,6 +1,11 @@
 ---
+aliases:
+- /programmer/2016/03/30/password-generator.html
 categories: programmer
-date: "2016-03-30T09:07:21Z"
+date: '2016-03-30T09:07:21Z'
+draft: false
+showtoc: false
+slug: password-generator
 title: Simple Password Generation
 ---
 

@@ -1,6 +1,11 @@
 ---
+aliases:
+- /programmer/2016/01/20/packaging-with-pypi.html
 categories: programmer
-date: "2016-01-20T15:33:06Z"
+date: '2016-01-20T15:33:06Z'
+draft: false
+showtoc: false
+slug: packaging-with-pypi
 title: Packaging Python Libraries with PyPI
 ---
 

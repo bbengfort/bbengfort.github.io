@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2018/08/03/actor-model.html
 categories: snippets
-date: "2018-08-03T07:27:36Z"
+date: '2018-08-03T07:27:36Z'
+draft: false
+showtoc: false
+slug: actor-model
 title: The Actor Model
 ---
 

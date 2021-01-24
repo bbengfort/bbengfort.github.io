@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2017/07/06/on-track-with-rails.html
 categories: observations
-date: "2017-07-06T08:15:13Z"
+date: '2017-07-06T08:15:13Z'
+draft: false
+showtoc: false
+slug: on-track-with-rails
 title: On the Tracks with Rails
 ---
 

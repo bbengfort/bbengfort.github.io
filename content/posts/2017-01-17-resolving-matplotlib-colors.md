@@ -1,6 +1,11 @@
 ---
+aliases:
+- /programmer/2017/01/17/resolving-matplotlib-colors.html
 categories: programmer
-date: "2017-01-17T14:52:50Z"
+date: '2017-01-17T14:52:50Z'
+draft: false
+showtoc: false
+slug: resolving-matplotlib-colors
 title: Resolving Matplotlib Colors
 ---
 

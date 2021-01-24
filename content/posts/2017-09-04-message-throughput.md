@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2017/09/04/message-throughput.html
 categories: observations
-date: "2017-09-04T17:20:06Z"
+date: '2017-09-04T17:20:06Z'
+draft: false
+showtoc: false
+slug: message-throughput
 title: Messaging Throughput gRPC vs. ZMQ
 ---
 

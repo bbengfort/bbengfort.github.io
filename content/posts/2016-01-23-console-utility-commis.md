@@ -1,6 +1,11 @@
 ---
+aliases:
+- /tutorials/2016/01/23/console-utility-commis.html
 categories: tutorials
-date: "2016-01-23T08:46:18Z"
+date: '2016-01-23T08:46:18Z'
+draft: false
+showtoc: false
+slug: console-utility-commis
 title: Building a Console Utility with Commis
 ---
 

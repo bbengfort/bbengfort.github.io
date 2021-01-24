@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2016/04/26/visualizing-distributed-systems.html
 categories: observations
-date: "2016-04-26T11:34:42Z"
+date: '2016-04-26T11:34:42Z'
+draft: false
+showtoc: false
+slug: visualizing-distributed-systems
 title: Visualizing Distributed Systems
 ---
 

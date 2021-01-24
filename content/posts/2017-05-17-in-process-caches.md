@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/05/17/in-process-caches.html
 categories: snippets
-date: "2017-05-17T08:16:34Z"
+date: '2017-05-17T08:16:34Z'
+draft: false
+showtoc: false
+slug: in-process-caches
 title: In Process Cacheing
 ---
 

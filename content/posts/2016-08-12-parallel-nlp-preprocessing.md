@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/08/12/parallel-nlp-preprocessing.html
 categories: snippets
-date: "2016-08-12T22:09:25Z"
+date: '2016-08-12T22:09:25Z'
+draft: false
+showtoc: false
+slug: parallel-nlp-preprocessing
 title: Parallel NLP Preprocessing
 ---
 

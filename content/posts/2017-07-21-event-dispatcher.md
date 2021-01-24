@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/07/21/event-dispatcher.html
 categories: snippets
-date: "2017-07-21T06:28:45Z"
+date: '2017-07-21T06:28:45Z'
+draft: false
+showtoc: false
+slug: event-dispatcher
 title: Event Dispatcher in Go
 ---
 

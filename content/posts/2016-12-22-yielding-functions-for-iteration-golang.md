@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/12/22/yielding-functions-for-iteration-golang.html
 categories: snippets
-date: "2016-12-22T06:54:26Z"
+date: '2016-12-22T06:54:26Z'
+draft: false
+showtoc: false
+slug: yielding-functions-for-iteration-golang
 title: Yielding Functions for Iteration in Go
 ---
 

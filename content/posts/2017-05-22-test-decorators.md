@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/05/22/test-decorators.html
 categories: snippets
-date: "2017-05-22T13:05:08Z"
+date: '2017-05-22T13:05:08Z'
+draft: false
+showtoc: false
+slug: test-decorators
 title: Decorating Nose Tests
 ---
 

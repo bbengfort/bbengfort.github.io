@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/07/15/color-mapper.html
 categories: snippets
-date: "2016-07-15T16:28:11Z"
+date: '2016-07-15T16:28:11Z'
+draft: false
+showtoc: false
+slug: color-mapper
 title: Color Map Utility
 ---
 

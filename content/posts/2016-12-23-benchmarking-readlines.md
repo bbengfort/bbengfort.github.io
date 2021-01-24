@@ -1,6 +1,11 @@
 ---
+aliases:
+- /programmer/2016/12/23/benchmarking-readlines.html
 categories: programmer
-date: "2016-12-23T10:18:01Z"
+date: '2016-12-23T10:18:01Z'
+draft: false
+showtoc: false
+slug: benchmarking-readlines
 title: Benchmarking Readline Iterators
 ---
 

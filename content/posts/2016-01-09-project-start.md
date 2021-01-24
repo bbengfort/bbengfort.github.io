@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/01/09/project-start.html
 categories: snippets
-date: "2016-01-09T14:01:59Z"
+date: '2016-01-09T14:01:59Z'
+draft: false
+showtoc: false
+slug: project-start
 title: Basic Python Project Files
 ---
 

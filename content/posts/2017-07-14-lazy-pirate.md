@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2017/07/14/lazy-pirate.html
 categories: snippets
-date: "2017-07-14T10:24:15Z"
+date: '2017-07-14T10:24:15Z'
+draft: false
+showtoc: false
+slug: lazy-pirate
 title: Lazy Pirate Client
 ---
 

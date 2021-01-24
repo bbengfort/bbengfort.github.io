@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/01/10/simple-cli-argparse.html
 categories: snippets
-date: "2016-01-10T14:48:14Z"
+date: '2016-01-10T14:48:14Z'
+draft: false
+showtoc: false
+slug: simple-cli-argparse
 title: Simple CLI Script with Argparse
 ---
 

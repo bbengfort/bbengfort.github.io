@@ -1,6 +1,11 @@
 ---
+aliases:
+- /observations/2017/04/28/throughput.html
 categories: observations
-date: "2017-04-28T15:22:40Z"
+date: '2017-04-28T15:22:40Z'
+draft: false
+showtoc: false
+slug: throughput
 title: Measuring Throughput
 ---
 

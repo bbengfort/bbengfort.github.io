@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2018/02/28/prediction-distribution.html
 categories: snippets
-date: "2018-02-28T12:52:11Z"
+date: '2018-02-28T12:52:11Z'
+draft: false
+showtoc: false
+slug: prediction-distribution
 title: Class Balance Prediction Distribution
 ---
 

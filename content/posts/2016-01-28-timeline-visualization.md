@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/01/28/timeline-visualization.html
 categories: snippets
-date: "2016-01-28T22:24:47Z"
+date: '2016-01-28T22:24:47Z'
+draft: false
+showtoc: false
+slug: timeline-visualization
 title: Timeline Visualization with Matplotlib
 ---
 

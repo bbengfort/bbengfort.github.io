@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2016/09/07/parallel-enqueue-and-work.html
 categories: snippets
-date: "2016-09-07T14:29:51Z"
+date: '2016-09-07T14:29:51Z'
+draft: false
+showtoc: false
+slug: parallel-enqueue-and-work
 title: Parallel Enqueue and Workers
 ---
 

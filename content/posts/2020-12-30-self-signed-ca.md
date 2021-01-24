@@ -1,6 +1,11 @@
 ---
+aliases:
+- /snippets/2020/12/30/self-signed-ca.html
 categories: snippets
-date: "2020-12-30T15:51:06Z"
+date: '2020-12-30T15:51:06Z'
+draft: false
+showtoc: false
+slug: self-signed-ca
 title: Self Signed CA
 ---
 
