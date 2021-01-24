@@ -1,0 +1,64 @@
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+#progressBar {
+    width: 100%;
+    height: 38px;
+    background-color: #D4D4D4;
+    margin-bottom: 1rem;
+}
+
+#progressBar span {
+    display: inline-block;
+    height:100%;
+    box-sizing: border-box;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FEFEFE;
+}
+
+#inProgressBar {
+    background-color: purple;
+}
+
+#inProgressCount {
+    color: purple;
+}
+
+#doneBar {
+    background-color: green;
+}
+
+#doneCount {
+    color: green;
+}
+
+.taskCounts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-variant: small-caps;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.taskCounts li {
+    margin-left: 0;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.taskList ul {}
+
+ul.list-unstyled {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul.list-inline li {
+    display: inline-block;
+}

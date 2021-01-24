@@ -16,4 +16,5 @@ So these notes certify the performance of my programming, demonstrating my loyal
 
 ### Thanks
 
-This site was built with [Jekyll](http://jekyllrb.com/) using the [Hyde](http://hyde.getpoole.com/) theme by [@mdo](https://twitter.com/mdo). It is hosted on [GitHub](https://github.com/bbengfort/bbengfort.github.io/) and served with [GitHub Pages](https://pages.github.com/).
+This site was built with [Hugo](https://gohugo.io/) using the [PaperMod](https://themes.gohugo.io/hugo-papermod/) theme by [
+Aditya Telange](https://github.com/adityatelange/). It is hosted on [GitHub](https://github.com/bbengfort/bbengfort.github.io/) and served with [GitHub Pages](https://pages.github.com/). The logo and icon I've used is [Bear](https://thenounproject.com/search/?q=bear&i=836669) by [Gregor Cresnar](https://thenounproject.com/grega.cresnar) from [the Noun Project](https://thenounproject.com/).

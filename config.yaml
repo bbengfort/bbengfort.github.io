@@ -1,0 +1,124 @@
+baseURL: https://bbengfort.github.io
+languageCode: en-us
+title: Libelli
+paginate: 7
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableInlineShortcodes: true
+
+googleAnalytics: UA-8096804-11
+minify:
+    disableXML: true
+    minifyOutput: true
+
+permalinks:
+  posts: /:year/:month/:slug/
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: Libelli
+    description: "The development journal of @bbengfort including notes and ramblings from his various programming activities."
+    author: Benjamin Bengfort
+    images: ["<link or path of image for opengraph, twitter-cards>"]
+
+    defaultTheme: auto # dark, light
+    disableThemeToggle: false
+
+    ShowReadingTime: true
+    ShowShareButtons: false
+    disableSpecial1stPost: false
+    comments: false
+    hidemeta: false
+    showtoc: false
+    tocopen: false
+
+    assets:
+        # disableHLJS: true # to disable highlight.js
+        # disableFingerprinting: true
+        favicon: "/favicon.ico"
+        favicon16x16: "/icon.png"
+        favicon32x32: "/icon.png"
+        apple_touch_icon: "/apple-touch-icon-precomposed.png"
+        safari_pinned_tab: "/icon.png"
+
+    label:
+        text: "Libelli"
+        icon: /icon.png
+        iconHeight: 35
+
+    # profile-mode
+    profileMode:
+        enabled: false # needs to be explicitly set
+        title: Libelli
+        imageUrl: "<img location>"
+        imageWidth: 120
+        imageHeight: 120
+        imageTitle: my image
+        buttons:
+            - name: Posts
+              url: posts
+            - name: Tags
+              url: tags
+
+    # home-info mode
+    homeInfoParams:
+        Title: "A Development Journal"
+        Content: Contains the notes and ramblings from my various programming activities.
+
+    socialIcons:
+        - name: twitter
+          url: "https://twitter.com/bbengfort/"
+        - name: stackoverflow
+          url: "https://stackoverflow.com/users/488917/bbengfort"
+        - name: github
+          url: "https://github.com/bbengfort/"
+        - name: linkedin
+          url: "https://linkedin.com/in/bbengfort/"
+
+    analytics:
+        google:
+            SiteVerificationTag: ""
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+menu:
+    main:
+        - identifier: archive
+          name: archive
+          url: /archive/
+          weight: 10
+        - identifier: categories
+          name: categories
+          url: /categories/
+          weight: 20
+        - identifier: search
+          name: search
+          url: /search/
+          weight: 30
+        - identifier: about
+          name: about
+          url: /about/
+          weight: 40
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
