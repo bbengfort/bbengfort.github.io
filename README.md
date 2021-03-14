@@ -4,6 +4,28 @@
 
 **My Github Pages repository for bengfort.github.io**
 
+## Workflow
+
+Create a new post as follows:
+
+```
+$ hugo new posts/YYYY-MM-DD-title-slug.md
+```
+
+This will create a new file in `content/posts` using the `archetypes/posts.md` archetype. The archetype ensures that the title is correctly extracted from the post path name without the date components as well as the slug. You can then open the file and start editing.
+
+To view the rendered version of the site:
+
+```
+$ hugo serve -D
+```
+
+Note that the `-D` flag builds drafts and enables you to work on posts before they're published.
+
+Images should be added to the `static/images` folder using a path in the form of `YYYY-MM-DD-image-name.png` -- this is a throwback to the old Jekyll site, and I'd prefer to use content bundles, but we haven't quite made that transition yet. Embed images into markdown posts using the standard markdown with a link from the absolute `images` directory, e.g. `/images/YYYY-MM-DD-image-name.png` from the example above.
+
+To deploy, simply push to the master branch and Travis-CI will deploy the contents of the `public` directory to GitHub pages. For manual deployment, use the `bin/publish.sh` script.
+
 ## About
 
 This page is primarily my development journal and really only contains notes and ramblings for me to refer to as I practice programming. Please feel free to read and use anything you find on this site, but note it is not meant for publication or wide public consumption. If you want to find my more formal writing, check out the [District Data Labs Blog](http://blog.districtdatalabs.com/) where I write about Python, data science, streaming, distributed systems, and more.
