@@ -14,3 +14,8 @@ ul.checklist li:before {
     content: '\f046';
     margin: 0 5px 0 -22px;
 }
+
+figcaption {
+    margin-top: 0px;
+    color: red;
+}
