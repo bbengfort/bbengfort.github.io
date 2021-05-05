@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>tutorials on Libelli</title>
+    <link>https://bbengfort.github.io/categories/tutorials/</link>
+    <description>Recent content in tutorials on Libelli</description>
+    <image>
+      <url>https://bbengfort.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://bbengfort.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Oct 2019 16:40:08 +0000</lastBuildDate><atom:link href="https://bbengfort.github.io/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Launching a JupyterHub Instance</title>
+      <link>https://bbengfort.github.io/2019/10/launch-jupyterhub-server/</link>
+      <pubDate>Wed, 09 Oct 2019 16:40:08 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2019/10/launch-jupyterhub-server/</guid>
+      <description>In this post I walk through the steps of creating a multi-user JupyterHub sever running on an AWS Ubuntu 18.04 instance. There are many ways of setting up JupyterHub including using Docker and Kubernetes - but this is a pretty staight forward mechanism that doesn&amp;rsquo;t have too many moving parts such as TLS termination proxies etc. I think of this as the baseline setup.
+Note that this setup has a few pros or cons depending on how you look at them.</description>
+    </item>
+    
+    <item>
+      <title>Exception Handling</title>
+      <link>https://bbengfort.github.io/2016/11/exception-handling/</link>
+      <pubDate>Mon, 21 Nov 2016 12:53:30 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/11/exception-handling/</guid>
+      <description>This short tutorial is intended to demonstrate the basics of exception handling and the use of context management in order to handle standard cases. These notes were originally created for a training I gave, and the notebook can be found at Exception Handling. I&amp;rsquo;m happy for any comments or pull requests on the notebook.
+Exceptions Exceptions are a tool that programmers use to describe errors or faults that are fatal to the program; e.</description>
+    </item>
+    
+    <item>
+      <title>SVG Vertex with a Timer</title>
+      <link>https://bbengfort.github.io/2016/11/svg-timer-vertex/</link>
+      <pubDate>Fri, 04 Nov 2016 10:30:29 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/11/svg-timer-vertex/</guid>
+      <description>In order to promote the use of graph data structures for data analysis, I&amp;rsquo;ve recently given talks on dynamic graphs: embedding time into graph structures to analyze change. In order to embed time into a graph there are two primary mechanisms: make time a graph element (a vertex or an edge) or have multiple subgraphs where each graph represents a discrete time step. By using either of these techniques, opportunities exist to perform a structural analysis using graph algorithms on time; for example - asking what time is most central to a particular set of relationships.</description>
+    </item>
+    
+    <item>
+      <title>Text Classification with NLTK and Scikit-Learn</title>
+      <link>https://bbengfort.github.io/2016/05/text-classification-nltk-sckit-learn/</link>
+      <pubDate>Thu, 19 May 2016 08:06:40 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/05/text-classification-nltk-sckit-learn/</guid>
+      <description>This post is an early draft of expanded work that will eventually appear on the District Data Labs Blog. Your feedback is welcome, and you can submit your comments on the draft GitHub issue.
+ I&amp;rsquo;ve often been asked which is better for text processing, NLTK or Scikit-Learn (and sometimes Gensim). The answer is that I use all three tools on a regular basis, but I often have a problem mixing and matching them or combining them in meaningful ways.</description>
+    </item>
+    
+    <item>
+      <title>Building a Console Utility with Commis</title>
+      <link>https://bbengfort.github.io/2016/01/console-utility-commis/</link>
+      <pubDate>Sat, 23 Jan 2016 08:46:18 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/01/console-utility-commis/</guid>
+      <description>Applications like Git or Django&amp;rsquo;s management utility provide a rich interaction between a software library and their users by exposing many subcommands from a single root command. This style of what is essentially better argument parsing simplifies the user experience by only forcing them to remember one primary command, and allows the exploration of the utility hierarchy by using --help and other visibility mechanisms. Moreover, it allows the utility writer to decouple different commands or actions from each other.</description>
+    </item>
+    
+  </channel>
+</rss>

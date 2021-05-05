@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Libelli</title>
+    <link>https://bbengfort.github.io/posts/</link>
+    <description>Recent content in Posts on Libelli</description>
+    <image>
+      <url>https://bbengfort.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://bbengfort.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Mar 2021 09:53:49 -0400</lastBuildDate><atom:link href="https://bbengfort.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nonlinear Workflow for Planning Software Projects</title>
+      <link>https://bbengfort.github.io/2021/03/nonlinear-workflow-planning-software-projects/</link>
+      <pubDate>Sun, 14 Mar 2021 09:53:49 -0400</pubDate>
+      
+      <guid>https://bbengfort.github.io/2021/03/nonlinear-workflow-planning-software-projects/</guid>
+      <description>Good software development achieves complexity by describing the interactions between simpler components. Although we tend to think of software processes as step-by-step &amp;ldquo;wizards&amp;rdquo;, design and decoupling of components often means that the interactions are non-linear. So why should our software project planning be defined in a linear progression of steps with time estimates? Can we plan projects using a non-linear workflow that mirrors how we think about component design?
+The figure above is an experiment in task planning that I recently used to try to describe the complex dependencies between different tasks in a project.</description>
+    </item>
+    
+    <item>
+      <title>Go Closures &amp; Interfaces</title>
+      <link>https://bbengfort.github.io/2021/02/go-closures-interfaces/</link>
+      <pubDate>Tue, 23 Feb 2021 08:28:22 -0500</pubDate>
+      
+      <guid>https://bbengfort.github.io/2021/02/go-closures-interfaces/</guid>
+      <description>Strict typing in the Go programming language provides safety and performance that is valuable even if it does increase the verbosity of code. If there is a drawback to be found with strict typing, it is usually felt by library developers who require flexibility to cover different use cases, and most often appears as a suite of type-named functions such as lib.HandleString, lib.HandleUint64, lib.HandleBool and so on. Go does provide two important language tools that do provide a lot of flexibility in library development: closures and interfaces, which we will explore in this post.</description>
+    </item>
+    
+    <item>
+      <title>New Hugo Theme</title>
+      <link>https://bbengfort.github.io/2021/01/new-hugo-theme/</link>
+      <pubDate>Sun, 24 Jan 2021 17:12:16 -0500</pubDate>
+      
+      <guid>https://bbengfort.github.io/2021/01/new-hugo-theme/</guid>
+      <description>A facelift for Libelli today! I moved from Jekyll to Hugo for static site generation, a move that has been long overdue — and I&amp;rsquo;m very happy I&amp;rsquo;ve done it. Not only can I take advantage of a new theme with extra functionality (PaperMod in this case) but also because Hugo is written in Go, I feel like I have more control over how the site gets generated.
+A lot has been said on this topic, if you&amp;rsquo;re thinking about migrating from Jekyll to Hugo, I recommend Sara Soueidan&amp;rsquo;s blog post — the notes here are Libelli specific and are listed here more as notes than anything else.</description>
+    </item>
+    
+    <item>
+      <title>Documenting a gRPC API with OpenAPI</title>
+      <link>https://bbengfort.github.io/2021/01/grpc-openapi-docs/</link>
+      <pubDate>Thu, 21 Jan 2021 17:45:35 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2021/01/grpc-openapi-docs/</guid>
+      <description>gRPC makes the specification and implementation of networked APIs a snap. But what is the simplest way to document a gRPC API? There seem to be some hosted providers by Google, e.g. SmartDocs, but I have yet to find a gRPC-specific tool. For REST API frameworks, documentation is commonly generated along with live examples using OpenAPI (formerly swagger). By using grpc-gateway it appears to be pretty straight forward to generate a REST/gRPC API combo from protocol buffers and then hook into the OpenAPI specification.</description>
+    </item>
+    
+    <item>
+      <title>Self Signed CA</title>
+      <link>https://bbengfort.github.io/2020/12/self-signed-ca/</link>
+      <pubDate>Wed, 30 Dec 2020 15:51:06 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2020/12/self-signed-ca/</guid>
+      <description>I went on a brief adventure looking into creating a lightweight certificate authority (CA) in Go to issue certificates for mTLS connections between peers in a network. The CA was a simple command line program and the idea was that the certificate would initialize its own self-generated certs whose public key would be included in the code base of the peer-to-peer servers, then it could generate TLS x.509 key pairs signed by the CA.</description>
+    </item>
+    
+    <item>
+      <title>OS X Cleanup</title>
+      <link>https://bbengfort.github.io/2020/11/mac-cleanup/</link>
+      <pubDate>Tue, 24 Nov 2020 14:26:25 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2020/11/mac-cleanup/</guid>
+      <description>Developer computers often get a lot of cruft built up in non-standard places because of compiled binaries, assets, packages, and other tools that we install over time then forget about as we move onto other projects. In general, I like to reinstall my OS and wipe my disk every year or so to prevent crud from accumulating. As an interemediate step, this post compiles several maintenance caommands that I run fairly routinely.</description>
+    </item>
+    
+    <item>
+      <title>Managing Multi-Errors in Go</title>
+      <link>https://bbengfort.github.io/2020/10/go-multiple-errors/</link>
+      <pubDate>Thu, 22 Oct 2020 11:45:41 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2020/10/go-multiple-errors/</guid>
+      <description>This post is a response to Go: Multiple Errors Management. I&amp;rsquo;ve dealt with a multiple error contexts in a few places in my Go code but never created a subpackage for it in github.com/bbengfort/x and so I thought this post was a good motivation to explore it in slightly more detail. I&amp;rsquo;d also like to make error contexts for routine cancellation a part of my standard programming practice, so this post also investigates multiple error handling in a single routine or multiple routines like the original post.</description>
+    </item>
+    
+    <item>
+      <title>Writing JSON into a Zip file with Python</title>
+      <link>https://bbengfort.github.io/2020/08/zipfiles-json/</link>
+      <pubDate>Thu, 20 Aug 2020 11:41:14 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2020/08/zipfiles-json/</guid>
+      <description>For scientific reproducibility, it has become common for me to output experimental results as zip files that contain both configurations and inputs as well as one or more output results files. This is similar to .epub or .docx formats which are just specialized zip files - and allows me to easily rerun experiments for comparison purposes. Recently I tried to dump some json data into a zip file using Python 3.</description>
+    </item>
+    
+    <item>
+      <title>Read mprofile Output into Pandas</title>
+      <link>https://bbengfort.github.io/2020/07/read-mprofile-into-pandas/</link>
+      <pubDate>Mon, 27 Jul 2020 18:16:50 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2020/07/read-mprofile-into-pandas/</guid>
+      <description>When benchmarking Python programs, it is very common for me to use memory_profiler from the command line - e.g. mprof run python myscript.py. This creates a .dat file in the current working directory which you can view with mprof show. More often than not, though I want to compare two different runs for their memory profiles or do things like annotate the graphs with different timing benchmarks. This requires generating my own figures, which requires loading the memory profiler data myself.</description>
+    </item>
+    
+    <item>
+      <title>Basic Python Profiling</title>
+      <link>https://bbengfort.github.io/2020/07/basic-python-profiling/</link>
+      <pubDate>Tue, 14 Jul 2020 18:01:08 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2020/07/basic-python-profiling/</guid>
+      <description>I&amp;rsquo;m getting started on some projects that will make use of extensive Python performance profiling, unfortunately Python doesn&amp;rsquo;t focus on performance and so doesn&amp;rsquo;t have benchmark tools like I might find in Go. I&amp;rsquo;ve noticed that the two most important usages I&amp;rsquo;m looking at when profiling are speed and memory usage. For the latter, I simply use memory_profiler from the command line - which is pretty straight forward. However for speed usage, I did find a snippet that I thought would be useful to include and update depending on how my usage changes.</description>
+    </item>
+    
+    <item>
+      <title>Launching a JupyterHub Instance</title>
+      <link>https://bbengfort.github.io/2019/10/launch-jupyterhub-server/</link>
+      <pubDate>Wed, 09 Oct 2019 16:40:08 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2019/10/launch-jupyterhub-server/</guid>
+      <description>In this post I walk through the steps of creating a multi-user JupyterHub sever running on an AWS Ubuntu 18.04 instance. There are many ways of setting up JupyterHub including using Docker and Kubernetes - but this is a pretty staight forward mechanism that doesn&amp;rsquo;t have too many moving parts such as TLS termination proxies etc. I think of this as the baseline setup.
+Note that this setup has a few pros or cons depending on how you look at them.</description>
+    </item>
+    
+    <item>
+      <title>Mount an EBS volume</title>
+      <link>https://bbengfort.github.io/2019/02/mount-ebs-volume/</link>
+      <pubDate>Tue, 05 Feb 2019 12:48:18 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2019/02/mount-ebs-volume/</guid>
+      <description>Once the EBS volume has been created and attached to the instance, ssh into the instance and list the available disks:
+$ lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT loop0 7:0 0 86.9M 1 loop /snap/core/4917 loop1 7:1 0 12.6M 1 loop /snap/amazon-ssm-agent/295 loop2 7:2 0 91M 1 loop /snap/core/6350 loop3 7:3 0 18M 1 loop /snap/amazon-ssm-agent/930 nvme0n1 259:0 0 300G 0 disk nvme1n1 259:1 0 8G 0 disk └─nvme1n1p1 259:2 0 8G 0 part / In the above case we want to attach nvme0n1 - a 300GB gp2 EBS volume.</description>
+    </item>
+    
+    <item>
+      <title>Blast Throughput</title>
+      <link>https://bbengfort.github.io/2018/09/blast-throughput/</link>
+      <pubDate>Wed, 26 Sep 2018 17:06:24 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/09/blast-throughput/</guid>
+      <description>Blast throughput is what we call a throughput measurement such that N requests are simultaneously sent to the server and the duration to receive responses for all N requests is recorded. The throughput is computed as N/duration where duration is in seconds. This is the typical and potentially correct way to measure throughput from a client to a server, however issues do arise in distributed systems land:
+ the requests must all originate from a single client high latency response outliers can skew results you must be confident that N is big enough to max out the server N mustn&amp;rsquo;t be so big as to create non-server related bottlenecks.</description>
+    </item>
+    
+    <item>
+      <title>Go Testing Notes</title>
+      <link>https://bbengfort.github.io/2018/09/go-testing-notes/</link>
+      <pubDate>Sat, 22 Sep 2018 09:58:12 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/09/go-testing-notes/</guid>
+      <description>In this post I&amp;rsquo;m just going to maintain a list of notes for Go testing that I seem to commonly need to reference. It will also serve as an index for the posts related to testing that I have to commonly look up as well. Here is a quick listing of the table of contents:
+ Basics Table Driven Tests Fixtures  Golden Files   Frameworks  No Framework Ginkgo &amp;amp; Gomega   Helpers  Temporary Directories   Sources and References  Basics Just a quick reminder of how to write tests, benchmarks, and examples.</description>
+    </item>
+    
+    <item>
+      <title>Streaming Remote Throughput</title>
+      <link>https://bbengfort.github.io/2018/09/streaming-remote-throughput/</link>
+      <pubDate>Tue, 11 Sep 2018 15:19:17 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/09/streaming-remote-throughput/</guid>
+      <description>In order to improve the performance of asynchronous message passing in Alia, I&amp;rsquo;m using gRPC bidirectional streaming to create the peer to peer connections. When the replica is initialized it creates a remote connection to each of its peers that lives in its own go routine; any other thread can send messages by passing them to that go routine through a channel, replies are then dispatched via another channel, directed to the thread via an actor dispatching model.</description>
+    </item>
+    
+    <item>
+      <title>Future Date Script</title>
+      <link>https://bbengfort.github.io/2018/09/future-date/</link>
+      <pubDate>Wed, 05 Sep 2018 17:42:50 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/09/future-date/</guid>
+      <description>This is kind of a dumb post, but it&amp;rsquo;s something I&amp;rsquo;m sure I&amp;rsquo;ll look up in the future. I have a lot of emails where I have to send a date that&amp;rsquo;s sometime in the future, e.g. six weeks from the end of a class to specify a deadline … I&amp;rsquo;ve just been opening a Python terminal and importing datetime and timedelta but I figured this quick script on the command line would make my life a bit easier:</description>
+    </item>
+    
+    <item>
+      <title>Aggregating Reads from a Go Channel</title>
+      <link>https://bbengfort.github.io/2018/08/aggregating-go-channels/</link>
+      <pubDate>Sat, 25 Aug 2018 08:28:59 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/08/aggregating-go-channels/</guid>
+      <description>Here&amp;rsquo;s the scenario: we have a buffered channel that&amp;rsquo;s being read by a single Go routine and is written to by multiple go routines. For simplicity, we&amp;rsquo;ll say that the channel accepts events and that the other routines generate events of specific types, A, B, and C. If there are more of one type of event generator (or some producers are faster than others) we may end up in the situation where there are a series of the same events on the buffered channel.</description>
+    </item>
+    
+    <item>
+      <title>The Actor Model</title>
+      <link>https://bbengfort.github.io/2018/08/actor-model/</link>
+      <pubDate>Fri, 03 Aug 2018 07:27:36 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/08/actor-model/</guid>
+      <description>Building correct concurrent programs in a distributed system with multiple threads and processes can quickly become very complex to reason about. For performance, we want each thread in a single process to operate as independently as possible; however anytime the shared state of the system is modified synchronization is required. Primitives like mutexes can [ensure structs are thread-safe]({% post_url 2017-02-21-synchronizing-structs %}), however in Go, the strong preference for synchronization is communication.</description>
+    </item>
+    
+    <item>
+      <title>Syntax Parsing with CoreNLP and NLTK</title>
+      <link>https://bbengfort.github.io/2018/06/corenlp-nltk-parses/</link>
+      <pubDate>Fri, 22 Jun 2018 14:38:21 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/06/corenlp-nltk-parses/</guid>
+      <description>Syntactic parsing is a technique by which segmented, tokenized, and part-of-speech tagged text is assigned a structure that reveals the relationships between tokens governed by syntax rules, e.g. by grammars. Consider the sentence:
+ The factory employs 12.8 percent of Bradford County.
+ A syntax parse produces a tree that might help us understand that the subject of the sentence is &amp;ldquo;the factory&amp;rdquo;, the predicate is &amp;ldquo;employs&amp;rdquo;, and the target is &amp;ldquo;12.</description>
+    </item>
+    
+    <item>
+      <title>Continuing Outer Loops with for/else</title>
+      <link>https://bbengfort.github.io/2018/05/continuing-outer-loops-for-else/</link>
+      <pubDate>Thu, 17 May 2018 09:02:43 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/05/continuing-outer-loops-for-else/</guid>
+      <description>When you have an outer and an inner loop, how do you continue the outer loop from a condition inside the inner loop? Consider the following code:
+for i in range(10): for j in range(9): if i &amp;lt;= j: # break out of inner loop # continue outer loop print(i,j) # don&amp;#39;t print unless inner loop completes, # e.g. outer loop is not continued print(&amp;#34;inner complete!&amp;#34;) Here, we want to print for all i ∈ [0,10) all numbers j ∈ [0,9) that are less than or equal to i and we want to print complete once we&amp;rsquo;ve found an entire list of j that meets the criteria.</description>
+    </item>
+    
+    <item>
+      <title>Predicted Class Balance</title>
+      <link>https://bbengfort.github.io/2018/03/prediction-balance/</link>
+      <pubDate>Thu, 08 Mar 2018 09:18:37 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/03/prediction-balance/</guid>
+      <description>This is a follow on to the [prediction distribution]({{ site.base_url }}{% link _posts/2018-02-28-prediction-distribution.md %}) visualization presented in the last post. This visualization shows a bar chart with the number of predicted and number of actual values for each class, e.g. a class balance chart with predicted balance as well.
+This visualization actually came before the prior visualization, but I was more excited about that one because it showed where error was occurring similar to a classification report or confusion matrix.</description>
+    </item>
+    
+    <item>
+      <title>Class Balance Prediction Distribution</title>
+      <link>https://bbengfort.github.io/2018/02/prediction-distribution/</link>
+      <pubDate>Wed, 28 Feb 2018 12:52:11 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/02/prediction-distribution/</guid>
+      <description>In this quick snippet I present an alternative to the confusion matrix or classification report visualizations in order to judge the efficacy of multi-class classifiers:
+The base of the visualization is a class balance chart, the x-axis is the actual (or true class) and the height of the bar chart is the number of instances that match that class in the dataset. The difference here is that each bar is a stacked chart representing the percentage of the predicted class given the actual value.</description>
+    </item>
+    
+    <item>
+      <title>Synchronization in Write Throughput</title>
+      <link>https://bbengfort.github.io/2018/02/sync-write-throughput/</link>
+      <pubDate>Tue, 13 Feb 2018 07:10:06 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/02/sync-write-throughput/</guid>
+      <description>This post serves as a reminder of how to perform benchmarks when accounting for synchronized writing in Go. The normal benchmarking process involves running a command a large number of times and determining the average amount of time that operation took. When threads come into play, we consider throughput - that is the number of operations that can be conducted per second. However, in order to successfully measure this without duplicating time, the throughput must be measured from the server&amp;rsquo;s perspective.</description>
+    </item>
+    
+    <item>
+      <title>Thread and Non-Thread Safe Go Set</title>
+      <link>https://bbengfort.github.io/2018/01/go-set/</link>
+      <pubDate>Fri, 26 Jan 2018 09:15:13 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/01/go-set/</guid>
+      <description>I came across this now archived project that implements a set data structure in Go and was intrigued by the implementation of both thread-safe and non-thread-safe implementations of the same data structure. Recently I&amp;rsquo;ve been attempting to get rid of locks in my code in favor of one master data structure that does all of the synchronization, having multiple options for thread safety is useful. Previously I did this by having a lower-case method name (a private method) that was non-thread-safe and an upper-case method name (public) that did implement thread-safety.</description>
+    </item>
+    
+    <item>
+      <title>Git-Style File Editing in CLI</title>
+      <link>https://bbengfort.github.io/2018/01/cli-editor-app/</link>
+      <pubDate>Sat, 06 Jan 2018 09:30:58 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/01/cli-editor-app/</guid>
+      <description>A recent application I was working on required the management of several configuration and list files that needed to be validated. Rather than have the user find and edit these files directly, I wanted to create an editing workflow similar to crontab -e or git commit — the user would call the application, which would redirect to a text editor like vim, then when editing was complete, the application would take over again.</description>
+    </item>
+    
+    <item>
+      <title>Transaction Handling with Psycopg2</title>
+      <link>https://bbengfort.github.io/2017/12/psycopg2-transactions/</link>
+      <pubDate>Wed, 06 Dec 2017 13:58:16 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/12/psycopg2-transactions/</guid>
+      <description>Databases are essential to most applications, however most database interaction is often overlooked by Python developers who use higher level libraries like Django or SQLAlchemy. We use and love PostgreSQL with Psycopg2, but I recently realized that I didn&amp;rsquo;t have a good grasp on how exactly psycopg2 implemented core database concepts: particularly transaction isolation and thread safety.
+Here&amp;rsquo;s what the documentation says regarding transactions:
+ Transactions are handled by the connection class.</description>
+    </item>
+    
+    <item>
+      <title>Lock Diagnostics in Go</title>
+      <link>https://bbengfort.github.io/2017/09/lock-diagnostics/</link>
+      <pubDate>Thu, 28 Sep 2017 10:44:30 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/09/lock-diagnostics/</guid>
+      <description>By now it&amp;rsquo;s pretty clear that I&amp;rsquo;ve just had a bear of a time with locks and synchronization inside of multi-threaded environments with Go. Probably most gophers would simply tell me that I should share memory by communicating rather than to communication by sharing memory — and frankly I&amp;rsquo;m in that camp too. The issue is that:
+ Mutexes can be more expressive than channels Channels are fairly heavyweight  So to be honest, there are situations where a mutex is a better choice than a channel.</description>
+    </item>
+    
+    <item>
+      <title>Lock Queuing in Go</title>
+      <link>https://bbengfort.github.io/2017/09/lock-queueing/</link>
+      <pubDate>Fri, 08 Sep 2017 11:31:19 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/09/lock-queueing/</guid>
+      <description>In Go, you can use sync.Mutex and sync.RWMutex objects to create thread-safe data structures in memory as discussed in [“Synchronizing Structs for Safe Concurrency in Go”]({% post_url 2017-02-21-synchronizing-structs %}). When using the sync.RWMutex in Go, there are two kinds of locks: read locks and write locks. The basic difference is that many read locks can be acquired at the same time, but only one write lock can be acquired at at time.</description>
+    </item>
+    
+    <item>
+      <title>Messaging Throughput gRPC vs. ZMQ</title>
+      <link>https://bbengfort.github.io/2017/09/message-throughput/</link>
+      <pubDate>Mon, 04 Sep 2017 17:20:06 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/09/message-throughput/</guid>
+      <description>Building distributed systems in Go requires an RPC or message framework of some sort. In the systems I build I prefer to pass messages serialized with protocol buffers therefore a natural choice for me is grpc. The grpc library uses HTTP2 as a transport layer and provides a code generator based on the protocol buffer syntax making it very simple to use.
+For more detailed control, the ZMQ library is an excellent, low latency socket framework.</description>
+    </item>
+    
+    <item>
+      <title>Online Distribution</title>
+      <link>https://bbengfort.github.io/2017/08/online-distribution/</link>
+      <pubDate>Mon, 28 Aug 2017 12:49:46 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/08/online-distribution/</guid>
+      <description>This post started out as a discussion of a struct in Go that could keep track of online statistics without keeping an array of values. It ended up being a lesson on over-engineering for concurrency.
+The spec of the routine was to build a data structure that could keep track of internal statistics of values over time in a space-saving fashion. The primary interface was a method, Update(sample float64), so that a new sample could be passed to the structure, updating internal parameters.</description>
+    </item>
+    
+    <item>
+      <title>Rapid FS Walks with ErrGroup</title>
+      <link>https://bbengfort.github.io/2017/08/rapid-fs-walk/</link>
+      <pubDate>Fri, 18 Aug 2017 15:33:35 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/08/rapid-fs-walk/</guid>
+      <description>I&amp;rsquo;ve been looking for a way to quickly scan a file system and gather information about the files in directories contained within. I had been doing this with multiprocessing in Python, but figured Go could speed up my performance by a lot. What I discovered when I went down this path was the sync.ErrGroup, an extension of the sync.WaitGroup that helps manage the complexity of multiple go routines but also includes error handling!</description>
+    </item>
+    
+    <item>
+      <title>Buffered Write Performance</title>
+      <link>https://bbengfort.github.io/2017/08/buffered-writes/</link>
+      <pubDate>Thu, 03 Aug 2017 09:48:19 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/08/buffered-writes/</guid>
+      <description>This is just a quick note on the performance of writing to a file on disk using Go, and reveals a question about a common programming paradigm that I am now suspicious of. I discovered that when I wrapped the open file object with a bufio.Writer that the performance of my writes to disk significantly increased. Ok, so this isn&amp;rsquo;t about simple file writing to disk, this is about a complex writer that does some seeking in the file writing to different positions and maintains the overall state of what&amp;rsquo;s on disk in memory, however the question remains:</description>
+    </item>
+    
+    <item>
+      <title>Event Dispatcher in Go</title>
+      <link>https://bbengfort.github.io/2017/07/event-dispatcher/</link>
+      <pubDate>Fri, 21 Jul 2017 06:28:45 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/07/event-dispatcher/</guid>
+      <description>The event dispatcher pattern is extremely common in software design, particularly in languages like JavaScript that are primarily used for user interface work. The dispatcher is an object (usually a mixin to other objects) that can register callback functions for particular events. Then when a dispatch method is called with an event, the dispatcher calls each callback function in order of their registration and passes them a copy of the event.</description>
+    </item>
+    
+    <item>
+      <title>Lazy Pirate Client</title>
+      <link>https://bbengfort.github.io/2017/07/lazy-pirate/</link>
+      <pubDate>Fri, 14 Jul 2017 10:24:15 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/07/lazy-pirate/</guid>
+      <description>In the [last post]({% post_url 2017-07-13-zmq-basic %}) I discussed a simple REQ/REP pattern for ZMQ. However, by itself REQ/REP is pretty fragile. First, every REQ requires a REP and a server can only handle one request at a time. Moreover, if the server fails in the middle of a reply, then everything is hung. We need more reliable REQ/REP, which is actually the subject of an entire chapter in the ZMQ book.</description>
+    </item>
+    
+    <item>
+      <title>Simple ZMQ Message Passing</title>
+      <link>https://bbengfort.github.io/2017/07/zmq-basic/</link>
+      <pubDate>Thu, 13 Jul 2017 11:00:27 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/07/zmq-basic/</guid>
+      <description>There are many ways to create RPCs and send messages between nodes in a distributed system. Typically when we think about messaging, we think about a transport layer (TCP, IP) and a protocol layer (HTTP) along with some message serialization. Perhaps best known are RESTful APIs which allow us to GET, POST, PUT, and DELETE JSON data to a server. Other methods include gRPC which uses HTTP and protocol buffers for interprocess communication.</description>
+    </item>
+    
+    <item>
+      <title>PID File Management</title>
+      <link>https://bbengfort.github.io/2017/07/pid-management/</link>
+      <pubDate>Tue, 11 Jul 2017 09:10:44 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/07/pid-management/</guid>
+      <description>In this discussion, I want to propose some code to perform PID file management in a Go program. When a program is backgrounded or daemonized we need some way to communicate with it in order to stop it. All active processes are assigned a unique process id by the operating system and that ID can be used to send signals to the program. Therefore a PID file:
+ The pid files contains the process id (a number) of a given program.</description>
+    </item>
+    
+    <item>
+      <title>Public IP Address Discovery</title>
+      <link>https://bbengfort.github.io/2017/07/public-ip/</link>
+      <pubDate>Sun, 09 Jul 2017 13:14:46 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/07/public-ip/</guid>
+      <description>When doing research on peer-to-peer networks, addressing can become pretty complex pretty quickly. Not everyone has the resources to allocate static, public facing IP addresses to machines. A machine that is in a home network for example only has a single public-facing IP address, usually assigned to the router. The router then performs NAT (network address translation) forwarding requests to internal devices.
+In order to get a service running on an internal network, you can port forward external requests to a specific port to a specific device.</description>
+    </item>
+    
+    <item>
+      <title>On the Tracks with Rails</title>
+      <link>https://bbengfort.github.io/2017/07/on-track-with-rails/</link>
+      <pubDate>Thu, 06 Jul 2017 08:15:13 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/07/on-track-with-rails/</guid>
+      <description>I&amp;rsquo;m preparing to move into a new job when I finish my dissertation hopefully later this summer. The new role involves web application development with Rails and so I needed to get up to speed. I had a web application requirement for my research so I figured I&amp;rsquo;d knock out two birds with one stone and build that app with Rails (a screenshot of the app is above, though of course this is just a front-end and doesn&amp;rsquo;t really tell you it was built with Rails).</description>
+    </item>
+    
+    <item>
+      <title>Concurrent Subprocesses and Fabric</title>
+      <link>https://bbengfort.github.io/2017/06/concurrent-subprocesses-fabric/</link>
+      <pubDate>Wed, 14 Jun 2017 15:56:24 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/06/concurrent-subprocesses-fabric/</guid>
+      <description>I&amp;rsquo;ve ben using Fabric to concurrently start multiple processes on several machines. These processes have to run at the same time (since they are experimental processes and are interacting with each other) and shut down at more or less the same time so that I can collect results and immediately execute the next sample in the experiment. However, I was having a some difficulties directly using Fabric:
+ Fabric can parallelize one task across multiple hosts accordint to roles.</description>
+    </item>
+    
+    <item>
+      <title>Appending Results to a File</title>
+      <link>https://bbengfort.github.io/2017/06/append-json-results/</link>
+      <pubDate>Mon, 12 Jun 2017 16:04:24 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/06/append-json-results/</guid>
+      <description>In my current experimental setup, each process is a single instance of sample, from start to finish. This means that I need to aggregate results across multiple process runs that are running concurrently. Moreover, I may need to aggregate those results between machines.
+The most compact format to store results in is CSV. This was my first approach and it had some benefits including:
+ small file sizes readability CSV files can just be concatenated together  The problems were:</description>
+    </item>
+    
+    <item>
+      <title>Compression Benchmarks</title>
+      <link>https://bbengfort.github.io/2017/06/compression-benchmarks/</link>
+      <pubDate>Wed, 07 Jun 2017 10:45:35 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/06/compression-benchmarks/</guid>
+      <description>One of the projects I&amp;rsquo;m currently working on is the ingestion of RSS feeds into a Mongo database. It&amp;rsquo;s been running for the past year, and as of this post has collected 1,575,987 posts for 373 feeds after 8,126 jobs. This equates to about 585GB of raw data, and a firm requirement for compression in order to exchange data.
+Recently, @ojedatony1616 downloaded the compressed zip file (53GB) onto a 1TB external hard disk and attempted to decompress it.</description>
+    </item>
+    
+    <item>
+      <title>Decorating Nose Tests</title>
+      <link>https://bbengfort.github.io/2017/05/test-decorators/</link>
+      <pubDate>Mon, 22 May 2017 13:05:08 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/05/test-decorators/</guid>
+      <description>Was introduced to an interesting problem today when decorating tests that need to be discovered by the nose runner. By default, nose explores a directory looking for things named test or tests and then executes those functions, classes, modules, etc. as tests. A standard test suite for me looks something like:
+import unittest class MyTests(unittest.TestCase): def test_undecorated(self): &amp;#34;&amp;#34;&amp;#34; assert undecorated works &amp;#34;&amp;#34;&amp;#34; self.assertEqual(2+2, 4) The problem came up when we wanted to decorate a test with some extra functionality, for example loading a fixture:</description>
+    </item>
+    
+    <item>
+      <title>In Process Cacheing</title>
+      <link>https://bbengfort.github.io/2017/05/in-process-caches/</link>
+      <pubDate>Wed, 17 May 2017 08:16:34 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/05/in-process-caches/</guid>
+      <description>I have had some recent discussions regarding cacheing to improve application performance that I wanted to share. Most of the time those conversations go something like this: “have you heard of Redis?” I&amp;rsquo;m fascinated by the fact that an independent, distributed key-value store has won the market to this degree. However, as I&amp;rsquo;ve pointed out in these conversations, cacheing is a hierarchy (heck, even the processor has varying levels of cacheing).</description>
+    </item>
+    
+    <item>
+      <title>Unique Values in Python: A Benchmark</title>
+      <link>https://bbengfort.github.io/2017/05/python-unique-benchmark/</link>
+      <pubDate>Tue, 02 May 2017 14:24:18 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/05/python-unique-benchmark/</guid>
+      <description>An interesting question came up in the development of Yellowbrick: given a vector of values, what is the quickest way to get the unique values? Ok, so maybe this isn&amp;rsquo;t a terribly interesting question, however the results surprised us and may surprise you as well. First we&amp;rsquo;ll do a little background, then I&amp;rsquo;ll give the results and then discuss the benchmarking method.
+The problem comes up in Yellowbrick when we want to get the discrete values for a target vector, y — a problem that comes up in classification tasks.</description>
+    </item>
+    
+    <item>
+      <title>Measuring Throughput</title>
+      <link>https://bbengfort.github.io/2017/04/throughput/</link>
+      <pubDate>Fri, 28 Apr 2017 15:22:40 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/04/throughput/</guid>
+      <description>Part of my research is taking me down a path where I want to measure the number of reads and writes from a client to a storage server. A key metric that we&amp;rsquo;re looking for is throughput — the number of accesses per second that a system supports. As I discovered in a very simple test to get some baseline metrics, even this simple metric can have some interesting complications.</description>
+    </item>
+    
+    <item>
+      <title>OAuth Tokens on the Command Line</title>
+      <link>https://bbengfort.github.io/2017/04/oauth-token-command-line/</link>
+      <pubDate>Thu, 20 Apr 2017 10:26:32 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/04/oauth-token-command-line/</guid>
+      <description>This week I discovered I had a problem with my Google Calendar — events accidentally got duplicated or deleted and I needed a way to verify that my primary calendar was correct. Rather than painstakingly go through the web interface and spot check every event, I instead wrote a Go console program using the Google Calendar API to retrieve events and save them in a CSV so I could inspect them all at once.</description>
+    </item>
+    
+    <item>
+      <title>Gmail Notifications with Python</title>
+      <link>https://bbengfort.github.io/2017/04/gmail-notifications-python/</link>
+      <pubDate>Mon, 17 Apr 2017 12:26:55 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/04/gmail-notifications-python/</guid>
+      <description>I routinely have long-running scripts (e.g. for a data processing task) that I want to know when they&amp;rsquo;re complete. It seems like it should be simple for me to add in a little snippet of code that will send an email using Gmail to notify me, right? Unfortunately, it isn&amp;rsquo;t quite that simple for a lot of reasons, including security, attachment handling, configuration, etc. In this snippet, I&amp;rsquo;ve attached my constant copy and paste notify() function, written into a command line script for easy sending on the command line.</description>
+    </item>
+    
+    <item>
+      <title>A Benchmark of Grumpy Transpiling</title>
+      <link>https://bbengfort.github.io/2017/03/grumpy-transpiling-fib-benchmark/</link>
+      <pubDate>Thu, 23 Mar 2017 08:47:04 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/03/grumpy-transpiling-fib-benchmark/</guid>
+      <description>On Tuesday evening I attended a Django District meetup on Grumpy, a transpiler from Python to Go. Because it was a Python meetup, the talk naturally focused on introducing Go to a Python audience, and because it was a Django meetup, we also focused on web services. The premise for Grumpy, as discussed in the announcing Google blog post, is also a web focused one — to take YouTube&amp;rsquo;s API that&amp;rsquo;s primarily written in Python and transpile it to Go to improve the overall performance and stability of YouTube&amp;rsquo;s front-end services.</description>
+    </item>
+    
+    <item>
+      <title>Sanely gRPC Dial a Remote</title>
+      <link>https://bbengfort.github.io/2017/03/sanely-grpc-dial-a-remote/</link>
+      <pubDate>Tue, 21 Mar 2017 16:27:39 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/03/sanely-grpc-dial-a-remote/</guid>
+      <description>In my systems I need to handle failure; so unlike in a typical client-server relationship, I&amp;rsquo;m prepared for the remote I&amp;rsquo;m dialing to not be available. Unfortunately when you do this with gRPC-Go there are a couple of annoyances you have to address. They are (in order of solutions):
+ Verbose connection logging Background and back-off for reconnection attempts Errors are not returned on demand. There is no ability to keep track of statistics  So first the logging.</description>
+    </item>
+    
+    <item>
+      <title>Contributing a Multiprocess Memory Profiler</title>
+      <link>https://bbengfort.github.io/2017/03/contributing-a-multiprocess-memory-profiler/</link>
+      <pubDate>Mon, 20 Mar 2017 11:42:58 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/03/contributing-a-multiprocess-memory-profiler/</guid>
+      <description>In this post I wanted to catalog the process of an open source contribution I was a part of, which added a feature to the memory profiler Python library by Fabian Pedregosa and Philippe Gervais. It&amp;rsquo;s a quick story to tell but took over a year to complete, and I learned a lot from the process. I hope that the story is revealing, particularly to first time contributors and shows that even folks that have been doing this for a long time still have to find ways to positively approach collaboration in an open source environment.</description>
+    </item>
+    
+    <item>
+      <title>Pseudo Merkle Tree</title>
+      <link>https://bbengfort.github.io/2017/03/pseudo-merkle-tree/</link>
+      <pubDate>Thu, 16 Mar 2017 12:23:21 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/03/pseudo-merkle-tree/</guid>
+      <description>A Merkle tree is a data structure in which every non-leaf node is labeled with the hash of its child nodes. This makes them particular useful for comparing large data structures quickly and efficiently. Given trees a and b, if the root hash of either is different, it means that part of the tree below is different (if they are identical, they are probably also identical). You can then proceed in a a breadth first fashion, pruning nodes with identical hashes to directly identify the differences.</description>
+    </item>
+    
+    <item>
+      <title>Using Select in Go</title>
+      <link>https://bbengfort.github.io/2017/03/channel-select/</link>
+      <pubDate>Wed, 08 Mar 2017 10:52:39 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/03/channel-select/</guid>
+      <description>Ask a Go programmer what makes Go special and they will immediately say “concurrency is baked into the language”. Go&amp;rsquo;s concurrency model is one of communication (as opposed to locks) and so concurrency primitives are implemented using channels. In order to synchronize across multiple channels, go provides the select statement.
+A common pattern for me has become to use a select to manage broadcasted work (either in a publisher/subscriber model or a fanout model) by initializing go routines and passing them directional channels for synchronization and communication.</description>
+    </item>
+    
+    <item>
+      <title>Benchmarking Secure gRPC</title>
+      <link>https://bbengfort.github.io/2017/03/tls-grpc-benchmarks/</link>
+      <pubDate>Sun, 05 Mar 2017 17:26:24 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/03/tls-grpc-benchmarks/</guid>
+      <description>A natural question to ask after the previous post is “how much overhead does security add?” So I&amp;rsquo;ve benchmarked the three methods discussed; mutual TLS, server-side TLS, and no encryption. The results are below:
+
+Here are the numeric results for one of the runs:
+BenchmarkMutualTLS-8 200	9331850 ns/op BenchmarkServerTLS-8 300	5004505 ns/op BenchmarkInsecure-8 2000	1179252 ns/op PASS ok github.com/bbengfort/sping	7.364s Here is the code for the benchmarking for reference:</description>
+    </item>
+    
+    <item>
+      <title>Secure gRPC with TLS/SSL</title>
+      <link>https://bbengfort.github.io/2017/03/secure-grpc/</link>
+      <pubDate>Fri, 03 Mar 2017 09:41:39 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/03/secure-grpc/</guid>
+      <description>One of the primary requirements for the systems we build is something we call the “minimum security requirement”. Although our systems are not designed specifically for high security applications, they must use minimum standards of encryption and authentication. For example, it seems obvious to me that a web application that stores passwords or credit card information would encrypt their data on disk on a per-record basis with a salted hash. In the same way, a distributed system must be able to handle encrypted blobs, encrypt all inter-node communication, and authenticate and sign all messages.</description>
+    </item>
+    
+    <item>
+      <title>Synchronizing Structs for Safe Concurrency in Go</title>
+      <link>https://bbengfort.github.io/2017/02/synchronizing-structs/</link>
+      <pubDate>Tue, 21 Feb 2017 10:48:24 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/02/synchronizing-structs/</guid>
+      <description>Go is built for concurrency by providing language features that allow developers to embed complex concurrency patterns into their applications. These language features can be intuitive and a lot of safety is built in (for example a race detector) but developers still need to be aware of the interactions between various threads in their programs.
+In any shared memory system the biggest concern is synchronization: ensuring that separate go routines operate in the correct order and that no race conditions occur.</description>
+    </item>
+    
+    <item>
+      <title>Fixed vs. Variable Length Chunking</title>
+      <link>https://bbengfort.github.io/2017/02/chunking/</link>
+      <pubDate>Wed, 08 Feb 2017 19:51:28 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/02/chunking/</guid>
+      <description>FluidFS and other file systems break large files into recipes of hash-identified blobs of binary data. Blobs can then be replicated with far more ease than a single file, as well as streamed from disk in a memory safe manner. Blobs are treated as single, independent units so the underlying data store doesn&amp;rsquo;t grow as files are duplicated. Finally, blobs can be encrypted individually and provide more opportunities for privacy.</description>
+    </item>
+    
+    <item>
+      <title>Extracting a TOC from Markup</title>
+      <link>https://bbengfort.github.io/2017/02/extract-toc/</link>
+      <pubDate>Sun, 05 Feb 2017 09:11:27 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/02/extract-toc/</guid>
+      <description>In today&amp;rsquo;s addition of “really simple things that come in handy all the time” I present a simple script to extract the table of contents from markdown or asciidoc files:
+ So this is pretty simple, just use regular expressions to look for lines that start with one or more &amp;quot;#&amp;quot; or &amp;quot;=&amp;quot; (for markdown and asciidoc, respectively) and print them out with an indent according to their depth (e.g. indent ## heading 2 one block).</description>
+    </item>
+    
+    <item>
+      <title>In-Memory File System with FUSE</title>
+      <link>https://bbengfort.github.io/2017/01/fuse-inmem-fs/</link>
+      <pubDate>Mon, 30 Jan 2017 16:17:26 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/01/fuse-inmem-fs/</guid>
+      <description>The Filesystem in Userspace (FUSE) software interface allows developers to create file systems without editing kernel code. This is especially useful when creating replicated file systems, file protocols, backup systems, or other computer systems that require intervention for FS operations but not an entire operating system. FUSE works by running the FS code as a user process while FUSE provides a bridge through a request/response protocol to the kernel.
+In Go, the FUSE library is implemented by bazil.</description>
+    </item>
+    
+    <item>
+      <title>FUSE Calls on Go Writes</title>
+      <link>https://bbengfort.github.io/2017/01/fuse-calls/</link>
+      <pubDate>Thu, 26 Jan 2017 20:04:40 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/01/fuse-calls/</guid>
+      <description>For close-to-open consistency, we need to be able to implement a file system that can detect atomic changes to a single file. Most programming languages implement open() and close() methods for files - but what they are really modifying is the access of a handle to an open file that the operating system provides. Writes are buffered in an asynchronous fashion so that the operating system and user program don&amp;rsquo;t have to wait for the spinning disk to figure itself out before carrying on.</description>
+    </item>
+    
+    <item>
+      <title>Error Descriptions for System Calls</title>
+      <link>https://bbengfort.github.io/2017/01/syscall-errno/</link>
+      <pubDate>Mon, 23 Jan 2017 14:29:50 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/01/syscall-errno/</guid>
+      <description>Working with FUSE to build file systems means inevitably you have to deal with (or return) system call errors. The Go FUSE implementation includes helpers and constants for returning these errors, but simply wraps them around the syscall error numbers. I needed descriptions to better understand what was doing what. Pete saved the day by pointing me towards the errno.h header file on my Macbook. Some Python later and we had the descriptions:</description>
+    </item>
+    
+    <item>
+      <title>Run Until Error with Go Channels</title>
+      <link>https://bbengfort.github.io/2017/01/run-until-err/</link>
+      <pubDate>Thu, 19 Jan 2017 11:00:40 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/01/run-until-err/</guid>
+      <description>Writing systems means the heavy use of go routines to support concurrent operations. My current architecture employs several go routines to run a server for a simple web interface as well as command line app, file system servers, replica servers, consensus coordination, etc. Using multiple go routines (threads) instead of processes allows for easier development and shared resources, such as a database that can support transactions. However, management of all these threads can be tricky.</description>
+    </item>
+    
+    <item>
+      <title>Generic JSON Serialization with Go</title>
+      <link>https://bbengfort.github.io/2017/01/generic-json-serialization-go/</link>
+      <pubDate>Wed, 18 Jan 2017 11:31:06 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/01/generic-json-serialization-go/</guid>
+      <description>This post is just a reminder as I work through handling JSON data with Go. Go provides first class JSON support through its standard library json package. The interface is simple, primarily through json.Marshal and json.Unmarshal functions which are analagous to typed versions of json.load and json.dump. Type safety is the trick, however, and generally speaking you define a struct to serialize and deserialize as follows:
+type Person struct { Name string `json:&amp;#34;name,omitempty&amp;#34;` Age int `json:&amp;#34;age,omitempty&amp;#34;` Salary int `json:&amp;#34;-&amp;#34;` } op := &amp;amp;Person{&amp;#34;John Doe&amp;#34;, 42} data, _ := json.</description>
+    </item>
+    
+    <item>
+      <title>Resolving Matplotlib Colors</title>
+      <link>https://bbengfort.github.io/2017/01/resolving-matplotlib-colors/</link>
+      <pubDate>Tue, 17 Jan 2017 14:52:50 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/01/resolving-matplotlib-colors/</guid>
+      <description>One of the challenges we&amp;rsquo;ve been dealing with in the Yellowbrick library is the proper resolution of colors, a problem that seems to have parallels in matplotlib as well. The issue is that colors can be described by the user in a variety of ways, then that description has to be parsed and rendered as specific colors. To name a few color specifications that exist in matplotlib:
+ None: choose a reasonable default color The name of the color, e.</description>
+    </item>
+    
+    <item>
+      <title>Benchmarking Readline Iterators</title>
+      <link>https://bbengfort.github.io/2016/12/benchmarking-readlines/</link>
+      <pubDate>Fri, 23 Dec 2016 10:18:01 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/12/benchmarking-readlines/</guid>
+      <description>I&amp;rsquo;m starting to get serious about programming in Go, trying to move from an intermediate level to an advanced/expert level as I start to build larger systems. Right now I&amp;rsquo;m working on a problem that involves on demand iteration, and I don&amp;rsquo;t want to pass around entire arrays and instead be a bit more frugal about my memory usage. Yesterday, I discussed using [channels to yield iterators from functions]({% post_url 2016-12-22-yielding-functions-for-iteration-golang %}) and was a big fan of the API, but had some questions about memory usage.</description>
+    </item>
+    
+    <item>
+      <title>Yielding Functions for Iteration in Go</title>
+      <link>https://bbengfort.github.io/2016/12/yielding-functions-for-iteration-golang/</link>
+      <pubDate>Thu, 22 Dec 2016 06:54:26 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/12/yielding-functions-for-iteration-golang/</guid>
+      <description>It is very common for me to design code that expects functions to return an iterable context, particularly because I have been developing in Python with the yield statement. The yield statement allows functions to “return” the execution context to the caller while still maintaining state such that the caller can return state to the function and continue to iterate. It does this by actually returning a generator, iterable object constructed from the local state of the closure.</description>
+    </item>
+    
+    <item>
+      <title>Exception Handling</title>
+      <link>https://bbengfort.github.io/2016/11/exception-handling/</link>
+      <pubDate>Mon, 21 Nov 2016 12:53:30 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/11/exception-handling/</guid>
+      <description>This short tutorial is intended to demonstrate the basics of exception handling and the use of context management in order to handle standard cases. These notes were originally created for a training I gave, and the notebook can be found at Exception Handling. I&amp;rsquo;m happy for any comments or pull requests on the notebook.
+Exceptions Exceptions are a tool that programmers use to describe errors or faults that are fatal to the program; e.</description>
+    </item>
+    
+    <item>
+      <title>SVG Vertex with a Timer</title>
+      <link>https://bbengfort.github.io/2016/11/svg-timer-vertex/</link>
+      <pubDate>Fri, 04 Nov 2016 10:30:29 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/11/svg-timer-vertex/</guid>
+      <description>In order to promote the use of graph data structures for data analysis, I&amp;rsquo;ve recently given talks on dynamic graphs: embedding time into graph structures to analyze change. In order to embed time into a graph there are two primary mechanisms: make time a graph element (a vertex or an edge) or have multiple subgraphs where each graph represents a discrete time step. By using either of these techniques, opportunities exist to perform a structural analysis using graph algorithms on time; for example - asking what time is most central to a particular set of relationships.</description>
+    </item>
+    
+    <item>
+      <title>Message Latency: Ping vs. gRPC</title>
+      <link>https://bbengfort.github.io/2016/11/ping-vs-grpc/</link>
+      <pubDate>Wed, 02 Nov 2016 15:46:31 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/11/ping-vs-grpc/</guid>
+      <description>Building distributed systems means passing messages between devices over a network connection. My research specifically considers networks that have extremely variable latencies or that can be partition prone. This led me to the natural question, “how variable are real world networks?” In order to get real numbers, I built a simple echo protocol using Go and gRPC called Orca.
+I ran Orca for a few days and got some latency measurements as I traveled around with my laptop.</description>
+    </item>
+    
+    <item>
+      <title>Computing Reading Speed</title>
+      <link>https://bbengfort.github.io/2016/10/reading-speed/</link>
+      <pubDate>Fri, 28 Oct 2016 13:16:24 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/10/reading-speed/</guid>
+      <description>Ashley and I have been going over the District Data Labs Blog trying to figure out a method to make it more accessible both to readers (who are at various levels) and to encourage writers to contribute. To that end, she&amp;rsquo;s been exploring other blogs to see if we can put multiple forms of content up; long form tutorials (the bulk of what&amp;rsquo;s there) and shorter idea articles, possibly even as short as the posts I put on my dev journal.</description>
+    </item>
+    
+    <item>
+      <title>Modifying an Image&#39;s Aspect Ratio</title>
+      <link>https://bbengfort.github.io/2016/09/image-aspect-ratio/</link>
+      <pubDate>Tue, 13 Sep 2016 14:19:14 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/09/image-aspect-ratio/</guid>
+      <description>When making slides, I generally like to use Flickr to search for images that are licensed via Creative Commons to use as backgrounds. My slide deck tools of choice are either Reveal.js or Google Slides. Both tools allow you to specify an image as a background for the slide, but for Google Slides in particular, if the aspect ratio of the image doesn&amp;rsquo;t match the aspect ratio of the slide deck, then weird things can happen.</description>
+    </item>
+    
+    <item>
+      <title>Serializing GraphML</title>
+      <link>https://bbengfort.github.io/2016/09/serialize-graphml/</link>
+      <pubDate>Fri, 09 Sep 2016 17:13:13 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/09/serialize-graphml/</guid>
+      <description>This is mostly a post of annoyance. I&amp;rsquo;ve been working with graphs in Python via NetworkX and trying to serialize them to GraphML for use in Gephi and graph-tool. Unfortunately the following error is really starting to get on my nerves:
+networkx.exception.NetworkXError: GraphML writer does not support &amp;lt;class &#39;datetime.datetime&#39;&amp;gt; as data values. Also it doesn&amp;rsquo;t support &amp;lt;type NoneType&amp;gt; or list or dict or &amp;hellip;
+So I have to do something about it:</description>
+    </item>
+    
+    <item>
+      <title>Parallel Enqueue and Workers</title>
+      <link>https://bbengfort.github.io/2016/09/parallel-enqueue-and-work/</link>
+      <pubDate>Wed, 07 Sep 2016 14:29:51 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/09/parallel-enqueue-and-work/</guid>
+      <description>I was recently asked about the parallelization of both the enqueuing of tasks and their processing. This is a tricky subject because there are a lot of factors that come into play. For example do you have two parallel phases, e.g. a map and a reduce phase that need to be synchronized, or is there some sort of data parallelism that requires multiple tasks to be applied to the data (e.</description>
+    </item>
+    
+    <item>
+      <title>Parallel NLP Preprocessing</title>
+      <link>https://bbengfort.github.io/2016/08/parallel-nlp-preprocessing/</link>
+      <pubDate>Fri, 12 Aug 2016 22:09:25 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/08/parallel-nlp-preprocessing/</guid>
+      <description>A common source of natural language corpora comes from the web, usually in the form of HTML documents. However, in order to actually build models on the natural language, the structured HTML needs to be transformed into units of discourse that can then be used for learning. In particular, we need to strip away extraneous material such as navigation or advertisements, targeting exactly the content we&amp;rsquo;re looking for. Once done, we need to split paragraphs into sentences, sentences into tokens, and assign part-of-speech tags to each token.</description>
+    </item>
+    
+    <item>
+      <title>Pretty Print Directories</title>
+      <link>https://bbengfort.github.io/2016/08/pretty-print-directories/</link>
+      <pubDate>Mon, 01 Aug 2016 12:17:47 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/08/pretty-print-directories/</guid>
+      <description>It feels like there are many questions like this one on Stack Overflow: Representing Directory &amp;amp; File Structure in Markdown Syntax, basically asking &amp;ldquo;how can we represent a directory structure in text in a pleasant way?&amp;rdquo; I too use these types of text representations in slides, blog posts, books, etc. It would be very helpful if I had an automatic way of doing this so I didn&amp;rsquo;t have to create it from scratch.</description>
+    </item>
+    
+    <item>
+      <title>Color Map Utility</title>
+      <link>https://bbengfort.github.io/2016/07/color-mapper/</link>
+      <pubDate>Fri, 15 Jul 2016 16:28:11 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/07/color-mapper/</guid>
+      <description>Many of us are spoiled by the use of matplotlib&amp;rsquo;s colormaps which allow you to specify a string or object name of a color map (e.g. Blues) then simply pass in a range of nearly continuous values which are spread along the color map. However, using these color maps for categorical or discrete values (like the colors of nodes) can pose challenges as the colors may not be distinct enough for the representation you&amp;rsquo;re looking for.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing Normal Distributions</title>
+      <link>https://bbengfort.github.io/2016/06/normal-distribution-viz/</link>
+      <pubDate>Mon, 27 Jun 2016 08:28:07 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/06/normal-distribution-viz/</guid>
+      <description>Normal distributions are the backbone of random number generation for simulation. By selecting a mean (μ) and standard deviation (σ) you can generate simulated data representative of the types of models you&amp;rsquo;re trying to build (and certainly better than simple uniform random number generators). However, you might already be able to tell that selecting μ and σ is a little backward! Typically these metrics are computed from data, not used to describe data.</description>
+    </item>
+    
+    <item>
+      <title>Background Work with Goroutines on a Timer</title>
+      <link>https://bbengfort.github.io/2016/06/background-work-goroutines-timer/</link>
+      <pubDate>Sun, 26 Jun 2016 06:52:38 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/06/background-work-goroutines-timer/</guid>
+      <description>As I&amp;rsquo;m moving deeper into my PhD, I&amp;rsquo;m getting into more Go programming for the systems that I&amp;rsquo;m building. One thing that I&amp;rsquo;m constantly doing is trying to create a background process that runs forever, and does some work at an interval. Concurrency in Go is native and therefore the use of threads and parallel processing is very simple, syntax-wise. However I am still solving problems that I wanted to make sure I recorded here.</description>
+    </item>
+    
+    <item>
+      <title>Converting NetworkX to Graph-Tool</title>
+      <link>https://bbengfort.github.io/2016/06/graph-tool-from-networkx/</link>
+      <pubDate>Thu, 23 Jun 2016 19:21:58 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/06/graph-tool-from-networkx/</guid>
+      <description>This week I discovered graph-tool, a Python library for network analysis and visualization that is implemented in C++ with Boost. As a result, it can quickly and efficiently perform manipulations, statistical analyses of Graphs, and draw them in a visual pleasing style. It&amp;rsquo;s like using Python with the performance of C++, and I was rightly excited:
+It&amp;#39;s a bear to get setup, but once you do things get pretty nice. Moving my network viz over to it now!</description>
+    </item>
+    
+    <item>
+      <title>Text Classification with NLTK and Scikit-Learn</title>
+      <link>https://bbengfort.github.io/2016/05/text-classification-nltk-sckit-learn/</link>
+      <pubDate>Thu, 19 May 2016 08:06:40 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/05/text-classification-nltk-sckit-learn/</guid>
+      <description>This post is an early draft of expanded work that will eventually appear on the District Data Labs Blog. Your feedback is welcome, and you can submit your comments on the draft GitHub issue.
+ I&amp;rsquo;ve often been asked which is better for text processing, NLTK or Scikit-Learn (and sometimes Gensim). The answer is that I use all three tools on a regular basis, but I often have a problem mixing and matching them or combining them in meaningful ways.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Microservice in Go</title>
+      <link>https://bbengfort.github.io/2016/05/a-microservice-in-go/</link>
+      <pubDate>Wed, 11 May 2016 09:52:13 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/05/a-microservice-in-go/</guid>
+      <description>Yesterday I built my first microservice (a RESTful API) using Go, and I wanted to collect a few of my thoughts on the experience here before I forgot them. The project, Scribo, is intended to aid in my research by collecting data about a specific network that I&amp;rsquo;m looking to build distributed systems for. I do have something running, which will need to evolve a lot, and it could be helpful to know where it started.</description>
+    </item>
+    
+    <item>
+      <title>Extracting Diffs from Git with Python</title>
+      <link>https://bbengfort.github.io/2016/05/git-diff-extract/</link>
+      <pubDate>Fri, 06 May 2016 08:43:29 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/05/git-diff-extract/</guid>
+      <description>One of the first steps to performing analysis of Git repositories is extracting the changes over time, e.g. the Git log. This seems like it should be a very simple thing to do, as visualizations on GitHub and elsewhere show file change analyses through history on a commit by commit basis. Moreover, by using the GitPython library you have direct access to Git repositories that is scriptable. Unfortunately, things aren&amp;rsquo;t as simple as that, so I present a snippet for extracting change information from a Repository.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing Distributed Systems</title>
+      <link>https://bbengfort.github.io/2016/04/visualizing-distributed-systems/</link>
+      <pubDate>Tue, 26 Apr 2016 11:34:42 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/04/visualizing-distributed-systems/</guid>
+      <description>As I&amp;rsquo;ve dug into my distributed systems research, one question keeps coming up: “How do you visualize distributed systems?” Distributed systems are hard, so it feels like being able to visualize the data flow would go a long way to understanding them in detail and avoiding bugs. Unfortunately, the same things that make architecting distributed systems difficult also make them hard to visualize.
+I don&amp;rsquo;t have an answer to this question, unfortunately.</description>
+    </item>
+    
+    <item>
+      <title>Scikit-Learn Data Management: Bunches</title>
+      <link>https://bbengfort.github.io/2016/04/bunch-data-management/</link>
+      <pubDate>Tue, 19 Apr 2016 11:29:30 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/04/bunch-data-management/</guid>
+      <description>One large issue that I encounter in development with machine learning is the need to structure our data on disk in a way that we can load into Scikit-Learn in a repeatable fashion for continued analysis. My proposal is to use the sklearn.datasets.base.Bunch object to load the data into data and target attributes respectively, similar to how Scikit-Learn&amp;rsquo;s toy datasets are structured. Using this object to manage our data will mirror the native API and allow us to easily copy and paste code that demonstrates classifiers and techniques with the built in datasets.</description>
+    </item>
+    
+    <item>
+      <title>Lessons in Discrete Event Simulation</title>
+      <link>https://bbengfort.github.io/2016/04/lessons-in-discrete-event-simulation/</link>
+      <pubDate>Fri, 15 Apr 2016 06:26:42 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/04/lessons-in-discrete-event-simulation/</guid>
+      <description>Part of my research involves the creation of large scale distributed systems, and while we do build these systems and deploy them, we do find that simulating them for development and research gives us an advantage in trying new things out. To that end, I employ discrete event simulation (DES) using Python&amp;rsquo;s SimPy library to build very large simulations of distributed systems, such as the one I&amp;rsquo;ve built to inspect consistency patterns in variable latency, heterogenous, partition prone networks: CloudScope.</description>
+    </item>
+    
+    <item>
+      <title>NLTK Corpus Reader for Extracted Corpus</title>
+      <link>https://bbengfort.github.io/2016/04/nltk-corpus-reader/</link>
+      <pubDate>Mon, 11 Apr 2016 21:03:18 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/04/nltk-corpus-reader/</guid>
+      <description>Yesterday I wrote a blog about [extracting a corpus]({% post_url 2016-04-10-extract-ddl-corpus %}) from a directory containing Markdown, such as for a blog that is deployed with Silvrback or Jekyll. In this post, I&amp;rsquo;ll briefly show how to use the built in CorpusReader objects in nltk for streaming the data to the segmentation and tokenization preprocessing functions that are built into NLTK for performing analytics.
+The dataset that I&amp;rsquo;ll be working with is the District Data Labs Blog, in particular the state of the blog as of today.</description>
+    </item>
+    
+    <item>
+      <title>Extracting the DDL Blog Corpus</title>
+      <link>https://bbengfort.github.io/2016/04/extract-ddl-corpus/</link>
+      <pubDate>Sun, 10 Apr 2016 06:44:28 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/04/extract-ddl-corpus/</guid>
+      <description>We have some simple text analyses coming up and as an example, I thought it might be nice to use the DDL blog corpus as a data set. There are relatively few DDL blogs, but they all are long with a lot of significant text and discourse. It might be interesting to try to do some lightweight analysis on them.
+So, how to extract the corpus? The DDL blog is currently hosted on Silvrback which is designed for text-forward, distraction-free blogging.</description>
+    </item>
+    
+    <item>
+      <title>Dispatching Types to Handler Methods</title>
+      <link>https://bbengfort.github.io/2016/04/dispatching-types-handler-methods/</link>
+      <pubDate>Tue, 05 Apr 2016 08:58:32 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/04/dispatching-types-handler-methods/</guid>
+      <description>A while I ago, I discussed the [observer pattern]({% post_url 2016-02-16-observer-pattern %}) for dispatching events based on a series of registered callbacks. In this post, I take a look at a similar, but very different methodology for dispatching based on type with pre-assigned handlers. For me, this is actually the more common pattern because the observer pattern is usually implemented as an API to outsider code. On the other hand, this type of dispatcher is usually a programmer&amp;rsquo;s pattern, used for development and decoupling.</description>
+    </item>
+    
+    <item>
+      <title>Class Variables</title>
+      <link>https://bbengfort.github.io/2016/04/class-variables/</link>
+      <pubDate>Mon, 04 Apr 2016 19:52:46 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/04/class-variables/</guid>
+      <description>These snippets are just a short reminder of how class variables work in Python. I understand this topic a bit too well, I think; I always remember the gotchas and can&amp;rsquo;t remember which gotcha belongs to which important detail. I generally come up with the right answer then convince myself I&amp;rsquo;m wrong until I write a bit of code and experiment. Hopefully this snippet will shortcut that process.
+Consider the following class hierarchy:</description>
+    </item>
+    
+    <item>
+      <title>Simple Password Generation</title>
+      <link>https://bbengfort.github.io/2016/03/password-generator/</link>
+      <pubDate>Wed, 30 Mar 2016 09:07:21 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/03/password-generator/</guid>
+      <description>I was talking with @looselycoupled the other day about how we generate passwords for use on websites. We both agree that every single domain should have its own password (to prevent one crack ruling all your Internets). However, we&amp;rsquo;ve both evolved on the method over time, and I&amp;rsquo;ve written a simple script that allows me to generate passwords using methodologies discussed in this post.
+In particular I use the generator to create passwords for pwSafe, the tool I currently use for password management (due to its use of the open source database format created by Bruce Schneier).</description>
+    </item>
+    
+    <item>
+      <title>Visualizing Pi with matplotlib</title>
+      <link>https://bbengfort.github.io/2016/03/pi-day/</link>
+      <pubDate>Mon, 14 Mar 2016 10:56:57 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/03/pi-day/</guid>
+      <description>Happy Pi day! As is the tradition at the University of Maryland (and to a certain extent, in my family) we are celebrating March 14 with pie and Pi. A shoutout to @konstantinosx who, during last year&amp;rsquo;s Pi day, requested blueberry pie, which was the strangest pie request I&amp;rsquo;ve received for Pi day. Not that blueberry pie is strange, just that someone would want one so badly for Pi day (he got a mixed berry pie).</description>
+    </item>
+    
+    <item>
+      <title>Adding a Git Commit to Header Comments</title>
+      <link>https://bbengfort.github.io/2016/03/git-version-id/</link>
+      <pubDate>Tue, 08 Mar 2016 13:57:56 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/03/git-version-id/</guid>
+      <description>You may have seen the following type of header at the top of my source code:
+# main # short description # # Author: Benjamin Bengfort &amp;lt;benjamin@bengfort.com&amp;gt; # Created: Tue Mar 08 14:07:24 2016 -0500 # # Copyright (C) 2016 Bengfort.com # For license information, see LICENSE.txt # # ID: main.py [] benjamin@bengfort.com $ All of this is pretty self explanatory with the exception of the final line. This final line is a throw back to Subversion actually, when you could add a $Id$ tag to your code, and Subversion would automatically populate it with something that looks like:</description>
+    </item>
+    
+    <item>
+      <title>The Bengfort Toolkit</title>
+      <link>https://bbengfort.github.io/2016/03/toolkit/</link>
+      <pubDate>Mon, 07 Mar 2016 13:32:14 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/03/toolkit/</guid>
+      <description>Programming life has finally caused me to give into something that I&amp;rsquo;ve resisted for a while: the creation of a Bengfort Toolkit and specifically a benlib. This post is mostly a reminder that this toolkit now exists and that I spent valuable time creating it against my better judgement. And as a result, I should probably use it and update it.
+I&amp;rsquo;ve already written (whoops, I almost said “you&amp;rsquo;ve already read” but I know no one reads this) posts about tools that I use frequently including [clock.</description>
+    </item>
+    
+    <item>
+      <title>Anonymizing User Profile Data with Faker</title>
+      <link>https://bbengfort.github.io/2016/02/anonymizing-profile-data/</link>
+      <pubDate>Thu, 25 Feb 2016 12:32:54 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/02/anonymizing-profile-data/</guid>
+      <description>This post is an early draft of expanded work that will eventually appear on the District Data Labs Blog. Your feedback is welcome, and you can submit your comments on the draft GitHub issue.
+ In order to learn (or teach) data science you need data (surprise!). The best libraries often come with a toy dataset to show examples and how the code works. However, nothing can replace an actual, non-trivial dataset for a tutorial or lesson because it provides for deep and meaningful further exploration.</description>
+    </item>
+    
+    <item>
+      <title>Implementing the Observer Pattern with an Event System</title>
+      <link>https://bbengfort.github.io/2016/02/observer-pattern/</link>
+      <pubDate>Tue, 16 Feb 2016 07:24:04 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/02/observer-pattern/</guid>
+      <description>I was looking back through some old code (hoping to find a quick post before I got back to work) when I ran across a project I worked on called Mortar. Mortar was a simple daemon that ran in the background and watched a particular directory. When a file was added or removed from that directory, Mortar would notify other services or perform some other task (e.g. if it was integrated into a library).</description>
+    </item>
+    
+    <item>
+      <title>Running on Schedule</title>
+      <link>https://bbengfort.github.io/2016/02/running-on-schedule/</link>
+      <pubDate>Wed, 10 Feb 2016 09:50:33 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/02/running-on-schedule/</guid>
+      <description>Automation with Python is a lovely thing, particularly for very repetitive or long running tasks; but unfortunately someone still has to press the button to make it go. It feels like there should be an easy way to set up a program such that it runs routinely, in the background, without much human intervention. Daemonized services are the route to go in server land; but how do you routinely schedule a process to run on your local computer, which may or may not be turned off1?</description>
+    </item>
+    
+    <item>
+      <title>Iterators and Generators</title>
+      <link>https://bbengfort.github.io/2016/02/iterators-generators/</link>
+      <pubDate>Fri, 05 Feb 2016 22:47:15 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/02/iterators-generators/</guid>
+      <description>This post is an attempt to explain what iterators and generators are in Python, defend the yield statement, and reveal why a library like SimPy is possible. But first some terminology (that specifically targets my friends who Java). Iteration is a syntactic construct that implements a loop over an iterable object. The for statement provides iteration, the while statement may provide iteration. An iterable object is something that implements the iteration protocol (Java folks, read interface).</description>
+    </item>
+    
+    <item>
+      <title>On Interval Calls with Threading</title>
+      <link>https://bbengfort.github.io/2016/02/intervals-with-threads/</link>
+      <pubDate>Tue, 02 Feb 2016 20:43:07 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/02/intervals-with-threads/</guid>
+      <description>Event driven programming can be a wonderful thing, particularly when the execution of your code is dependent on user input. It is for this reason that JavaScript and other user facing languages implement very strong event based semantics. Many times event driven semantics depends on elapsed time (e.g. wait then execute). Python, however, does not provide a native setTimeout or setInterval that will allow you to call a function after a specific amount of time, or to call a function again and again at a specific interval.</description>
+    </item>
+    
+    <item>
+      <title>Timeline Visualization with Matplotlib</title>
+      <link>https://bbengfort.github.io/2016/01/timeline-visualization/</link>
+      <pubDate>Thu, 28 Jan 2016 22:24:47 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/01/timeline-visualization/</guid>
+      <description>Several times it&amp;rsquo;s come up that I&amp;rsquo;ve needed to visualize a time sequence for a collection of events across multiple sources. Unlike a normal time series, events don&amp;rsquo;t necessarily have a magnitude, e.g. a stock market series is a graph with a time and a price. Events simply have times, and possibly types.
+A one dimensional number line is still interesting in this case, because the frequency or density of events reveal patterns that might not easily be analyzed with non-visual methods.</description>
+    </item>
+    
+    <item>
+      <title>Building a Console Utility with Commis</title>
+      <link>https://bbengfort.github.io/2016/01/console-utility-commis/</link>
+      <pubDate>Sat, 23 Jan 2016 08:46:18 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/01/console-utility-commis/</guid>
+      <description>Applications like Git or Django&amp;rsquo;s management utility provide a rich interaction between a software library and their users by exposing many subcommands from a single root command. This style of what is essentially better argument parsing simplifies the user experience by only forcing them to remember one primary command, and allows the exploration of the utility hierarchy by using --help and other visibility mechanisms. Moreover, it allows the utility writer to decouple different commands or actions from each other.</description>
+    </item>
+    
+    <item>
+      <title>Freezing Package Requirements</title>
+      <link>https://bbengfort.github.io/2016/01/freezing-requirements/</link>
+      <pubDate>Thu, 21 Jan 2016 10:23:06 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/01/freezing-requirements/</guid>
+      <description>I have a minor issue with freezing requirements, and so I put together a very complex solution. One that is documented here. Not 100% sure why this week is all about packaging, but there you go.
+First up, what is a requirement file? Basically they are a list of items that can be installed with pip using the following command:
+$ pip install -r requirements.txt  The file therefore mostly serves as a list of arguments to the pip install command.</description>
+    </item>
+    
+    <item>
+      <title>Packaging Python Libraries with PyPI</title>
+      <link>https://bbengfort.github.io/2016/01/packaging-with-pypi/</link>
+      <pubDate>Wed, 20 Jan 2016 15:33:06 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/01/packaging-with-pypi/</guid>
+      <description>Package deployment is something that is so completely necessary, but such a pain in the butt that I avoid it a little bit. However to reuse code in Python and to do awesome things like pip install mycode, you need to package it up and stick it on to PyPI (pronounced /pīˈpēˈī/ according to one site I read, though I still prefer /pīˈpī/). This process should be easy, but it&amp;rsquo;s detail oriented and there are only two good walk throughs (see links below).</description>
+    </item>
+    
+    <item>
+      <title>Better JSON Encoding</title>
+      <link>https://bbengfort.github.io/2016/01/better-json-encoding/</link>
+      <pubDate>Tue, 19 Jan 2016 14:26:27 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/01/better-json-encoding/</guid>
+      <description>The topic of the day is a simple one: JSON serialization. Here is my question, if you have a data structure like this:
+import json import datetime data = { &amp;#34;now&amp;#34;: datetime.datetime.now(), &amp;#34;range&amp;#34;: xrange(42), } Why can&amp;rsquo;t you do something as simple as: print json.dumps(data)? These are simple Python datetypes from the standard library. Granted serializing a datetime might have some complications, but JSON does have a datetime specification. Moreover, a generator is just an iterable, which can be put into memory as a list, which is exactly the kind of thing that JSON likes to serialize.</description>
+    </item>
+    
+    <item>
+      <title>Simple SQL Query Wrapper</title>
+      <link>https://bbengfort.github.io/2016/01/query-factory/</link>
+      <pubDate>Mon, 18 Jan 2016 10:52:00 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/01/query-factory/</guid>
+      <description>Programming with databases is a fact of life for any seasoned programmer (read, “worth their salt”). From embedded databases like SQLite and LevelDB to server databases like PostgreSQL, data management is a fundamental part of any significant project. The first thing I should say here is skip the ORM and learn SQL. SQL is such a powerful tool to query and manage a database, and is far more performant thanks to 40 years of research and development.</description>
+    </item>
+    
+    <item>
+      <title>The codetime and clock Commands</title>
+      <link>https://bbengfort.github.io/2016/01/codetime-and-clock/</link>
+      <pubDate>Tue, 12 Jan 2016 17:02:51 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/01/codetime-and-clock/</guid>
+      <description>If you&amp;rsquo;ve pair programmed with me, you might have seen me type something to the following effect on my terminal, particularly if I have just created a new file:
+$ codetime  Then somehow I can magically paste a formatted timestamp into the file! Well it&amp;rsquo;s not a mystery, in fact, it&amp;rsquo;s just a simple alias:
+alias codetime=&amp;#34;clock.py code | pbcopy&amp;#34; Oh, well that&amp;rsquo;s easy — why the blog post? Hey, what&amp;rsquo;s clock.</description>
+    </item>
+    
+    <item>
+      <title>Wrapping the Logging Module</title>
+      <link>https://bbengfort.github.io/2016/01/logging-mixin/</link>
+      <pubDate>Mon, 11 Jan 2016 08:15:05 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/01/logging-mixin/</guid>
+      <description>The standard library logging module is excellent. It is also quite tedious if you want to use it in a production system. In particular you have to figure out the following:
+ configuration of the formatters, handlers, and loggers object management throughout the script (e.g. the logging.getLogger function) adding extra context to log messages for more complex formatters handling and logging warnings (and to a lesser extent, exceptions)  The logging module actually does all of these things.</description>
+    </item>
+    
+    <item>
+      <title>Simple CLI Script with Argparse</title>
+      <link>https://bbengfort.github.io/2016/01/simple-cli-argparse/</link>
+      <pubDate>Sun, 10 Jan 2016 14:48:14 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/01/simple-cli-argparse/</guid>
+      <description>Let&amp;rsquo;s face it, most of the Python programs we write are going to be used from the command line. There are tons of command line interface helper libraries out there. My preferred CLI method is the style of Django&amp;rsquo;s management utility. More on this later, when we hopefully publish a library that gives us that out of the box (we use it in many of our projects already).
+Sometimes though, you just want a simple CLI script.</description>
+    </item>
+    
+    <item>
+      <title>Basic Python Project Files</title>
+      <link>https://bbengfort.github.io/2016/01/project-start/</link>
+      <pubDate>Sat, 09 Jan 2016 14:01:59 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/01/project-start/</guid>
+      <description>I don&amp;rsquo;t use project templates like cookiecutter. I&amp;rsquo;m sure they&amp;rsquo;re fine, but when I start a new project I like to get a cup of coffee, go to my zen place and manually create the workspace. It gets me in the right place to code. Here&amp;rsquo;s the thing, there is a right way to set up a Python project. Plus, I have a particular style for my repositories — particularly how I use Creative Commons Flickr photos as the header for my README files.</description>
+    </item>
+    
+    <item>
+      <title>Frequently Copied and Pasted</title>
+      <link>https://bbengfort.github.io/2016/01/frequently-copy-pasted/</link>
+      <pubDate>Fri, 08 Jan 2016 23:14:57 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/01/frequently-copy-pasted/</guid>
+      <description>I have a bit of catch up to do — and I think that this notepad and development journal is the perfect resource to do it. You see, I am constantly copy and pasting code from other projects into the current project that I&amp;rsquo;m working on. Usually this takes the form of a problem that I had solved previously that has a similar domain to a new problem, but requires a slight amount of tweaking.</description>
+    </item>
+    
+    <item>
+      <title>One Big Gift Selection Algorithm</title>
+      <link>https://bbengfort.github.io/2015/12/one-big-gift/</link>
+      <pubDate>Fri, 25 Dec 2015 11:54:12 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2015/12/one-big-gift/</guid>
+      <description>My family does &amp;ldquo;one big gift&amp;rdquo; every Christmas; that is instead of everyone simply buying everyone else a smaller gift; every person is assigned to one other person to give them a single large gift. Selection of who gives what to who is a place of some (minor) conflict. Therefore we simply use a random algorithm. Unfortunately, apparently a uniform random sample of pairs is not enough, therefore we take 100 samples to vote for each combination to see who gets what as follows:</description>
+    </item>
+    
+  </channel>
+</rss>

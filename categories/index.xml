@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Libelli</title>
+    <link>https://bbengfort.github.io/categories/</link>
+    <description>Recent content in Categories on Libelli</description>
+    <image>
+      <url>https://bbengfort.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://bbengfort.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Mar 2021 09:53:49 -0400</lastBuildDate><atom:link href="https://bbengfort.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>snippets</title>
+      <link>https://bbengfort.github.io/categories/snippets/</link>
+      <pubDate>Sun, 14 Mar 2021 09:53:49 -0400</pubDate>
+      
+      <guid>https://bbengfort.github.io/categories/snippets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>observations</title>
+      <link>https://bbengfort.github.io/categories/observations/</link>
+      <pubDate>Tue, 23 Feb 2021 08:28:22 -0500</pubDate>
+      
+      <guid>https://bbengfort.github.io/categories/observations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorials</title>
+      <link>https://bbengfort.github.io/categories/tutorials/</link>
+      <pubDate>Wed, 09 Oct 2019 16:40:08 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/categories/tutorials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programmer</title>
+      <link>https://bbengfort.github.io/categories/programmer/</link>
+      <pubDate>Sat, 22 Sep 2018 09:58:12 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/categories/programmer/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

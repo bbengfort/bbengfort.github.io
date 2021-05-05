@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>observations on Libelli</title>
+    <link>https://bbengfort.github.io/categories/observations/</link>
+    <description>Recent content in observations on Libelli</description>
+    <image>
+      <url>https://bbengfort.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://bbengfort.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Feb 2021 08:28:22 -0500</lastBuildDate><atom:link href="https://bbengfort.github.io/categories/observations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go Closures &amp; Interfaces</title>
+      <link>https://bbengfort.github.io/2021/02/go-closures-interfaces/</link>
+      <pubDate>Tue, 23 Feb 2021 08:28:22 -0500</pubDate>
+      
+      <guid>https://bbengfort.github.io/2021/02/go-closures-interfaces/</guid>
+      <description>Strict typing in the Go programming language provides safety and performance that is valuable even if it does increase the verbosity of code. If there is a drawback to be found with strict typing, it is usually felt by library developers who require flexibility to cover different use cases, and most often appears as a suite of type-named functions such as lib.HandleString, lib.HandleUint64, lib.HandleBool and so on. Go does provide two important language tools that do provide a lot of flexibility in library development: closures and interfaces, which we will explore in this post.</description>
+    </item>
+    
+    <item>
+      <title>New Hugo Theme</title>
+      <link>https://bbengfort.github.io/2021/01/new-hugo-theme/</link>
+      <pubDate>Sun, 24 Jan 2021 17:12:16 -0500</pubDate>
+      
+      <guid>https://bbengfort.github.io/2021/01/new-hugo-theme/</guid>
+      <description>A facelift for Libelli today! I moved from Jekyll to Hugo for static site generation, a move that has been long overdue — and I&amp;rsquo;m very happy I&amp;rsquo;ve done it. Not only can I take advantage of a new theme with extra functionality (PaperMod in this case) but also because Hugo is written in Go, I feel like I have more control over how the site gets generated.
+A lot has been said on this topic, if you&amp;rsquo;re thinking about migrating from Jekyll to Hugo, I recommend Sara Soueidan&amp;rsquo;s blog post — the notes here are Libelli specific and are listed here more as notes than anything else.</description>
+    </item>
+    
+    <item>
+      <title>Streaming Remote Throughput</title>
+      <link>https://bbengfort.github.io/2018/09/streaming-remote-throughput/</link>
+      <pubDate>Tue, 11 Sep 2018 15:19:17 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/09/streaming-remote-throughput/</guid>
+      <description>In order to improve the performance of asynchronous message passing in Alia, I&amp;rsquo;m using gRPC bidirectional streaming to create the peer to peer connections. When the replica is initialized it creates a remote connection to each of its peers that lives in its own go routine; any other thread can send messages by passing them to that go routine through a channel, replies are then dispatched via another channel, directed to the thread via an actor dispatching model.</description>
+    </item>
+    
+    <item>
+      <title>Synchronization in Write Throughput</title>
+      <link>https://bbengfort.github.io/2018/02/sync-write-throughput/</link>
+      <pubDate>Tue, 13 Feb 2018 07:10:06 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2018/02/sync-write-throughput/</guid>
+      <description>This post serves as a reminder of how to perform benchmarks when accounting for synchronized writing in Go. The normal benchmarking process involves running a command a large number of times and determining the average amount of time that operation took. When threads come into play, we consider throughput - that is the number of operations that can be conducted per second. However, in order to successfully measure this without duplicating time, the throughput must be measured from the server&amp;rsquo;s perspective.</description>
+    </item>
+    
+    <item>
+      <title>Transaction Handling with Psycopg2</title>
+      <link>https://bbengfort.github.io/2017/12/psycopg2-transactions/</link>
+      <pubDate>Wed, 06 Dec 2017 13:58:16 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/12/psycopg2-transactions/</guid>
+      <description>Databases are essential to most applications, however most database interaction is often overlooked by Python developers who use higher level libraries like Django or SQLAlchemy. We use and love PostgreSQL with Psycopg2, but I recently realized that I didn&amp;rsquo;t have a good grasp on how exactly psycopg2 implemented core database concepts: particularly transaction isolation and thread safety.
+Here&amp;rsquo;s what the documentation says regarding transactions:
+ Transactions are handled by the connection class.</description>
+    </item>
+    
+    <item>
+      <title>Messaging Throughput gRPC vs. ZMQ</title>
+      <link>https://bbengfort.github.io/2017/09/message-throughput/</link>
+      <pubDate>Mon, 04 Sep 2017 17:20:06 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/09/message-throughput/</guid>
+      <description>Building distributed systems in Go requires an RPC or message framework of some sort. In the systems I build I prefer to pass messages serialized with protocol buffers therefore a natural choice for me is grpc. The grpc library uses HTTP2 as a transport layer and provides a code generator based on the protocol buffer syntax making it very simple to use.
+For more detailed control, the ZMQ library is an excellent, low latency socket framework.</description>
+    </item>
+    
+    <item>
+      <title>Buffered Write Performance</title>
+      <link>https://bbengfort.github.io/2017/08/buffered-writes/</link>
+      <pubDate>Thu, 03 Aug 2017 09:48:19 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/08/buffered-writes/</guid>
+      <description>This is just a quick note on the performance of writing to a file on disk using Go, and reveals a question about a common programming paradigm that I am now suspicious of. I discovered that when I wrapped the open file object with a bufio.Writer that the performance of my writes to disk significantly increased. Ok, so this isn&amp;rsquo;t about simple file writing to disk, this is about a complex writer that does some seeking in the file writing to different positions and maintains the overall state of what&amp;rsquo;s on disk in memory, however the question remains:</description>
+    </item>
+    
+    <item>
+      <title>On the Tracks with Rails</title>
+      <link>https://bbengfort.github.io/2017/07/on-track-with-rails/</link>
+      <pubDate>Thu, 06 Jul 2017 08:15:13 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/07/on-track-with-rails/</guid>
+      <description>I&amp;rsquo;m preparing to move into a new job when I finish my dissertation hopefully later this summer. The new role involves web application development with Rails and so I needed to get up to speed. I had a web application requirement for my research so I figured I&amp;rsquo;d knock out two birds with one stone and build that app with Rails (a screenshot of the app is above, though of course this is just a front-end and doesn&amp;rsquo;t really tell you it was built with Rails).</description>
+    </item>
+    
+    <item>
+      <title>Compression Benchmarks</title>
+      <link>https://bbengfort.github.io/2017/06/compression-benchmarks/</link>
+      <pubDate>Wed, 07 Jun 2017 10:45:35 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/06/compression-benchmarks/</guid>
+      <description>One of the projects I&amp;rsquo;m currently working on is the ingestion of RSS feeds into a Mongo database. It&amp;rsquo;s been running for the past year, and as of this post has collected 1,575,987 posts for 373 feeds after 8,126 jobs. This equates to about 585GB of raw data, and a firm requirement for compression in order to exchange data.
+Recently, @ojedatony1616 downloaded the compressed zip file (53GB) onto a 1TB external hard disk and attempted to decompress it.</description>
+    </item>
+    
+    <item>
+      <title>Unique Values in Python: A Benchmark</title>
+      <link>https://bbengfort.github.io/2017/05/python-unique-benchmark/</link>
+      <pubDate>Tue, 02 May 2017 14:24:18 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/05/python-unique-benchmark/</guid>
+      <description>An interesting question came up in the development of Yellowbrick: given a vector of values, what is the quickest way to get the unique values? Ok, so maybe this isn&amp;rsquo;t a terribly interesting question, however the results surprised us and may surprise you as well. First we&amp;rsquo;ll do a little background, then I&amp;rsquo;ll give the results and then discuss the benchmarking method.
+The problem comes up in Yellowbrick when we want to get the discrete values for a target vector, y — a problem that comes up in classification tasks.</description>
+    </item>
+    
+    <item>
+      <title>Measuring Throughput</title>
+      <link>https://bbengfort.github.io/2017/04/throughput/</link>
+      <pubDate>Fri, 28 Apr 2017 15:22:40 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/04/throughput/</guid>
+      <description>Part of my research is taking me down a path where I want to measure the number of reads and writes from a client to a storage server. A key metric that we&amp;rsquo;re looking for is throughput — the number of accesses per second that a system supports. As I discovered in a very simple test to get some baseline metrics, even this simple metric can have some interesting complications.</description>
+    </item>
+    
+    <item>
+      <title>A Benchmark of Grumpy Transpiling</title>
+      <link>https://bbengfort.github.io/2017/03/grumpy-transpiling-fib-benchmark/</link>
+      <pubDate>Thu, 23 Mar 2017 08:47:04 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/03/grumpy-transpiling-fib-benchmark/</guid>
+      <description>On Tuesday evening I attended a Django District meetup on Grumpy, a transpiler from Python to Go. Because it was a Python meetup, the talk naturally focused on introducing Go to a Python audience, and because it was a Django meetup, we also focused on web services. The premise for Grumpy, as discussed in the announcing Google blog post, is also a web focused one — to take YouTube&amp;rsquo;s API that&amp;rsquo;s primarily written in Python and transpile it to Go to improve the overall performance and stability of YouTube&amp;rsquo;s front-end services.</description>
+    </item>
+    
+    <item>
+      <title>Contributing a Multiprocess Memory Profiler</title>
+      <link>https://bbengfort.github.io/2017/03/contributing-a-multiprocess-memory-profiler/</link>
+      <pubDate>Mon, 20 Mar 2017 11:42:58 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/03/contributing-a-multiprocess-memory-profiler/</guid>
+      <description>In this post I wanted to catalog the process of an open source contribution I was a part of, which added a feature to the memory profiler Python library by Fabian Pedregosa and Philippe Gervais. It&amp;rsquo;s a quick story to tell but took over a year to complete, and I learned a lot from the process. I hope that the story is revealing, particularly to first time contributors and shows that even folks that have been doing this for a long time still have to find ways to positively approach collaboration in an open source environment.</description>
+    </item>
+    
+    <item>
+      <title>FUSE Calls on Go Writes</title>
+      <link>https://bbengfort.github.io/2017/01/fuse-calls/</link>
+      <pubDate>Thu, 26 Jan 2017 20:04:40 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2017/01/fuse-calls/</guid>
+      <description>For close-to-open consistency, we need to be able to implement a file system that can detect atomic changes to a single file. Most programming languages implement open() and close() methods for files - but what they are really modifying is the access of a handle to an open file that the operating system provides. Writes are buffered in an asynchronous fashion so that the operating system and user program don&amp;rsquo;t have to wait for the spinning disk to figure itself out before carrying on.</description>
+    </item>
+    
+    <item>
+      <title>Message Latency: Ping vs. gRPC</title>
+      <link>https://bbengfort.github.io/2016/11/ping-vs-grpc/</link>
+      <pubDate>Wed, 02 Nov 2016 15:46:31 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/11/ping-vs-grpc/</guid>
+      <description>Building distributed systems means passing messages between devices over a network connection. My research specifically considers networks that have extremely variable latencies or that can be partition prone. This led me to the natural question, “how variable are real world networks?” In order to get real numbers, I built a simple echo protocol using Go and gRPC called Orca.
+I ran Orca for a few days and got some latency measurements as I traveled around with my laptop.</description>
+    </item>
+    
+    <item>
+      <title>Computing Reading Speed</title>
+      <link>https://bbengfort.github.io/2016/10/reading-speed/</link>
+      <pubDate>Fri, 28 Oct 2016 13:16:24 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/10/reading-speed/</guid>
+      <description>Ashley and I have been going over the District Data Labs Blog trying to figure out a method to make it more accessible both to readers (who are at various levels) and to encourage writers to contribute. To that end, she&amp;rsquo;s been exploring other blogs to see if we can put multiple forms of content up; long form tutorials (the bulk of what&amp;rsquo;s there) and shorter idea articles, possibly even as short as the posts I put on my dev journal.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing Distributed Systems</title>
+      <link>https://bbengfort.github.io/2016/04/visualizing-distributed-systems/</link>
+      <pubDate>Tue, 26 Apr 2016 11:34:42 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/04/visualizing-distributed-systems/</guid>
+      <description>As I&amp;rsquo;ve dug into my distributed systems research, one question keeps coming up: “How do you visualize distributed systems?” Distributed systems are hard, so it feels like being able to visualize the data flow would go a long way to understanding them in detail and avoiding bugs. Unfortunately, the same things that make architecting distributed systems difficult also make them hard to visualize.
+I don&amp;rsquo;t have an answer to this question, unfortunately.</description>
+    </item>
+    
+    <item>
+      <title>Lessons in Discrete Event Simulation</title>
+      <link>https://bbengfort.github.io/2016/04/lessons-in-discrete-event-simulation/</link>
+      <pubDate>Fri, 15 Apr 2016 06:26:42 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/2016/04/lessons-in-discrete-event-simulation/</guid>
+      <description>Part of my research involves the creation of large scale distributed systems, and while we do build these systems and deploy them, we do find that simulating them for development and research gives us an advantage in trying new things out. To that end, I employ discrete event simulation (DES) using Python&amp;rsquo;s SimPy library to build very large simulations of distributed systems, such as the one I&amp;rsquo;ve built to inspect consistency patterns in variable latency, heterogenous, partition prone networks: CloudScope.</description>
+    </item>
+    
+  </channel>
+</rss>

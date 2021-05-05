@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://bbengfort.github.io/categories/</loc>
+    <lastmod>2021-03-14T09:53:49-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/</loc>
+    <lastmod>2021-03-14T09:53:49-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2021/03/nonlinear-workflow-planning-software-projects/</loc>
+    <lastmod>2021-03-14T09:53:49-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/posts/</loc>
+    <lastmod>2021-03-14T09:53:49-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/categories/snippets/</loc>
+    <lastmod>2021-03-14T09:53:49-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2021/02/go-closures-interfaces/</loc>
+    <lastmod>2021-02-23T08:28:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/categories/observations/</loc>
+    <lastmod>2021-02-23T08:28:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2021/01/new-hugo-theme/</loc>
+    <lastmod>2021-01-24T17:12:16-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2021/01/grpc-openapi-docs/</loc>
+    <lastmod>2021-01-21T17:45:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2020/12/self-signed-ca/</loc>
+    <lastmod>2020-12-30T15:51:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2020/11/mac-cleanup/</loc>
+    <lastmod>2020-11-24T14:26:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2020/10/go-multiple-errors/</loc>
+    <lastmod>2020-10-22T11:45:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2020/08/zipfiles-json/</loc>
+    <lastmod>2020-08-20T11:41:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2020/07/read-mprofile-into-pandas/</loc>
+    <lastmod>2020-07-27T18:16:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2020/07/basic-python-profiling/</loc>
+    <lastmod>2020-07-14T18:01:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2019/10/launch-jupyterhub-server/</loc>
+    <lastmod>2019-10-09T16:40:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/categories/tutorials/</loc>
+    <lastmod>2019-10-09T16:40:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2019/02/mount-ebs-volume/</loc>
+    <lastmod>2019-02-05T12:48:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2018/09/blast-throughput/</loc>
+    <lastmod>2018-09-26T17:06:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2018/09/go-testing-notes/</loc>
+    <lastmod>2018-09-22T09:58:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/categories/programmer/</loc>
+    <lastmod>2018-09-22T09:58:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2018/09/streaming-remote-throughput/</loc>
+    <lastmod>2018-09-11T15:19:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2018/09/future-date/</loc>
+    <lastmod>2018-09-05T17:42:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2018/08/aggregating-go-channels/</loc>
+    <lastmod>2018-08-25T08:28:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2018/08/actor-model/</loc>
+    <lastmod>2018-08-03T07:27:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2018/06/corenlp-nltk-parses/</loc>
+    <lastmod>2018-06-22T14:38:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2018/05/continuing-outer-loops-for-else/</loc>
+    <lastmod>2018-05-17T09:02:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2018/03/prediction-balance/</loc>
+    <lastmod>2018-03-08T09:18:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2018/02/prediction-distribution/</loc>
+    <lastmod>2018-02-28T12:52:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2018/02/sync-write-throughput/</loc>
+    <lastmod>2018-02-13T07:10:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2018/01/go-set/</loc>
+    <lastmod>2018-01-26T09:15:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2018/01/cli-editor-app/</loc>
+    <lastmod>2018-01-06T09:30:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/12/psycopg2-transactions/</loc>
+    <lastmod>2017-12-06T13:58:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/09/lock-diagnostics/</loc>
+    <lastmod>2017-09-28T10:44:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/09/lock-queueing/</loc>
+    <lastmod>2017-09-08T11:31:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/09/message-throughput/</loc>
+    <lastmod>2017-09-04T17:20:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/08/online-distribution/</loc>
+    <lastmod>2017-08-28T12:49:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/08/rapid-fs-walk/</loc>
+    <lastmod>2017-08-18T15:33:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/08/buffered-writes/</loc>
+    <lastmod>2017-08-03T09:48:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/07/event-dispatcher/</loc>
+    <lastmod>2017-07-21T06:28:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/07/lazy-pirate/</loc>
+    <lastmod>2017-07-14T10:24:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/07/zmq-basic/</loc>
+    <lastmod>2017-07-13T11:00:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/07/pid-management/</loc>
+    <lastmod>2017-07-11T09:10:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/07/public-ip/</loc>
+    <lastmod>2017-07-09T13:14:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/07/on-track-with-rails/</loc>
+    <lastmod>2017-07-06T08:15:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/06/concurrent-subprocesses-fabric/</loc>
+    <lastmod>2017-06-14T15:56:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/06/append-json-results/</loc>
+    <lastmod>2017-06-12T16:04:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/06/compression-benchmarks/</loc>
+    <lastmod>2017-06-07T10:45:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/05/test-decorators/</loc>
+    <lastmod>2017-05-22T13:05:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/05/in-process-caches/</loc>
+    <lastmod>2017-05-17T08:16:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/05/python-unique-benchmark/</loc>
+    <lastmod>2017-05-02T14:24:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/04/throughput/</loc>
+    <lastmod>2017-04-28T15:22:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/04/oauth-token-command-line/</loc>
+    <lastmod>2017-04-20T10:26:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/04/gmail-notifications-python/</loc>
+    <lastmod>2017-04-17T12:26:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/03/grumpy-transpiling-fib-benchmark/</loc>
+    <lastmod>2017-03-23T08:47:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/03/sanely-grpc-dial-a-remote/</loc>
+    <lastmod>2017-03-21T16:27:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/03/contributing-a-multiprocess-memory-profiler/</loc>
+    <lastmod>2017-03-20T11:42:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/03/pseudo-merkle-tree/</loc>
+    <lastmod>2017-03-16T12:23:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/03/channel-select/</loc>
+    <lastmod>2017-03-08T10:52:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/03/tls-grpc-benchmarks/</loc>
+    <lastmod>2017-03-05T17:26:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/03/secure-grpc/</loc>
+    <lastmod>2017-03-03T09:41:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/02/synchronizing-structs/</loc>
+    <lastmod>2017-02-21T10:48:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/02/chunking/</loc>
+    <lastmod>2017-02-08T19:51:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/02/extract-toc/</loc>
+    <lastmod>2017-02-05T09:11:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/01/fuse-inmem-fs/</loc>
+    <lastmod>2017-01-30T16:17:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/01/fuse-calls/</loc>
+    <lastmod>2017-01-26T20:04:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/01/syscall-errno/</loc>
+    <lastmod>2017-01-23T14:29:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/01/run-until-err/</loc>
+    <lastmod>2017-01-19T11:00:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/01/generic-json-serialization-go/</loc>
+    <lastmod>2017-01-18T11:31:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2017/01/resolving-matplotlib-colors/</loc>
+    <lastmod>2017-01-17T14:52:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/12/benchmarking-readlines/</loc>
+    <lastmod>2016-12-23T10:18:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/12/yielding-functions-for-iteration-golang/</loc>
+    <lastmod>2016-12-22T06:54:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/11/exception-handling/</loc>
+    <lastmod>2016-11-21T12:53:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/11/svg-timer-vertex/</loc>
+    <lastmod>2016-11-04T10:30:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/11/ping-vs-grpc/</loc>
+    <lastmod>2016-11-02T15:46:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/10/reading-speed/</loc>
+    <lastmod>2016-10-28T13:16:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/09/image-aspect-ratio/</loc>
+    <lastmod>2016-09-13T14:19:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/09/serialize-graphml/</loc>
+    <lastmod>2016-09-09T17:13:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/09/parallel-enqueue-and-work/</loc>
+    <lastmod>2016-09-07T14:29:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/08/parallel-nlp-preprocessing/</loc>
+    <lastmod>2016-08-12T22:09:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/08/pretty-print-directories/</loc>
+    <lastmod>2016-08-01T12:17:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/07/color-mapper/</loc>
+    <lastmod>2016-07-15T16:28:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/06/normal-distribution-viz/</loc>
+    <lastmod>2016-06-27T08:28:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/06/background-work-goroutines-timer/</loc>
+    <lastmod>2016-06-26T06:52:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/06/graph-tool-from-networkx/</loc>
+    <lastmod>2016-06-23T19:21:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/05/text-classification-nltk-sckit-learn/</loc>
+    <lastmod>2016-05-19T08:06:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/05/a-microservice-in-go/</loc>
+    <lastmod>2016-05-11T09:52:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/05/git-diff-extract/</loc>
+    <lastmod>2016-05-06T08:43:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/04/visualizing-distributed-systems/</loc>
+    <lastmod>2016-04-26T11:34:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/04/bunch-data-management/</loc>
+    <lastmod>2016-04-19T11:29:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/04/lessons-in-discrete-event-simulation/</loc>
+    <lastmod>2016-04-15T06:26:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/04/nltk-corpus-reader/</loc>
+    <lastmod>2016-04-11T21:03:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/04/extract-ddl-corpus/</loc>
+    <lastmod>2016-04-10T06:44:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/04/dispatching-types-handler-methods/</loc>
+    <lastmod>2016-04-05T08:58:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/04/class-variables/</loc>
+    <lastmod>2016-04-04T19:52:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/03/password-generator/</loc>
+    <lastmod>2016-03-30T09:07:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/03/pi-day/</loc>
+    <lastmod>2016-03-14T10:56:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/03/git-version-id/</loc>
+    <lastmod>2016-03-08T13:57:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/03/toolkit/</loc>
+    <lastmod>2016-03-07T13:32:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/02/anonymizing-profile-data/</loc>
+    <lastmod>2016-02-25T12:32:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/02/observer-pattern/</loc>
+    <lastmod>2016-02-16T07:24:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/02/running-on-schedule/</loc>
+    <lastmod>2016-02-10T09:50:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/02/iterators-generators/</loc>
+    <lastmod>2016-02-05T22:47:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/02/intervals-with-threads/</loc>
+    <lastmod>2016-02-02T20:43:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/01/timeline-visualization/</loc>
+    <lastmod>2016-01-28T22:24:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/01/console-utility-commis/</loc>
+    <lastmod>2016-01-23T08:46:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/01/freezing-requirements/</loc>
+    <lastmod>2016-01-21T10:23:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/01/packaging-with-pypi/</loc>
+    <lastmod>2016-01-20T15:33:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/01/better-json-encoding/</loc>
+    <lastmod>2016-01-19T14:26:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/01/query-factory/</loc>
+    <lastmod>2016-01-18T10:52:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/01/codetime-and-clock/</loc>
+    <lastmod>2016-01-12T17:02:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/01/logging-mixin/</loc>
+    <lastmod>2016-01-11T08:15:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/01/simple-cli-argparse/</loc>
+    <lastmod>2016-01-10T14:48:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/01/project-start/</loc>
+    <lastmod>2016-01-09T14:01:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2016/01/frequently-copy-pasted/</loc>
+    <lastmod>2016-01-08T23:14:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/2015/12/one-big-gift/</loc>
+    <lastmod>2015-12-25T11:54:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/archive/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/search/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bbengfort.github.io/tags/</loc>
+  </url>
+  
+</urlset>

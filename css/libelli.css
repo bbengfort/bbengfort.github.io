@@ -1,0 +1,21 @@
+/*
+ * Bengfort Specific Styles
+ *
+ * Styles that Ben has put in specifically for Libelli.
+ */
+
+ul.checklist {
+    list-style: none;
+}
+
+ul.checklist li:before {
+    font-size: .9em;
+    font-family: 'FontAwesome';
+    content: '\f046';
+    margin: 0 5px 0 -22px;
+}
+
+figcaption {
+    margin-top: 0px;
+    color: red;
+}
