@@ -1,6 +1,6 @@
 # Libelli
 
-[![Build Status](https://travis-ci.org/bbengfort/bbengfort.github.io.svg?branch=master)](https://travis-ci.org/bbengfort/bbengfort.github.io)
+[![Build Status](https://travis-ci.org/bbengfort/bbengfort.github.io.svg?branch=main)](https://travis-ci.org/bbengfort/bbengfort.github.io)
 
 **My Github Pages repository for bengfort.github.io**
 
@@ -24,7 +24,7 @@ Note that the `-D` flag builds drafts and enables you to work on posts before th
 
 Images should be added to the `static/images` folder using a path in the form of `YYYY-MM-DD-image-name.png` -- this is a throwback to the old Jekyll site, and I'd prefer to use content bundles, but we haven't quite made that transition yet. Embed images into markdown posts using the standard markdown with a link from the absolute `images` directory, e.g. `/images/YYYY-MM-DD-image-name.png` from the example above.
 
-To deploy, simply push to the master branch and Travis-CI will deploy the contents of the `public` directory to GitHub pages. For manual deployment, use the `bin/publish.sh` script.
+To deploy, simply push to the main branch and Travis-CI will deploy the contents of the `public` directory to GitHub pages. For manual deployment, use the `bin/publish.sh` script.
 
 ## About
 
