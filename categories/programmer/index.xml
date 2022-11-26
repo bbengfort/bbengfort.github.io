@@ -18,7 +18,7 @@
       
       <guid>https://bbengfort.github.io/2018/09/go-testing-notes/</guid>
       <description>In this post I&amp;rsquo;m just going to maintain a list of notes for Go testing that I seem to commonly need to reference. It will also serve as an index for the posts related to testing that I have to commonly look up as well. Here is a quick listing of the table of contents:
- Basics Table Driven Tests Fixtures  Golden Files   Frameworks  No Framework Ginkgo &amp;amp; Gomega   Helpers  Temporary Directories   Sources and References  Basics Just a quick reminder of how to write tests, benchmarks, and examples.</description>
+Basics Table Driven Tests Fixtures Golden Files Frameworks No Framework Ginkgo &amp;amp; Gomega Helpers Temporary Directories Sources and References Basics Just a quick reminder of how to write tests, benchmarks, and examples.</description>
     </item>
     
     <item>
@@ -28,9 +28,9 @@
       
       <guid>https://bbengfort.github.io/2017/03/tls-grpc-benchmarks/</guid>
       <description>A natural question to ask after the previous post is “how much overhead does security add?” So I&amp;rsquo;ve benchmarked the three methods discussed; mutual TLS, server-side TLS, and no encryption. The results are below:
-
 Here are the numeric results for one of the runs:
-BenchmarkMutualTLS-8 200	9331850 ns/op BenchmarkServerTLS-8 300	5004505 ns/op BenchmarkInsecure-8 2000	1179252 ns/op PASS ok github.com/bbengfort/sping	7.364s Here is the code for the benchmarking for reference:</description>
+BenchmarkMutualTLS-8 200	9331850 ns/op BenchmarkServerTLS-8 300	5004505 ns/op BenchmarkInsecure-8 2000	1179252 ns/op PASS ok github.com/bbengfort/sping	7.364s Here is the code for the benchmarking for reference:
+var ( server *PingServer client *PingClient ) func BenchmarkMutualTLS(b *testing.</description>
     </item>
     
     <item>
@@ -68,7 +68,7 @@ In Go, the FUSE library is implemented by bazil.</description>
       
       <guid>https://bbengfort.github.io/2017/01/resolving-matplotlib-colors/</guid>
       <description>One of the challenges we&amp;rsquo;ve been dealing with in the Yellowbrick library is the proper resolution of colors, a problem that seems to have parallels in matplotlib as well. The issue is that colors can be described by the user in a variety of ways, then that description has to be parsed and rendered as specific colors. To name a few color specifications that exist in matplotlib:
- None: choose a reasonable default color The name of the color, e.</description>
+None: choose a reasonable default color The name of the color, e.</description>
     </item>
     
     <item>
@@ -125,7 +125,7 @@ I&amp;rsquo;ve already written (whoops, I almost said “you&amp;rsquo;ve alread
       
       <guid>https://bbengfort.github.io/2016/02/anonymizing-profile-data/</guid>
       <description>This post is an early draft of expanded work that will eventually appear on the District Data Labs Blog. Your feedback is welcome, and you can submit your comments on the draft GitHub issue.
- In order to learn (or teach) data science you need data (surprise!). The best libraries often come with a toy dataset to show examples and how the code works. However, nothing can replace an actual, non-trivial dataset for a tutorial or lesson because it provides for deep and meaningful further exploration.</description>
+In order to learn (or teach) data science you need data (surprise!). The best libraries often come with a toy dataset to show examples and how the code works. However, nothing can replace an actual, non-trivial dataset for a tutorial or lesson because it provides for deep and meaningful further exploration.</description>
     </item>
     
     <item>

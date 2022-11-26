@@ -47,7 +47,7 @@ Exceptions Exceptions are a tool that programmers use to describe errors or faul
       
       <guid>https://bbengfort.github.io/2016/05/text-classification-nltk-sckit-learn/</guid>
       <description>This post is an early draft of expanded work that will eventually appear on the District Data Labs Blog. Your feedback is welcome, and you can submit your comments on the draft GitHub issue.
- I&amp;rsquo;ve often been asked which is better for text processing, NLTK or Scikit-Learn (and sometimes Gensim). The answer is that I use all three tools on a regular basis, but I often have a problem mixing and matching them or combining them in meaningful ways.</description>
+I&amp;rsquo;ve often been asked which is better for text processing, NLTK or Scikit-Learn (and sometimes Gensim). The answer is that I use all three tools on a regular basis, but I often have a problem mixing and matching them or combining them in meaningful ways.</description>
     </item>
     
     <item>

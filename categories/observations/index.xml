@@ -56,7 +56,7 @@ A lot has been said on this topic, if you&amp;rsquo;re thinking about migrating 
       <guid>https://bbengfort.github.io/2017/12/psycopg2-transactions/</guid>
       <description>Databases are essential to most applications, however most database interaction is often overlooked by Python developers who use higher level libraries like Django or SQLAlchemy. We use and love PostgreSQL with Psycopg2, but I recently realized that I didn&amp;rsquo;t have a good grasp on how exactly psycopg2 implemented core database concepts: particularly transaction isolation and thread safety.
 Here&amp;rsquo;s what the documentation says regarding transactions:
- Transactions are handled by the connection class.</description>
+Transactions are handled by the connection class.</description>
     </item>
     
     <item>

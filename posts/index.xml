@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Mar 2021 09:53:49 -0400</lastBuildDate><atom:link href="https://bbengfort.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Nov 2022 12:24:25 -0600</lastBuildDate><atom:link href="https://bbengfort.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Atomic vs Mutex</title>
+      <link>https://bbengfort.github.io/2022/11/atomic-vs-mutex/</link>
+      <pubDate>Sat, 26 Nov 2022 12:24:25 -0600</pubDate>
+      
+      <guid>https://bbengfort.github.io/2022/11/atomic-vs-mutex/</guid>
+      <description>When implementing Go code, I find myself chasing increased concurrency performance by trying to reduce the number of locks in my code. Often I wonder if using the sync/atomic package is a better choice because I know (as proved by this blog post) that atomics have far more performance than mutexes. The issue is that reading on the internet, including the package documentation itself strongly recommends relying on channels, then mutexes, and finally atomics only if you know what you&amp;rsquo;re doing.</description>
+    </item>
+    
     <item>
       <title>Nonlinear Workflow for Planning Software Projects</title>
       <link>https://bbengfort.github.io/2021/03/nonlinear-workflow-planning-software-projects/</link>
@@ -130,7 +139,7 @@ $ lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT loop0 7:0 0 86.9M 1 loop /snap/c
       
       <guid>https://bbengfort.github.io/2018/09/blast-throughput/</guid>
       <description>Blast throughput is what we call a throughput measurement such that N requests are simultaneously sent to the server and the duration to receive responses for all N requests is recorded. The throughput is computed as N/duration where duration is in seconds. This is the typical and potentially correct way to measure throughput from a client to a server, however issues do arise in distributed systems land:
- the requests must all originate from a single client high latency response outliers can skew results you must be confident that N is big enough to max out the server N mustn&amp;rsquo;t be so big as to create non-server related bottlenecks.</description>
+the requests must all originate from a single client high latency response outliers can skew results you must be confident that N is big enough to max out the server N mustn&amp;rsquo;t be so big as to create non-server related bottlenecks.</description>
     </item>
     
     <item>
@@ -140,7 +149,7 @@ $ lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT loop0 7:0 0 86.9M 1 loop /snap/c
       
       <guid>https://bbengfort.github.io/2018/09/go-testing-notes/</guid>
       <description>In this post I&amp;rsquo;m just going to maintain a list of notes for Go testing that I seem to commonly need to reference. It will also serve as an index for the posts related to testing that I have to commonly look up as well. Here is a quick listing of the table of contents:
- Basics Table Driven Tests Fixtures  Golden Files   Frameworks  No Framework Ginkgo &amp;amp; Gomega   Helpers  Temporary Directories   Sources and References  Basics Just a quick reminder of how to write tests, benchmarks, and examples.</description>
+Basics Table Driven Tests Fixtures Golden Files Frameworks No Framework Ginkgo &amp;amp; Gomega Helpers Temporary Directories Sources and References Basics Just a quick reminder of how to write tests, benchmarks, and examples.</description>
     </item>
     
     <item>
@@ -186,8 +195,8 @@ $ lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT loop0 7:0 0 86.9M 1 loop /snap/c
       
       <guid>https://bbengfort.github.io/2018/06/corenlp-nltk-parses/</guid>
       <description>Syntactic parsing is a technique by which segmented, tokenized, and part-of-speech tagged text is assigned a structure that reveals the relationships between tokens governed by syntax rules, e.g. by grammars. Consider the sentence:
- The factory employs 12.8 percent of Bradford County.
- A syntax parse produces a tree that might help us understand that the subject of the sentence is &amp;ldquo;the factory&amp;rdquo;, the predicate is &amp;ldquo;employs&amp;rdquo;, and the target is &amp;ldquo;12.</description>
+The factory employs 12.8 percent of Bradford County.
+A syntax parse produces a tree that might help us understand that the subject of the sentence is &amp;ldquo;the factory&amp;rdquo;, the predicate is &amp;ldquo;employs&amp;rdquo;, and the target is &amp;ldquo;12.8 percent&amp;rdquo;, which in turn is modified by &amp;ldquo;Bradford County&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -255,7 +264,7 @@ The base of the visualization is a class balance chart, the x-axis is the actual
       <guid>https://bbengfort.github.io/2017/12/psycopg2-transactions/</guid>
       <description>Databases are essential to most applications, however most database interaction is often overlooked by Python developers who use higher level libraries like Django or SQLAlchemy. We use and love PostgreSQL with Psycopg2, but I recently realized that I didn&amp;rsquo;t have a good grasp on how exactly psycopg2 implemented core database concepts: particularly transaction isolation and thread safety.
 Here&amp;rsquo;s what the documentation says regarding transactions:
- Transactions are handled by the connection class.</description>
+Transactions are handled by the connection class.</description>
     </item>
     
     <item>
@@ -265,7 +274,7 @@ Here&amp;rsquo;s what the documentation says regarding transactions:
       
       <guid>https://bbengfort.github.io/2017/09/lock-diagnostics/</guid>
       <description>By now it&amp;rsquo;s pretty clear that I&amp;rsquo;ve just had a bear of a time with locks and synchronization inside of multi-threaded environments with Go. Probably most gophers would simply tell me that I should share memory by communicating rather than to communication by sharing memory — and frankly I&amp;rsquo;m in that camp too. The issue is that:
- Mutexes can be more expressive than channels Channels are fairly heavyweight  So to be honest, there are situations where a mutex is a better choice than a channel.</description>
+Mutexes can be more expressive than channels Channels are fairly heavyweight So to be honest, there are situations where a mutex is a better choice than a channel.</description>
     </item>
     
     <item>
@@ -349,7 +358,7 @@ The spec of the routine was to build a data structure that could keep track of i
       
       <guid>https://bbengfort.github.io/2017/07/pid-management/</guid>
       <description>In this discussion, I want to propose some code to perform PID file management in a Go program. When a program is backgrounded or daemonized we need some way to communicate with it in order to stop it. All active processes are assigned a unique process id by the operating system and that ID can be used to send signals to the program. Therefore a PID file:
- The pid files contains the process id (a number) of a given program.</description>
+The pid files contains the process id (a number) of a given program.</description>
     </item>
     
     <item>
@@ -378,7 +387,7 @@ In order to get a service running on an internal network, you can port forward e
       
       <guid>https://bbengfort.github.io/2017/06/concurrent-subprocesses-fabric/</guid>
       <description>I&amp;rsquo;ve ben using Fabric to concurrently start multiple processes on several machines. These processes have to run at the same time (since they are experimental processes and are interacting with each other) and shut down at more or less the same time so that I can collect results and immediately execute the next sample in the experiment. However, I was having a some difficulties directly using Fabric:
- Fabric can parallelize one task across multiple hosts accordint to roles.</description>
+Fabric can parallelize one task across multiple hosts accordint to roles.</description>
     </item>
     
     <item>
@@ -389,7 +398,7 @@ In order to get a service running on an internal network, you can port forward e
       <guid>https://bbengfort.github.io/2017/06/append-json-results/</guid>
       <description>In my current experimental setup, each process is a single instance of sample, from start to finish. This means that I need to aggregate results across multiple process runs that are running concurrently. Moreover, I may need to aggregate those results between machines.
 The most compact format to store results in is CSV. This was my first approach and it had some benefits including:
- small file sizes readability CSV files can just be concatenated together  The problems were:</description>
+small file sizes readability CSV files can just be concatenated together The problems were:</description>
     </item>
     
     <item>
@@ -474,7 +483,7 @@ The problem comes up in Yellowbrick when we want to get the discrete values for 
       
       <guid>https://bbengfort.github.io/2017/03/sanely-grpc-dial-a-remote/</guid>
       <description>In my systems I need to handle failure; so unlike in a typical client-server relationship, I&amp;rsquo;m prepared for the remote I&amp;rsquo;m dialing to not be available. Unfortunately when you do this with gRPC-Go there are a couple of annoyances you have to address. They are (in order of solutions):
- Verbose connection logging Background and back-off for reconnection attempts Errors are not returned on demand. There is no ability to keep track of statistics  So first the logging.</description>
+Verbose connection logging Background and back-off for reconnection attempts Errors are not returned on demand. There is no ability to keep track of statistics So first the logging.</description>
     </item>
     
     <item>
@@ -512,9 +521,9 @@ A common pattern for me has become to use a select to manage broadcasted work (e
       
       <guid>https://bbengfort.github.io/2017/03/tls-grpc-benchmarks/</guid>
       <description>A natural question to ask after the previous post is “how much overhead does security add?” So I&amp;rsquo;ve benchmarked the three methods discussed; mutual TLS, server-side TLS, and no encryption. The results are below:
-
 Here are the numeric results for one of the runs:
-BenchmarkMutualTLS-8 200	9331850 ns/op BenchmarkServerTLS-8 300	5004505 ns/op BenchmarkInsecure-8 2000	1179252 ns/op PASS ok github.com/bbengfort/sping	7.364s Here is the code for the benchmarking for reference:</description>
+BenchmarkMutualTLS-8 200	9331850 ns/op BenchmarkServerTLS-8 300	5004505 ns/op BenchmarkInsecure-8 2000	1179252 ns/op PASS ok github.com/bbengfort/sping	7.364s Here is the code for the benchmarking for reference:
+var ( server *PingServer client *PingClient ) func BenchmarkMutualTLS(b *testing.</description>
     </item>
     
     <item>
@@ -552,7 +561,7 @@ In any shared memory system the biggest concern is synchronization: ensuring tha
       
       <guid>https://bbengfort.github.io/2017/02/extract-toc/</guid>
       <description>In today&amp;rsquo;s addition of “really simple things that come in handy all the time” I present a simple script to extract the table of contents from markdown or asciidoc files:
- So this is pretty simple, just use regular expressions to look for lines that start with one or more &amp;quot;#&amp;quot; or &amp;quot;=&amp;quot; (for markdown and asciidoc, respectively) and print them out with an indent according to their depth (e.g. indent ## heading 2 one block).</description>
+So this is pretty simple, just use regular expressions to look for lines that start with one or more &amp;quot;#&amp;quot; or &amp;quot;=&amp;quot; (for markdown and asciidoc, respectively) and print them out with an indent according to their depth (e.g. indent ## heading 2 one block).</description>
     </item>
     
     <item>
@@ -609,7 +618,7 @@ type Person struct { Name string `json:&amp;#34;name,omitempty&amp;#34;` Age int
       
       <guid>https://bbengfort.github.io/2017/01/resolving-matplotlib-colors/</guid>
       <description>One of the challenges we&amp;rsquo;ve been dealing with in the Yellowbrick library is the proper resolution of colors, a problem that seems to have parallels in matplotlib as well. The issue is that colors can be described by the user in a variety of ways, then that description has to be parsed and rendered as specific colors. To name a few color specifications that exist in matplotlib:
- None: choose a reasonable default color The name of the color, e.</description>
+None: choose a reasonable default color The name of the color, e.</description>
     </item>
     
     <item>
@@ -684,7 +693,7 @@ I ran Orca for a few days and got some latency measurements as I traveled around
       
       <guid>https://bbengfort.github.io/2016/09/serialize-graphml/</guid>
       <description>This is mostly a post of annoyance. I&amp;rsquo;ve been working with graphs in Python via NetworkX and trying to serialize them to GraphML for use in Gephi and graph-tool. Unfortunately the following error is really starting to get on my nerves:
-networkx.exception.NetworkXError: GraphML writer does not support &amp;lt;class &#39;datetime.datetime&#39;&amp;gt; as data values. Also it doesn&amp;rsquo;t support &amp;lt;type NoneType&amp;gt; or list or dict or &amp;hellip;
+networkx.exception.NetworkXError: GraphML writer does not support &amp;lt;class &amp;#39;datetime.datetime&amp;#39;&amp;gt; as data values. Also it doesn&amp;rsquo;t support &amp;lt;type NoneType&amp;gt; or list or dict or &amp;hellip;
 So I have to do something about it:</description>
     </item>
     
@@ -749,7 +758,7 @@ So I have to do something about it:</description>
       
       <guid>https://bbengfort.github.io/2016/06/graph-tool-from-networkx/</guid>
       <description>This week I discovered graph-tool, a Python library for network analysis and visualization that is implemented in C++ with Boost. As a result, it can quickly and efficiently perform manipulations, statistical analyses of Graphs, and draw them in a visual pleasing style. It&amp;rsquo;s like using Python with the performance of C++, and I was rightly excited:
-It&amp;#39;s a bear to get setup, but once you do things get pretty nice. Moving my network viz over to it now!</description>
+It&amp;#39;s a bear to get setup, but once you do things get pretty nice.</description>
     </item>
     
     <item>
@@ -759,7 +768,7 @@ It&amp;#39;s a bear to get setup, but once you do things get pretty nice. Moving
       
       <guid>https://bbengfort.github.io/2016/05/text-classification-nltk-sckit-learn/</guid>
       <description>This post is an early draft of expanded work that will eventually appear on the District Data Labs Blog. Your feedback is welcome, and you can submit your comments on the draft GitHub issue.
- I&amp;rsquo;ve often been asked which is better for text processing, NLTK or Scikit-Learn (and sometimes Gensim). The answer is that I use all three tools on a regular basis, but I often have a problem mixing and matching them or combining them in meaningful ways.</description>
+I&amp;rsquo;ve often been asked which is better for text processing, NLTK or Scikit-Learn (and sometimes Gensim). The answer is that I use all three tools on a regular basis, but I often have a problem mixing and matching them or combining them in meaningful ways.</description>
     </item>
     
     <item>
@@ -893,7 +902,7 @@ I&amp;rsquo;ve already written (whoops, I almost said “you&amp;rsquo;ve alread
       
       <guid>https://bbengfort.github.io/2016/02/anonymizing-profile-data/</guid>
       <description>This post is an early draft of expanded work that will eventually appear on the District Data Labs Blog. Your feedback is welcome, and you can submit your comments on the draft GitHub issue.
- In order to learn (or teach) data science you need data (surprise!). The best libraries often come with a toy dataset to show examples and how the code works. However, nothing can replace an actual, non-trivial dataset for a tutorial or lesson because it provides for deep and meaningful further exploration.</description>
+In order to learn (or teach) data science you need data (surprise!). The best libraries often come with a toy dataset to show examples and how the code works. However, nothing can replace an actual, non-trivial dataset for a tutorial or lesson because it provides for deep and meaningful further exploration.</description>
     </item>
     
     <item>
@@ -959,7 +968,7 @@ A one dimensional number line is still interesting in this case, because the fre
       <guid>https://bbengfort.github.io/2016/01/freezing-requirements/</guid>
       <description>I have a minor issue with freezing requirements, and so I put together a very complex solution. One that is documented here. Not 100% sure why this week is all about packaging, but there you go.
 First up, what is a requirement file? Basically they are a list of items that can be installed with pip using the following command:
-$ pip install -r requirements.txt  The file therefore mostly serves as a list of arguments to the pip install command.</description>
+$ pip install -r requirements.txt The file therefore mostly serves as a list of arguments to the pip install command.</description>
     </item>
     
     <item>
@@ -997,7 +1006,7 @@ import json import datetime data = { &amp;#34;now&amp;#34;: datetime.datetime.no
       
       <guid>https://bbengfort.github.io/2016/01/codetime-and-clock/</guid>
       <description>If you&amp;rsquo;ve pair programmed with me, you might have seen me type something to the following effect on my terminal, particularly if I have just created a new file:
-$ codetime  Then somehow I can magically paste a formatted timestamp into the file! Well it&amp;rsquo;s not a mystery, in fact, it&amp;rsquo;s just a simple alias:
+$ codetime Then somehow I can magically paste a formatted timestamp into the file! Well it&amp;rsquo;s not a mystery, in fact, it&amp;rsquo;s just a simple alias:
 alias codetime=&amp;#34;clock.py code | pbcopy&amp;#34; Oh, well that&amp;rsquo;s easy — why the blog post? Hey, what&amp;rsquo;s clock.</description>
     </item>
     
@@ -1008,7 +1017,7 @@ alias codetime=&amp;#34;clock.py code | pbcopy&amp;#34; Oh, well that&amp;rsquo;
       
       <guid>https://bbengfort.github.io/2016/01/logging-mixin/</guid>
       <description>The standard library logging module is excellent. It is also quite tedious if you want to use it in a production system. In particular you have to figure out the following:
- configuration of the formatters, handlers, and loggers object management throughout the script (e.g. the logging.getLogger function) adding extra context to log messages for more complex formatters handling and logging warnings (and to a lesser extent, exceptions)  The logging module actually does all of these things.</description>
+configuration of the formatters, handlers, and loggers object management throughout the script (e.g. the logging.getLogger function) adding extra context to log messages for more complex formatters handling and logging warnings (and to a lesser extent, exceptions) The logging module actually does all of these things.</description>
     </item>
     
     <item>
