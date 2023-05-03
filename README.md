@@ -1,6 +1,6 @@
 # Libelli
 
-[![Build Status](https://travis-ci.org/bbengfort/bbengfort.github.io.svg?branch=main)](https://travis-ci.org/bbengfort/bbengfort.github.io)
+[![Publish](https://github.com/bbengfort/bbengfort.github.io/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/bbengfort/bbengfort.github.io/actions/workflows/publish.yml)
 
 **My Github Pages repository for bengfort.github.io**
 
@@ -24,11 +24,11 @@ Note that the `-D` flag builds drafts and enables you to work on posts before th
 
 Images should be added to the `static/images` folder using a path in the form of `YYYY-MM-DD-image-name.png` -- this is a throwback to the old Jekyll site, and I'd prefer to use content bundles, but we haven't quite made that transition yet. Embed images into markdown posts using the standard markdown with a link from the absolute `images` directory, e.g. `/images/YYYY-MM-DD-image-name.png` from the example above.
 
-To deploy, simply push to the main branch and Travis-CI will deploy the contents of the `public` directory to GitHub pages. For manual deployment, use the `bin/publish.sh` script.
+To deploy, simply push to the main branch and GitHub Actions will deploy the contents of the `public` directory to GitHub pages. For manual deployment, use the `bin/publish.sh` script.
 
 ## About
 
-This page is primarily my development journal and really only contains notes and ramblings for me to refer to as I practice programming. Please feel free to read and use anything you find on this site, but note it is not meant for publication or wide public consumption. If you want to find my more formal writing, check out the [District Data Labs Blog](http://blog.districtdatalabs.com/) where I write about Python, data science, streaming, distributed systems, and more.
+This page is primarily my development journal and really only contains notes and ramblings for me to refer to as I practice programming. Please feel free to read and use anything you find on this site, but note it is not meant for publication or wide public consumption. If you want to find my more formal writing, check out the [Rotational Labs Blog](https://rotational.io/blog/) where I write about Golang, distributed systems, Python, data science, streaming, and more.
 
 ### Name Origin
 
