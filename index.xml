@@ -10,7 +10,18 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Nov 2022 12:24:25 -0600</lastBuildDate><atom:link href="https://bbengfort.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 May 2023 10:30:16 -0500</lastBuildDate><atom:link href="https://bbengfort.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Faster Protocol Buffer Serialization</title>
+      <link>https://bbengfort.github.io/2023/05/faster-protocol-buffer-serialization/</link>
+      <pubDate>Wed, 03 May 2023 10:30:16 -0500</pubDate>
+      
+      <guid>https://bbengfort.github.io/2023/05/faster-protocol-buffer-serialization/</guid>
+      <description>Performance is key when building streaming gRPC services. When you&amp;rsquo;re trying to maximize throughput (e.g. messages per second) benchmarking is essential to understanding where the bottlenecks in your application are.
+However, as a start, you can pretty much guarantee that one bottleneck is going to be the serialization (marshaling) and deserialization (unmarshaling) of protocol buffer messages.
+We have a use case where the server does not need all of the information in the message in order to process the message.</description>
+    </item>
+    
     <item>
       <title>Atomic vs Mutex</title>
       <link>https://bbengfort.github.io/2022/11/atomic-vs-mutex/</link>

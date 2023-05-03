@@ -2,16 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bbengfort.github.io/2022/11/atomic-vs-mutex/</loc>
-    <lastmod>2022-11-26T12:24:25-06:00</lastmod>
-  </url><url>
     <loc>https://bbengfort.github.io/categories/</loc>
-    <lastmod>2022-11-26T12:24:25-06:00</lastmod>
+    <lastmod>2023-05-03T10:30:16-05:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/2023/05/faster-protocol-buffer-serialization/</loc>
+    <lastmod>2023-05-03T10:30:16-05:00</lastmod>
   </url><url>
     <loc>https://bbengfort.github.io/</loc>
-    <lastmod>2022-11-26T12:24:25-06:00</lastmod>
+    <lastmod>2023-05-03T10:30:16-05:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/categories/observations/</loc>
+    <lastmod>2023-05-03T10:30:16-05:00</lastmod>
   </url><url>
     <loc>https://bbengfort.github.io/posts/</loc>
+    <lastmod>2023-05-03T10:30:16-05:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/2022/11/atomic-vs-mutex/</loc>
     <lastmod>2022-11-26T12:24:25-06:00</lastmod>
   </url><url>
     <loc>https://bbengfort.github.io/categories/snippets/</loc>
@@ -21,9 +27,6 @@
     <lastmod>2021-03-14T09:53:49-04:00</lastmod>
   </url><url>
     <loc>https://bbengfort.github.io/2021/02/go-closures-interfaces/</loc>
-    <lastmod>2021-02-23T08:28:22-05:00</lastmod>
-  </url><url>
-    <loc>https://bbengfort.github.io/categories/observations/</loc>
     <lastmod>2021-02-23T08:28:22-05:00</lastmod>
   </url><url>
     <loc>https://bbengfort.github.io/2021/01/new-hugo-theme/</loc>
