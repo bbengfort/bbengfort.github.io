@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Libelli</title>
     <link>https://bbengfort.github.io/</link>
     <description>Recent content on Libelli</description>
-    <image>
-      <url>https://bbengfort.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://bbengfort.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 May 2023 10:30:16 -0500</lastBuildDate><atom:link href="https://bbengfort.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -1077,7 +1073,23 @@ Sometimes though, you just want a simple CLI script.</description>
       <description>about</description>
     </item>
     
+    <item>
+      <title>Archive</title>
+      <link>https://bbengfort.github.io/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/archive/</guid>
+      <description>archive</description>
+    </item>
     
+    <item>
+      <title>Search</title>
+      <link>https://bbengfort.github.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bbengfort.github.io/search/</guid>
+      <description>search</description>
+    </item>
     
   </channel>
 </rss>
