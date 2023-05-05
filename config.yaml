@@ -10,7 +10,7 @@ buildFuture: false
 buildExpired: false
 enableInlineShortcodes: true
 
-googleAnalytics: UA-8096804-11
+googleAnalytics: G-D3BE7EHHVP
 minify:
     disableXML: true
     minifyOutput: true
