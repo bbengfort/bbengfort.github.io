@@ -9,44 +9,37 @@
       <url>https://bbengfort.github.io/bear.png</url>
       <link>https://bbengfort.github.io/bear.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 May 2023 10:30:16 -0500</lastBuildDate><atom:link href="https://bbengfort.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 May 2023 10:30:16 -0500</lastBuildDate>
+    <atom:link href="https://bbengfort.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>observations</title>
+      <title>Observations</title>
       <link>https://bbengfort.github.io/categories/observations/</link>
       <pubDate>Wed, 03 May 2023 10:30:16 -0500</pubDate>
-      
       <guid>https://bbengfort.github.io/categories/observations/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>snippets</title>
+      <title>Snippets</title>
       <link>https://bbengfort.github.io/categories/snippets/</link>
       <pubDate>Sat, 26 Nov 2022 12:24:25 -0600</pubDate>
-      
       <guid>https://bbengfort.github.io/categories/snippets/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>tutorials</title>
+      <title>Tutorials</title>
       <link>https://bbengfort.github.io/categories/tutorials/</link>
       <pubDate>Wed, 09 Oct 2019 16:40:08 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/categories/tutorials/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>programmer</title>
+      <title>Programmer</title>
       <link>https://bbengfort.github.io/categories/programmer/</link>
       <pubDate>Sat, 22 Sep 2018 09:58:12 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/categories/programmer/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

@@ -1,169 +1,177 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>programmer on Libelli</title>
+    <title>Programmer on Libelli</title>
     <link>https://bbengfort.github.io/categories/programmer/</link>
-    <description>Recent content in programmer on Libelli</description>
+    <description>Recent content in Programmer on Libelli</description>
     <image>
       <title>Libelli</title>
       <url>https://bbengfort.github.io/bear.png</url>
       <link>https://bbengfort.github.io/bear.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Sep 2018 09:58:12 +0000</lastBuildDate><atom:link href="https://bbengfort.github.io/categories/programmer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Sep 2018 09:58:12 +0000</lastBuildDate>
+    <atom:link href="https://bbengfort.github.io/categories/programmer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go Testing Notes</title>
       <link>https://bbengfort.github.io/2018/09/go-testing-notes/</link>
       <pubDate>Sat, 22 Sep 2018 09:58:12 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2018/09/go-testing-notes/</guid>
-      <description>In this post I&amp;rsquo;m just going to maintain a list of notes for Go testing that I seem to commonly need to reference. It will also serve as an index for the posts related to testing that I have to commonly look up as well. Here is a quick listing of the table of contents:
-Basics Table Driven Tests Fixtures Golden Files Frameworks No Framework Ginkgo &amp;amp; Gomega Helpers Temporary Directories Sources and References Basics Just a quick reminder of how to write tests, benchmarks, and examples.</description>
+      <description>&lt;p&gt;In this post I&amp;rsquo;m just going to maintain a list of notes for Go testing that I seem to commonly need to reference. It will also serve as an index for the posts related to testing that I have to commonly look up as well. Here is a quick listing of the table of contents:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#basics&#34;&gt;Basics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#table-driven-tests&#34;&gt;Table Driven Tests&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#fixtures&#34;&gt;Fixtures&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#golden-files&#34;&gt;Golden Files&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#frameworks&#34;&gt;Frameworks&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#no-framework&#34;&gt;No Framework&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ginkgo--gomega&#34;&gt;Ginkgo &amp;amp; Gomega&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#helpers&#34;&gt;Helpers&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#temporary-directories&#34;&gt;Temporary Directories&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sources-and-references&#34;&gt;Sources and References&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;
+&lt;p&gt;Just a quick reminder of how to write tests, benchmarks, and examples. A test is written as follows:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Benchmarking Secure gRPC</title>
       <link>https://bbengfort.github.io/2017/03/tls-grpc-benchmarks/</link>
       <pubDate>Sun, 05 Mar 2017 17:26:24 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2017/03/tls-grpc-benchmarks/</guid>
-      <description>A natural question to ask after the previous post is “how much overhead does security add?” So I&amp;rsquo;ve benchmarked the three methods discussed; mutual TLS, server-side TLS, and no encryption. The results are below:
-Here are the numeric results for one of the runs:
-BenchmarkMutualTLS-8 200	9331850 ns/op BenchmarkServerTLS-8 300	5004505 ns/op BenchmarkInsecure-8 2000	1179252 ns/op PASS ok github.com/bbengfort/sping	7.364s Here is the code for the benchmarking for reference:
-var ( server *PingServer client *PingClient ) func BenchmarkMutualTLS(b *testing.</description>
+      <description>&lt;p&gt;A natural question to ask after the previous post is “how much overhead does security add?” So I&amp;rsquo;ve benchmarked the three methods discussed; mutual TLS, server-side TLS, and no encryption. The results are below:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://bbengfort.github.io/images/2017-03-05-benchmark.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://bbengfort.github.io/images/2017-03-05-benchmark.png&#34; alt=&#34;Secure gRPC Benchmarks&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here are the numeric results for one of the runs:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;BenchmarkMutualTLS-8   	     200	   9331850 ns/op
+BenchmarkServerTLS-8   	     300	   5004505 ns/op
+BenchmarkInsecure-8    	    2000	   1179252 ns/op
+PASS
+ok  	github.com/bbengfort/sping	7.364s
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here is the code for the benchmarking for reference:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Secure gRPC with TLS/SSL</title>
       <link>https://bbengfort.github.io/2017/03/secure-grpc/</link>
       <pubDate>Fri, 03 Mar 2017 09:41:39 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2017/03/secure-grpc/</guid>
-      <description>One of the primary requirements for the systems we build is something we call the “minimum security requirement”. Although our systems are not designed specifically for high security applications, they must use minimum standards of encryption and authentication. For example, it seems obvious to me that a web application that stores passwords or credit card information would encrypt their data on disk on a per-record basis with a salted hash. In the same way, a distributed system must be able to handle encrypted blobs, encrypt all inter-node communication, and authenticate and sign all messages.</description>
+      <description>&lt;p&gt;One of the primary requirements for the systems we build is something we call the “minimum security requirement”. Although our systems are not designed specifically for high security applications, they must use minimum standards of encryption and authentication. For example, it seems obvious to me that a web application that &lt;a href=&#34;https://docs.djangoproject.com/en/1.10/topics/auth/passwords/&#34;&gt;stores passwords&lt;/a&gt; or &lt;a href=&#34;https://www.pcisecuritystandards.org/&#34;&gt;credit card information&lt;/a&gt; would encrypt their data on disk on a per-record basis with a &lt;a href=&#34;https://www.codeproject.com/Articles/704865/Salted-Password-Hashing-Doing-it-Right&#34;&gt;salted hash&lt;/a&gt;. In the same way, a distributed system must be able to handle &lt;a href=&#34;https://www.usenix.org/legacy/event/osdi04/tech/full_papers/li_j/li_j.pdf&#34;&gt;encrypted blobs&lt;/a&gt;, &lt;a href=&#34;http://blog.cloudera.com/blog/2013/03/how-to-set-up-a-hadoop-cluster-with-network-encryption/&#34;&gt;encrypt all inter-node communication&lt;/a&gt;, and &lt;a href=&#34;https://alexbilbie.com/2012/11/hawk-a-new-http-authentication-scheme/&#34;&gt;authenticate and sign all messages&lt;/a&gt;. This adds some overhead to the system but the cost of overhead is far smaller than the cost of a breach, and if minimum security is the baseline then the overhead is just an accepted part of doing business.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fixed vs. Variable Length Chunking</title>
       <link>https://bbengfort.github.io/2017/02/chunking/</link>
       <pubDate>Wed, 08 Feb 2017 19:51:28 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2017/02/chunking/</guid>
-      <description>FluidFS and other file systems break large files into recipes of hash-identified blobs of binary data. Blobs can then be replicated with far more ease than a single file, as well as streamed from disk in a memory safe manner. Blobs are treated as single, independent units so the underlying data store doesn&amp;rsquo;t grow as files are duplicated. Finally, blobs can be encrypted individually and provide more opportunities for privacy.</description>
+      <description>&lt;p&gt;FluidFS and other file systems break large files into recipes of hash-identified blobs of binary data. Blobs can then be replicated with far more ease than a single file, as well as streamed from disk in a memory safe manner. Blobs are treated as single, independent units so the underlying data store doesn&amp;rsquo;t grow as files are duplicated. Finally, blobs can be encrypted individually and provide more opportunities for privacy.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>In-Memory File System with FUSE</title>
       <link>https://bbengfort.github.io/2017/01/fuse-inmem-fs/</link>
       <pubDate>Mon, 30 Jan 2017 16:17:26 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2017/01/fuse-inmem-fs/</guid>
-      <description>The Filesystem in Userspace (FUSE) software interface allows developers to create file systems without editing kernel code. This is especially useful when creating replicated file systems, file protocols, backup systems, or other computer systems that require intervention for FS operations but not an entire operating system. FUSE works by running the FS code as a user process while FUSE provides a bridge through a request/response protocol to the kernel.
-In Go, the FUSE library is implemented by bazil.</description>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://en.wikipedia.org/wiki/Filesystem_in_Userspace&#34;&gt;Filesystem in Userspace (FUSE)&lt;/a&gt; software interface allows developers to create file systems without editing kernel code. This is especially useful when creating replicated file systems, file protocols, backup systems, or other computer systems that require intervention for FS operations but not an entire operating system. FUSE works by running the FS code as a user process while FUSE provides a bridge through a request/response protocol to the kernel.&lt;/p&gt;
+&lt;p&gt;In Go, the FUSE library is implemented by &lt;a href=&#34;https://github.com/bazil/fuse&#34;&gt;bazil.org/fuse&lt;/a&gt;. It is a from-scratch implementation of the kernel-userspace communication protocol and does not use the C library. The library has been excellent for research implementations, particularly because Go is such an excellent language (named &lt;a href=&#34;http://www.tiobe.com/tiobe-index/&#34;&gt;programming language of 2016&lt;/a&gt;). However, it does lead to some questions (particularly because of the questions in the Go documentation):&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Resolving Matplotlib Colors</title>
       <link>https://bbengfort.github.io/2017/01/resolving-matplotlib-colors/</link>
       <pubDate>Tue, 17 Jan 2017 14:52:50 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2017/01/resolving-matplotlib-colors/</guid>
-      <description>One of the challenges we&amp;rsquo;ve been dealing with in the Yellowbrick library is the proper resolution of colors, a problem that seems to have parallels in matplotlib as well. The issue is that colors can be described by the user in a variety of ways, then that description has to be parsed and rendered as specific colors. To name a few color specifications that exist in matplotlib:
-None: choose a reasonable default color The name of the color, e.</description>
+      <description>&lt;p&gt;One of the challenges we&amp;rsquo;ve been dealing with in the Yellowbrick library is the proper resolution of colors, a problem that seems to have parallels in &lt;code&gt;matplotlib&lt;/code&gt; as well. The issue is that colors can be described by the user in a variety of ways, then that description has to be parsed and rendered as specific colors. To name a few color specifications that exist in &lt;code&gt;matplotlib&lt;/code&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;None: choose a reasonable default color&lt;/li&gt;
+&lt;li&gt;The name of the color, e.g. &lt;code&gt;&amp;quot;b&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;blue&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The hex code of the color e.g. &lt;code&gt;&amp;quot;#377eb8&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The RGB or RGBA tuples of the color, e.g. &lt;code&gt;(0.0078, 0.4470, 0.6353)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A greyscale intensity string, e.g. &lt;code&gt;&amp;quot;0.76&amp;quot;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The &lt;a href=&#34;http://matplotlib.org/api/pyplot_api.html&#34;&gt;pyplot api documentation&lt;/a&gt; sums it up as follows:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Benchmarking Readline Iterators</title>
       <link>https://bbengfort.github.io/2016/12/benchmarking-readlines/</link>
       <pubDate>Fri, 23 Dec 2016 10:18:01 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2016/12/benchmarking-readlines/</guid>
-      <description>I&amp;rsquo;m starting to get serious about programming in Go, trying to move from an intermediate level to an advanced/expert level as I start to build larger systems. Right now I&amp;rsquo;m working on a problem that involves on demand iteration, and I don&amp;rsquo;t want to pass around entire arrays and instead be a bit more frugal about my memory usage. Yesterday, I discussed using [channels to yield iterators from functions]({% post_url 2016-12-22-yielding-functions-for-iteration-golang %}) and was a big fan of the API, but had some questions about memory usage.</description>
+      <description>&lt;p&gt;I&amp;rsquo;m starting to get serious about programming in Go, trying to move from an intermediate level to an advanced/expert level as I start to build larger systems. Right now I&amp;rsquo;m working on a problem that involves on demand iteration, and I don&amp;rsquo;t want to pass around entire arrays and instead be a bit more frugal about my memory usage. Yesterday, I discussed using [channels to yield iterators from functions]({% post_url 2016-12-22-yielding-functions-for-iteration-golang %}) and was a big fan of the API, but had some questions about memory usage. So today I created a package, &lt;a href=&#34;https://github.com/bbengfort/iterfile&#34;&gt;iterfile&lt;/a&gt; to benchmark and profile various iteration constructs in Go.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Creating a Microservice in Go</title>
       <link>https://bbengfort.github.io/2016/05/a-microservice-in-go/</link>
       <pubDate>Wed, 11 May 2016 09:52:13 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2016/05/a-microservice-in-go/</guid>
-      <description>Yesterday I built my first microservice (a RESTful API) using Go, and I wanted to collect a few of my thoughts on the experience here before I forgot them. The project, Scribo, is intended to aid in my research by collecting data about a specific network that I&amp;rsquo;m looking to build distributed systems for. I do have something running, which will need to evolve a lot, and it could be helpful to know where it started.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://bbengfort.github.io/images/2016-05-10-mora-architecture.png&#34; alt=&#34;The Mora Architecture Diagram&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Yesterday I built my first &lt;a href=&#34;http://martinfowler.com/articles/microservices.html&#34;&gt;microservice&lt;/a&gt; (a RESTful API) using &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt;, and I wanted to collect a few of my thoughts on the experience here before I forgot them. The project, &lt;a href=&#34;https://github.com/bbengfort/scribo&#34;&gt;Scribo&lt;/a&gt;, is intended to aid in my research by collecting data about a specific network that I&amp;rsquo;m looking to build distributed systems for. I do have &lt;a href=&#34;https://mora-scribo.herokuapp.com/&#34;&gt;something running&lt;/a&gt;, which will need to evolve a lot, and it could be helpful to know where it started.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Scikit-Learn Data Management: Bunches</title>
       <link>https://bbengfort.github.io/2016/04/bunch-data-management/</link>
       <pubDate>Tue, 19 Apr 2016 11:29:30 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2016/04/bunch-data-management/</guid>
-      <description>One large issue that I encounter in development with machine learning is the need to structure our data on disk in a way that we can load into Scikit-Learn in a repeatable fashion for continued analysis. My proposal is to use the sklearn.datasets.base.Bunch object to load the data into data and target attributes respectively, similar to how Scikit-Learn&amp;rsquo;s toy datasets are structured. Using this object to manage our data will mirror the native API and allow us to easily copy and paste code that demonstrates classifiers and techniques with the built in datasets.</description>
+      <description>&lt;p&gt;One large issue that I encounter in development with machine learning is the need to structure our data on disk in a way that we can load into Scikit-Learn in a repeatable fashion for continued analysis. My proposal is to use the &lt;code&gt;sklearn.datasets.base.Bunch&lt;/code&gt; object to load the data into data and target attributes respectively, similar to how Scikit-Learn&amp;rsquo;s toy datasets are structured. Using this object to manage our data will mirror the native API and allow us to easily copy and paste code that demonstrates classifiers and techniques with the built in datasets. Importantly, this API will also allow us to communicate to other developers and our future-selves exactly how to use the data.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Simple Password Generation</title>
       <link>https://bbengfort.github.io/2016/03/password-generator/</link>
       <pubDate>Wed, 30 Mar 2016 09:07:21 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2016/03/password-generator/</guid>
-      <description>I was talking with @looselycoupled the other day about how we generate passwords for use on websites. We both agree that every single domain should have its own password (to prevent one crack ruling all your Internets). However, we&amp;rsquo;ve both evolved on the method over time, and I&amp;rsquo;ve written a simple script that allows me to generate passwords using methodologies discussed in this post.
-In particular I use the generator to create passwords for pwSafe, the tool I currently use for password management (due to its use of the open source database format created by Bruce Schneier).</description>
+      <description>&lt;p&gt;I was talking with &lt;a href=&#34;https://github.com/looselycoupled&#34;&gt;@looselycoupled&lt;/a&gt; the other day about how we generate passwords for use on websites. We both agree that every single domain should have its own password (to prevent one crack ruling all your Internets). However, we&amp;rsquo;ve both evolved on the method over time, and I&amp;rsquo;ve written a simple script that allows me to generate passwords using methodologies discussed in this post.&lt;/p&gt;
+&lt;p&gt;In particular I use the generator to create passwords for &lt;a href=&#34;http://pwsafe.info/&#34;&gt;pwSafe&lt;/a&gt;, the tool I currently use for password management (due to its use of the &lt;a href=&#34;https://raw.githubusercontent.com/jpvasquez/PasswordSafe/master/docs/formatV3.txt&#34;&gt;open source database format&lt;/a&gt; created by &lt;a href=&#34;https://www.schneier.com/blog/archives/2005/06/password_safe.html&#34;&gt;Bruce Schneier&lt;/a&gt;). It is my hope that this script can be embedded directly into pwSafe, or at least allow me to write directly to the database; but for now I just copy and paste with the &lt;code&gt;pbcopy&lt;/code&gt; utility.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Bengfort Toolkit</title>
       <link>https://bbengfort.github.io/2016/03/toolkit/</link>
       <pubDate>Mon, 07 Mar 2016 13:32:14 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2016/03/toolkit/</guid>
-      <description>Programming life has finally caused me to give into something that I&amp;rsquo;ve resisted for a while: the creation of a Bengfort Toolkit and specifically a benlib. This post is mostly a reminder that this toolkit now exists and that I spent valuable time creating it against my better judgement. And as a result, I should probably use it and update it.
-I&amp;rsquo;ve already written (whoops, I almost said “you&amp;rsquo;ve already read” but I know no one reads this) posts about tools that I use frequently including [clock.</description>
+      <description>&lt;p&gt;Programming life has finally caused me to give into something that I&amp;rsquo;ve resisted for a while: the creation of a &lt;a href=&#34;https://github.com/bbengfort/toolkit&#34;&gt;Bengfort Toolkit&lt;/a&gt; and specifically a &lt;code&gt;benlib&lt;/code&gt;. This post is mostly a reminder that this toolkit now exists and that I spent valuable time creating it against my better judgement. And as a result, I should probably use it and update it.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve already written (whoops, I almost said “you&amp;rsquo;ve already read” but I know no one reads this) posts about tools that I use frequently including [clock.py]({% post_url 2016-01-12-codetime-and-clock %}) and [requires]({% post_url 2016-01-21-freezing-requirements %}). These things have been simply Python scripts that I&amp;rsquo;ve put in &lt;code&gt;~/bin&lt;/code&gt;, which is part of my &lt;code&gt;$PATH&lt;/code&gt;. These are too small or simple to require full blown repositories and PyPI listings on their own merit. Plus, I honestly believe that I&amp;rsquo;m the only one that uses them.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Anonymizing User Profile Data with Faker</title>
       <link>https://bbengfort.github.io/2016/02/anonymizing-profile-data/</link>
       <pubDate>Thu, 25 Feb 2016 12:32:54 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2016/02/anonymizing-profile-data/</guid>
-      <description>This post is an early draft of expanded work that will eventually appear on the District Data Labs Blog. Your feedback is welcome, and you can submit your comments on the draft GitHub issue.
-In order to learn (or teach) data science you need data (surprise!). The best libraries often come with a toy dataset to show examples and how the code works. However, nothing can replace an actual, non-trivial dataset for a tutorial or lesson because it provides for deep and meaningful further exploration.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;This post is an early draft of expanded work that will eventually appear on the &lt;a href=&#34;http://blog.districtdatalabs.com/&#34;&gt;District Data Labs Blog&lt;/a&gt;. Your feedback is welcome, and you can submit your comments on the &lt;a href=&#34;https://github.com/bbengfort/bbengfort.github.io/issues/3&#34;&gt;draft GitHub issue&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In order to learn (or teach) data science you need data (surprise!). The best libraries often come with a toy dataset to show examples and how the code works. However, nothing can replace an actual, non-trivial dataset for a tutorial or lesson because it provides for deep and meaningful further exploration. Non-trivial datasets can provide surprise and intuition in a way that toy datasets just cannot. Unfortunately, non-trivial datasets can be hard to find for a few reasons, but one common reason is that the dataset contains personally identifying information (PII).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Running on Schedule</title>
       <link>https://bbengfort.github.io/2016/02/running-on-schedule/</link>
       <pubDate>Wed, 10 Feb 2016 09:50:33 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2016/02/running-on-schedule/</guid>
-      <description>Automation with Python is a lovely thing, particularly for very repetitive or long running tasks; but unfortunately someone still has to press the button to make it go. It feels like there should be an easy way to set up a program such that it runs routinely, in the background, without much human intervention. Daemonized services are the route to go in server land; but how do you routinely schedule a process to run on your local computer, which may or may not be turned off1?</description>
+      <description>&lt;p&gt;Automation with Python is a lovely thing, particularly for very repetitive or long running tasks; but unfortunately someone still has to press the button to make it go. It feels like there should be an easy way to set up a program such that it runs routinely, in the background, without much human intervention. Daemonized services are the route to go in server land; but how do you routinely schedule a process to run on your local computer, which may or may not be turned off&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;#ros-footnote-1&#34;&gt;1&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;? Moreover, long running daemon processes seem expensive when you just want a quick job to execute routinely.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Iterators and Generators</title>
       <link>https://bbengfort.github.io/2016/02/iterators-generators/</link>
       <pubDate>Fri, 05 Feb 2016 22:47:15 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2016/02/iterators-generators/</guid>
-      <description>This post is an attempt to explain what iterators and generators are in Python, defend the yield statement, and reveal why a library like SimPy is possible. But first some terminology (that specifically targets my friends who Java). Iteration is a syntactic construct that implements a loop over an iterable object. The for statement provides iteration, the while statement may provide iteration. An iterable object is something that implements the iteration protocol (Java folks, read interface).</description>
+      <description>&lt;p&gt;This post is an attempt to explain what iterators and generators are in Python, defend the &lt;code&gt;yield&lt;/code&gt; statement, and reveal why a library like &lt;a href=&#34;https://simpy.readthedocs.org/en/latest/&#34;&gt;SimPy&lt;/a&gt; is possible. But first some terminology (that specifically targets my friends who Java). &lt;em&gt;Iteration&lt;/em&gt; is a syntactic construct that implements a loop over an &lt;em&gt;iterable&lt;/em&gt; object. The &lt;code&gt;for&lt;/code&gt; statement provides &lt;em&gt;iteration&lt;/em&gt;, the &lt;code&gt;while&lt;/code&gt; statement may provide iteration. An &lt;em&gt;iterable&lt;/em&gt; object is something that implements the &lt;em&gt;iteration protocol&lt;/em&gt; (Java folks, read interface). A &lt;em&gt;generator&lt;/em&gt; is a function that produces a sequence of results instead of a single value and is designed to make writing &lt;em&gt;iterable&lt;/em&gt; objects easier.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Packaging Python Libraries with PyPI</title>
       <link>https://bbengfort.github.io/2016/01/packaging-with-pypi/</link>
       <pubDate>Wed, 20 Jan 2016 15:33:06 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2016/01/packaging-with-pypi/</guid>
-      <description>Package deployment is something that is so completely necessary, but such a pain in the butt that I avoid it a little bit. However to reuse code in Python and to do awesome things like pip install mycode, you need to package it up and stick it on to PyPI (pronounced /pīˈpēˈī/ according to one site I read, though I still prefer /pīˈpī/). This process should be easy, but it&amp;rsquo;s detail oriented and there are only two good walk throughs (see links below).</description>
+      <description>&lt;p&gt;Package deployment is something that is so completely necessary, but such a pain in the butt that I avoid it a little bit. However to reuse code in Python and to do awesome things like &lt;code&gt;pip install mycode&lt;/code&gt;, you need to package it up and stick it on to PyPI (pronounced /pīˈpēˈī/ according to one site I read, though I still prefer /pīˈpī/). This process should be easy, but it&amp;rsquo;s detail oriented and there are only two good walk throughs (see links below).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Frequently Copied and Pasted</title>
       <link>https://bbengfort.github.io/2016/01/frequently-copy-pasted/</link>
       <pubDate>Fri, 08 Jan 2016 23:14:57 +0000</pubDate>
-      
       <guid>https://bbengfort.github.io/2016/01/frequently-copy-pasted/</guid>
-      <description>I have a bit of catch up to do — and I think that this notepad and development journal is the perfect resource to do it. You see, I am constantly copy and pasting code from other projects into the current project that I&amp;rsquo;m working on. Usually this takes the form of a problem that I had solved previously that has a similar domain to a new problem, but requires a slight amount of tweaking.</description>
+      <description>&lt;p&gt;I have a bit of catch up to do — and I think that this notepad and development journal is the perfect resource to do it. You see, I am &lt;em&gt;constantly&lt;/em&gt; copy and pasting code from other projects into the current project that I&amp;rsquo;m working on. Usually this takes the form of a problem that I had solved previously that has a similar domain to a new problem, but requires a slight amount of tweaking. Other times I am just doing the same task over and over again.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

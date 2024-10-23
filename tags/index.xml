@@ -9,7 +9,8 @@
       <url>https://bbengfort.github.io/bear.png</url>
       <link>https://bbengfort.github.io/bear.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://bbengfort.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.135.0</generator>
+    <language>en-us</language>
+    <atom:link href="https://bbengfort.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
