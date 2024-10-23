@@ -45,7 +45,7 @@ The bottom line is that a feature that was relatively quick to prototype took a 
 
     The release was posted on PyPI along with a [nice thank you on Twitter](https://twitter.com/fpedregosa/status/844492791048814594). I can finally answer my own question on Stack Overflow!
 
-    {{< tweet 844492791048814594 >}}
+    {{< tweet user="fpedregosa" id="844492791048814594" >}}
 
 So let me break down what happened here and do a bit of a post-mortem. First, I had a problem that I wanted to solve with an existing, popular, and well-used codebase (namely track the memory usage of child processes independently to the main process). I thought there must be a way to do this, and while there was a solution to a variant of my problem, there was no direct solution.
 

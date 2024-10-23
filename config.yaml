@@ -1,7 +1,6 @@
 baseURL: https://bbengfort.github.io
 languageCode: en-us
 title: Libelli
-paginate: 7
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -17,6 +16,9 @@ minify:
 
 permalinks:
   posts: /:year/:month/:slug/
+
+pagination:
+  pagerSize: 7
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -81,8 +83,8 @@ params:
         Content: Contains the notes and ramblings from my various programming activities.
 
     socialIcons:
-        - name: twitter
-          url: "https://twitter.com/bbengfort/"
+        - name: googlescholar
+          url: "https://scholar.google.com/citations?hl=en&user=QHJF4OEAAAAJ"
         - name: stackoverflow
           url: "https://stackoverflow.com/users/488917/bbengfort"
         - name: github

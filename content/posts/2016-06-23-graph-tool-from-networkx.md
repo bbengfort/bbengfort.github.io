@@ -13,7 +13,7 @@ title: Converting NetworkX to Graph-Tool
 
 This week I discovered [graph-tool](https://graph-tool.skewed.de/), a Python library for network analysis and visualization that is implemented in C++ with Boost. As a result, it can quickly and efficiently perform manipulations, statistical analyses of Graphs, and draw them in a visual pleasing style. It's like using Python with the performance of C++, and I was rightly excited:
 
-{{< tweet 746398688197623808 >}}
+{{< tweet user="bbengfort" id="746398688197623808" >}}
 
 The visualization piece also excited me; as I tweeted, graph-tool sits between matplotlib and Gephi. It does a better job than matplotlib at the visualization, including things like edge curvature and directionality markers that are very difficult to do in native matplotlib. The graphs are very comparative to Gephi renderings, though it is probably a lot easier to do in Gephi then coding in graph-tool.
 
