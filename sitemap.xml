@@ -3,18 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bbengfort.github.io/categories/</loc>
-    <lastmod>2023-05-03T10:30:16-05:00</lastmod>
+    <lastmod>2023-11-07T12:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/</loc>
+    <lastmod>2023-11-07T12:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/posts/</loc>
+    <lastmod>2023-11-07T12:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/categories/presentations/</loc>
+    <lastmod>2023-11-07T12:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/2023/11/smart-global-replication-using-reinforcement-learning/</loc>
+    <lastmod>2023-11-07T12:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/2023/08/diy-consensus-crafting-your-own-distributed-code/</loc>
+    <lastmod>2023-08-30T12:00:00-05:00</lastmod>
   </url><url>
     <loc>https://bbengfort.github.io/2023/05/faster-protocol-buffer-serialization/</loc>
     <lastmod>2023-05-03T10:30:16-05:00</lastmod>
   </url><url>
-    <loc>https://bbengfort.github.io/</loc>
-    <lastmod>2023-05-03T10:30:16-05:00</lastmod>
-  </url><url>
     <loc>https://bbengfort.github.io/categories/observations/</loc>
-    <lastmod>2023-05-03T10:30:16-05:00</lastmod>
-  </url><url>
-    <loc>https://bbengfort.github.io/posts/</loc>
     <lastmod>2023-05-03T10:30:16-05:00</lastmod>
   </url><url>
     <loc>https://bbengfort.github.io/2022/11/atomic-vs-mutex/</loc>
@@ -62,6 +71,9 @@
     <loc>https://bbengfort.github.io/2019/02/mount-ebs-volume/</loc>
     <lastmod>2019-02-05T12:48:18+00:00</lastmod>
   </url><url>
+    <loc>https://bbengfort.github.io/2019/01/visual-diagnostics-for-more-effective-machine-learning/</loc>
+    <lastmod>2019-01-10T12:00:00-05:00</lastmod>
+  </url><url>
     <loc>https://bbengfort.github.io/2018/09/blast-throughput/</loc>
     <lastmod>2018-09-26T17:06:24+00:00</lastmod>
   </url><url>
@@ -85,6 +97,9 @@
   </url><url>
     <loc>https://bbengfort.github.io/2018/06/corenlp-nltk-parses/</loc>
     <lastmod>2018-06-22T14:38:21+00:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/2018/06/understanding-machine-learning-through-visualizations-with-benjamin-bengfort-and-rebecca-bilbro-episode-166/</loc>
+    <lastmod>2018-06-17T12:00:00-05:00</lastmod>
   </url><url>
     <loc>https://bbengfort.github.io/2018/05/continuing-outer-loops-for-else/</loc>
     <lastmod>2018-05-17T09:02:43+00:00</lastmod>
@@ -142,6 +157,9 @@
   </url><url>
     <loc>https://bbengfort.github.io/2017/07/on-track-with-rails/</loc>
     <lastmod>2017-07-06T08:15:13+00:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/2017/06/visual-pipelines-for-text-analysis/</loc>
+    <lastmod>2017-06-24T12:00:00-05:00</lastmod>
   </url><url>
     <loc>https://bbengfort.github.io/2017/06/concurrent-subprocesses-fabric/</loc>
     <lastmod>2017-06-14T15:56:24+00:00</lastmod>
@@ -224,6 +242,9 @@
     <loc>https://bbengfort.github.io/2016/12/yielding-functions-for-iteration-golang/</loc>
     <lastmod>2016-12-22T06:54:26+00:00</lastmod>
   </url><url>
+    <loc>https://bbengfort.github.io/2016/12/data-product-architectures-oreilly-webinar/</loc>
+    <lastmod>2016-12-07T12:00:00-05:00</lastmod>
+  </url><url>
     <loc>https://bbengfort.github.io/2016/11/exception-handling/</loc>
     <lastmod>2016-11-21T12:53:30+00:00</lastmod>
   </url><url>
@@ -235,6 +256,9 @@
   </url><url>
     <loc>https://bbengfort.github.io/2016/10/reading-speed/</loc>
     <lastmod>2016-10-28T13:16:24+00:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/2016/10/dynamics-in-graph-analysis-adding-time-as-a-structure-for-visual-and-statistical-insight/</loc>
+    <lastmod>2016-10-24T12:00:00-05:00</lastmod>
   </url><url>
     <loc>https://bbengfort.github.io/2016/09/image-aspect-ratio/</loc>
     <lastmod>2016-09-13T14:19:14+00:00</lastmod>
@@ -251,6 +275,15 @@
     <loc>https://bbengfort.github.io/2016/08/pretty-print-directories/</loc>
     <lastmod>2016-08-01T12:17:47+00:00</lastmod>
   </url><url>
+    <loc>https://bbengfort.github.io/2016/07/interview-ben-bengfort-of-district-data-labs/</loc>
+    <lastmod>2016-07-28T12:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/2016/07/visualizing-the-model-selection-process/</loc>
+    <lastmod>2016-07-23T12:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/2016/07/data-product-architectures-seattle-data-day/</loc>
+    <lastmod>2016-07-21T12:00:00-05:00</lastmod>
+  </url><url>
     <loc>https://bbengfort.github.io/2016/07/color-mapper/</loc>
     <lastmod>2016-07-15T16:28:11+00:00</lastmod>
   </url><url>
@@ -262,6 +295,9 @@
   </url><url>
     <loc>https://bbengfort.github.io/2016/06/graph-tool-from-networkx/</loc>
     <lastmod>2016-06-23T19:21:58+00:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/2016/05/natural-language-processing-with-nltk-and-gensim/</loc>
+    <lastmod>2016-05-30T12:00:00-05:00</lastmod>
   </url><url>
     <loc>https://bbengfort.github.io/2016/05/text-classification-nltk-sckit-learn/</loc>
     <lastmod>2016-05-19T08:06:40+00:00</lastmod>
@@ -355,6 +391,12 @@
   </url><url>
     <loc>https://bbengfort.github.io/2015/12/one-big-gift/</loc>
     <lastmod>2015-12-25T11:54:12+00:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/2013/11/natural-language-processing-and-hadoop/</loc>
+    <lastmod>2013-11-02T12:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://bbengfort.github.io/2012/12/unbound-concepts-columbia-techbreakfast/</loc>
+    <lastmod>2012-12-12T12:00:00-05:00</lastmod>
   </url><url>
     <loc>https://bbengfort.github.io/about/</loc>
   </url><url>

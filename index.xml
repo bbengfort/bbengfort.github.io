@@ -11,8 +11,42 @@
     </image>
     <generator>Hugo -- 0.135.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 May 2023 10:30:16 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 07 Nov 2023 12:00:00 -0500</lastBuildDate>
     <atom:link href="https://bbengfort.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smart Global Replication Using Reinforcement Learning</title>
+      <link>https://bbengfort.github.io/2023/11/smart-global-replication-using-reinforcement-learning/</link>
+      <pubDate>Tue, 07 Nov 2023 12:00:00 -0500</pubDate>
+      <guid>https://bbengfort.github.io/2023/11/smart-global-replication-using-reinforcement-learning/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://kccncna2023.sched.com/event/21d4640540a0961019d201de8ec2fd5e&#34;&gt;Smart Global Replication using Reinforcement Learning&lt;/a&gt; is a talk that I gave at KubeCon + CloudNative North America 2023 in Chicago, IL. The video of the talk is below:&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/YTF2dXNhFzI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;p&gt;There are many great reasons to replicate data across Kubernetes clusters in different geographic regions: e.g. for disaster recovery and to ensure the best possible user experiences. Unfortunately, global replication is not easy; not just because of the difficulty in consistency reasoning that it introduces, but also due to the increased cost of provisioning multiple volumes that exponentially duplicate ingress and egress. Wouldn&amp;rsquo;t it be great if our systems could learn the optimal placement of storage blocks so that total replication was not necessary? Wouldn&amp;rsquo;t it be even better if our replication messaging was reduced ensuring communication only between the minimally necessary set of storage nodes? We show a system that uses multi-armed bandits to perform such an optimization; dynamically adjusting how data is replicated based on usage. We demonstrate the savings achieved and system performance using a real world system: the TRISA Global Travel Rule Compliance Directory.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DIY Consensus: Crafting Your Own Distributed Code (with Benjamin Bengfort)</title>
+      <link>https://bbengfort.github.io/2023/08/diy-consensus-crafting-your-own-distributed-code/</link>
+      <pubDate>Wed, 30 Aug 2023 12:00:00 -0500</pubDate>
+      <guid>https://bbengfort.github.io/2023/08/diy-consensus-crafting-your-own-distributed-code/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://pod.link/developer-voices/episode/938292a4e4b2c1ca82a66d4674dd8d97&#34;&gt;DIY Consensus: Crafting Your Own Distributed Code (with Benjamin Bengfort)&lt;/a&gt;&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/Ij_PBvocf5c?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;p&gt;How do distributed systems work? If you&amp;rsquo;ve got a database spread over three servers, how do they elect a leader? How does that change when we spread those machines out across data centers, situated around the globe? Do we even need to understand how it works, or can we relegate those problems to an off the shelf tool like Zookeeper? Joining me this week is Distributed Systems Doctor—Benjamin Bengfort—for a deep dive into consensus algorithms. We start off by discussing how much of &amp;ldquo;the clustering problem&amp;rdquo; is your problem, and how much can be handled by a library. We go through many of the constraints and tradeoffs that you need to understand either way. And we eventually reach Benjamin&amp;rsquo;s surprising message - maybe the time is ripe to roll your own. Should we be writing our own bespoke Raft implementations? And if so, how hard would that be? What guidance can he offer us?  Somewhere in the recording of this episode, I decided I want to sit down and try to implement a leader election protocol. Maybe you will too. And if not, you&amp;rsquo;ll at least have a better appreciation for what it takes. Distributed systems used to be rocket science, but they&amp;rsquo;re becoming deployment as usual. This episode should help us all to keep up!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Faster Protocol Buffer Serialization</title>
       <link>https://bbengfort.github.io/2023/05/faster-protocol-buffer-serialization/</link>
@@ -128,6 +162,27 @@ nvme1n1     259:1    0    8G  0 disk
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In the above case we want to attach nvme0n1 - a 300GB gp2 EBS volume. Check if the volume already has data in it (e.g. created from a snapshot or being attached to a new instance):&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Visual Diagnostics for More Effective Machine Learning</title>
+      <link>https://bbengfort.github.io/2019/01/visual-diagnostics-for-more-effective-machine-learning/</link>
+      <pubDate>Thu, 10 Jan 2019 12:00:00 -0500</pubDate>
+      <guid>https://bbengfort.github.io/2019/01/visual-diagnostics-for-more-effective-machine-learning/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://pydata.org/miami2019/schedule/presentation/8/&#34;&gt;Visual Diagnostics for More Effective Machine Learning&lt;/a&gt;&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/2kZ38ysHDzM?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;iframe
+  style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
+  src=&#34;http://www.slideshare.net/slideshow/embed_code/127690054?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;p&gt;Modeling is often treated as a search activity: find some combination of features, algorithm, and hyperparameters that yields the best score after cross-validation. In this talk, we will explore how to steer the model selection process with visual diagnostics and the Yellowbrick library, leading to more effective and more interpretable results and faster experimental workflows.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Blast Throughput</title>
       <link>https://bbengfort.github.io/2018/09/blast-throughput/</link>
       <pubDate>Wed, 26 Sep 2018 17:06:24 +0000</pubDate>
@@ -209,6 +264,15 @@ nvme1n1     259:1    0    8G  0 disk
 &lt;p&gt;The factory employs 12.8 percent of Bradford County.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;A syntax parse produces a tree that might help us understand that the subject of the sentence is &amp;ldquo;the factory&amp;rdquo;, the predicate is &amp;ldquo;employs&amp;rdquo;, and the target is &amp;ldquo;12.8 percent&amp;rdquo;, which in turn is modified by &amp;ldquo;Bradford County&amp;rdquo;. Syntax parses are often a first step toward deep information extraction or semantic understanding of text. Note however, that syntax parsing methods suffer from &lt;em&gt;structural ambiguity&lt;/em&gt;, that is the possibility that there exists more than one correct parse for a given sentence. Attempting to select the most likely parse for a sentence is incredibly difficult.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding Machine Learning Through Visualizations with Benjamin Bengfort and Rebecca Bilbro - Episode 166</title>
+      <link>https://bbengfort.github.io/2018/06/understanding-machine-learning-through-visualizations-with-benjamin-bengfort-and-rebecca-bilbro-episode-166/</link>
+      <pubDate>Sun, 17 Jun 2018 12:00:00 -0500</pubDate>
+      <guid>https://bbengfort.github.io/2018/06/understanding-machine-learning-through-visualizations-with-benjamin-bengfort-and-rebecca-bilbro-episode-166/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.pythonpodcast.com/yellowbrick-with-bejnamin-bengfort-and-rebecca-bilbro-episode-166/&#34;&gt;Understanding Machine Learning Through Visualizations with Benjamin Bengfort and Rebecca Bilbro - Episode 166&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;p&gt;Machine learning models are often inscrutable and it can be difficult to know whether you are making progress. To improve feedback and speed up iteration&lt;/p&gt;</description>
     </item>
     <item>
       <title>Continuing Outer Loops with for/else</title>
@@ -374,6 +438,15 @@ nvme1n1     259:1    0    8G  0 disk
       <description>&lt;p&gt;&lt;a href=&#34;https://bbengfort.github.io/images/2017-07-06-kahu-screenshot.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://bbengfort.github.io/images/2017-07-06-kahu-screenshot.png&#34; alt=&#34;Kahu Screenshot&#34;  /&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m preparing to move into a new job when I finish my dissertation hopefully later this summer. The new role involves web application development with Rails and so I needed to get up to speed. I had a web application requirement for my research so I figured I&amp;rsquo;d knock out two birds with one stone and build that &lt;a href=&#34;https://github.com/bbengfort/kahu&#34;&gt;app with Rails&lt;/a&gt; (a screenshot of the app is above, though of course this is just a front-end and doesn&amp;rsquo;t really tell you it was built with Rails).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Visual Pipelines for Text Analysis</title>
+      <link>https://bbengfort.github.io/2017/06/visual-pipelines-for-text-analysis/</link>
+      <pubDate>Sat, 24 Jun 2017 12:00:00 -0500</pubDate>
+      <guid>https://bbengfort.github.io/2017/06/visual-pipelines-for-text-analysis/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://data-intelligence.ai/presentations/13&#34;&gt;Visual Pipelines for Text Analysis&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;p&gt;Employing machine learning in practice is half search, half expertise, and half blind luck. In this talk we will explore how to make the luck half less blind by using visual pipelines to steer model selection from raw input to operational prediction. We will look specifically at extending transformer pipelines with visualizers for sentiment analysis and topic modeling text corpora.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concurrent Subprocesses and Fabric</title>
@@ -634,6 +707,15 @@ ok  	github.com/bbengfort/sping	7.364s
       <description>&lt;p&gt;It is very common for me to design code that expects functions to return an iterable context, particularly because I have been developing in Python with the &lt;code&gt;yield&lt;/code&gt; statement. The &lt;code&gt;yield&lt;/code&gt; statement allows functions to “return” the execution context to the caller while still maintaining state such that the caller can return state to the function and continue to iterate. It does this by actually returning a &lt;code&gt;generator&lt;/code&gt;, iterable object constructed from the local state of the closure.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Data Product Architectures: O&#39;Reilly Webinar</title>
+      <link>https://bbengfort.github.io/2016/12/data-product-architectures-oreilly-webinar/</link>
+      <pubDate>Wed, 07 Dec 2016 12:00:00 -0500</pubDate>
+      <guid>https://bbengfort.github.io/2016/12/data-product-architectures-oreilly-webinar/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.oreilly.com/pub/e/3800&#34;&gt;Data Product Architectures: O&amp;rsquo;Reilly Webinar&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;p&gt;Data products derive their value from data and generate new data in return. As a result, machine-learning techniques must be applied to their architecture and development. Machine learning fits models to make predictions on unknown inputs and must be generalizable and adaptable. As such, fitted models cannot exist in isolation; they must be operationalized and user facing so that applications can benefit from the new data, respond to it, and feed it back into the data product.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Exception Handling</title>
       <link>https://bbengfort.github.io/2016/11/exception-handling/</link>
       <pubDate>Mon, 21 Nov 2016 12:53:30 +0000</pubDate>
@@ -663,6 +745,38 @@ ok  	github.com/bbengfort/sping	7.364s
       <pubDate>Fri, 28 Oct 2016 13:16:24 +0000</pubDate>
       <guid>https://bbengfort.github.io/2016/10/reading-speed/</guid>
       <description>&lt;p&gt;Ashley and I have been going over the &lt;a href=&#34;http://blog.districtdatalabs.com/&#34;&gt;District Data Labs Blog&lt;/a&gt; trying to figure out a method to make it more accessible both to readers (who are at various levels) and to encourage writers to contribute. To that end, she&amp;rsquo;s been exploring other blogs to see if we can put multiple forms of content up; long form tutorials (the bulk of what&amp;rsquo;s there) and shorter idea articles, possibly even as short as the posts I put on my dev journal. One interesting suggestion she had was to mark the reading time of each post, something that &lt;a href=&#34;http://bit.ly/2ePtm3z&#34;&gt; the Longreads Blog&lt;/a&gt; does. This may help give readers a better sense of the time committment and be able to engage more easily.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dynamics in Graph Analysis Adding Time as a Structure for Visual and Statistical Insight</title>
+      <link>https://bbengfort.github.io/2016/10/dynamics-in-graph-analysis-adding-time-as-a-structure-for-visual-and-statistical-insight/</link>
+      <pubDate>Mon, 24 Oct 2016 12:00:00 -0500</pubDate>
+      <guid>https://bbengfort.github.io/2016/10/dynamics-in-graph-analysis-adding-time-as-a-structure-for-visual-and-statistical-insight/</guid>
+      <description>&lt;p&gt;I gave this talk twice, both at &lt;a href=&#34;http://pydata.org/dc2016/schedule/presentation/36/&#34;&gt;PyData DC&lt;/a&gt; on October 24, 2016 and at &lt;a href=&#34;http://pydata.org/carolinas2016/schedule/presentation/39/&#34;&gt;PyData Carolinas&lt;/a&gt; on September 15, 2016. Both videos are below if you feel like figuring out which presentation was better!&lt;/p&gt;
+&lt;h3 id=&#34;pydata-dc&#34;&gt;PyData DC&lt;/h3&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/QhMZ1PmlJn4?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;pydata-carolinas&#34;&gt;PyData Carolinas&lt;/h3&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/RgixxVpfXDY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;slides&#34;&gt;Slides&lt;/h3&gt;
+&lt;iframe
+  style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
+  src=&#34;http://www.slideshare.net/slideshow/embed_code/66065281?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;p&gt;Network analyses are powerful methods for both visual analytics and machine learning but can suffer as their complexity increases. By embedding time as a structural element rather than a property, we will explore how time series and interactive analysis can be improved on Graph structures. Primarily we will look at decomposition in NLP-extracted concept graphs using NetworkX and Graph Tool.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Modifying an Image&#39;s Aspect Ratio</title>
@@ -703,6 +817,43 @@ ok  	github.com/bbengfort/sping	7.364s
       <description>&lt;p&gt;It feels like there are many questions like this one on Stack Overflow: &lt;a href=&#34;http://stackoverflow.com/questions/19699059/representing-directory-file-structure-in-markdown-syntax&#34;&gt;Representing Directory &amp;amp; File Structure in Markdown Syntax&lt;/a&gt;, basically asking &amp;ldquo;how can we represent a directory structure in text in a pleasant way?&amp;rdquo; I too use these types of text representations in slides, blog posts, books, etc. It would be very helpful if I had an automatic way of doing this so I didn&amp;rsquo;t have to create it from scratch.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Interview - Ben Bengfort of District Data Labs</title>
+      <link>https://bbengfort.github.io/2016/07/interview-ben-bengfort-of-district-data-labs/</link>
+      <pubDate>Thu, 28 Jul 2016 12:00:00 -0500</pubDate>
+      <guid>https://bbengfort.github.io/2016/07/interview-ben-bengfort-of-district-data-labs/</guid>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/ZiY5tjgg7lU?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;p&gt;We talk to Benjamin Bengfort about his Data Day Seattle talks, District Data Labs, and Ben&amp;rsquo;s popular O&amp;rsquo;Reilly books.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Visualizing the Model Selection Process</title>
+      <link>https://bbengfort.github.io/2016/07/visualizing-the-model-selection-process/</link>
+      <pubDate>Sat, 23 Jul 2016 12:00:00 -0500</pubDate>
+      <guid>https://bbengfort.github.io/2016/07/visualizing-the-model-selection-process/</guid>
+      <description>&lt;iframe
+  style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
+  src=&#34;http://www.slideshare.net/slideshow/embed_code/64311820?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;p&gt;Machine learning is the hacker art of describing the features of instances that we want to make predictions about, then fitting the data that describes those instances to a model form. Applied machine learning has come a long way from it&amp;rsquo;s beginnings in academia, and with tools like Scikit-Learn, it&amp;rsquo;s easier than ever to generate operational models for a wide variety of applications. Thanks to the ease and variety of the tools in Scikit-Learn, the primary job of the data scientist is &lt;em&gt;model selection&lt;/em&gt;. Model selection involves performing feature engineering, hyperparameter tuning, and algorithm selection. These dimensions of machine learning often lead computer scientists towards automatic model selection via optimization (maximization) of a model&amp;rsquo;s evaluation metric. However, the search space is large, and grid search approaches to machine learning can easily lead to failure and frustration. Human intuition is still essential to machine learning, and visual analysis in concert with automatic methods can allow data scientists to steer model selection towards better fitted models, faster. In this talk, we will discuss interactive visual methods for better understanding, steering, and tuning machine learning models.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Product Architectures: Seattle Data Day</title>
+      <link>https://bbengfort.github.io/2016/07/data-product-architectures-seattle-data-day/</link>
+      <pubDate>Thu, 21 Jul 2016 12:00:00 -0500</pubDate>
+      <guid>https://bbengfort.github.io/2016/07/data-product-architectures-seattle-data-day/</guid>
+      <description>&lt;iframe
+  style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
+  src=&#34;http://www.slideshare.net/slideshow/embed_code/64265501?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;p&gt;Data products derive their value from data and generate new data in return; as a result, machine learning techniques must be applied to their architecture and their development. Machine learning fits models to make predictions on unknown inputs and must be &lt;em&gt;generalizable&lt;/em&gt; and &lt;em&gt;adaptable&lt;/em&gt;. As such, fitted models cannot exist in isolation; they must be operationalized and user facing so that applications can benefit from the new data, respond to it, and feed it back in to the data product. Data product architectures are therefore &lt;em&gt;life cycles&lt;/em&gt; and understanding the data product life cycle will enable architects to develop robust, failure free workflows and applications. In this talk we will discuss the data product life cycle, explore how to engage a model build, evaluation, and selection phase with an operation and interaction phase. Following the lambda architecture, we will investigate wrapping a central computational store for speed and querying, as well as incorporating a discussion of monitoring, management, and data exploration for hypothesis driven development. From web applications to big data appliances; this architecture serves as a blueprint for handling data services of all sizes!&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Color Map Utility</title>
       <link>https://bbengfort.github.io/2016/07/color-mapper/</link>
       <pubDate>Fri, 15 Jul 2016 16:28:11 +0000</pubDate>
@@ -732,6 +883,23 @@ ok  	github.com/bbengfort/sping	7.364s
 &lt;/p&gt;
 &lt;p&gt;This week I discovered &lt;a href=&#34;https://graph-tool.skewed.de/&#34;&gt;graph-tool&lt;/a&gt;, a Python library for network analysis and visualization that is implemented in C++ with Boost. As a result, it can quickly and efficiently perform manipulations, statistical analyses of Graphs, and draw them in a visual pleasing style. It&amp;rsquo;s like using Python with the performance of C++, and I was rightly excited:&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;It&amp;#39;s a bear to get setup, but once you do things get pretty nice. Moving my network viz over to it now!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Natural Language Processing with NLTK and Gensim</title>
+      <link>https://bbengfort.github.io/2016/05/natural-language-processing-with-nltk-and-gensim/</link>
+      <pubDate>Mon, 30 May 2016 12:00:00 -0500</pubDate>
+      <guid>https://bbengfort.github.io/2016/05/natural-language-processing-with-nltk-and-gensim/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://us.pycon.org/2016/schedule/presentation/1597/&#34;&gt;Natural Language Processing with NLTK and Gensim&lt;/a&gt;&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/itKNpCPHq3I?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;p&gt;Natural Language Processing (NLP) is often taught at the academic level from the perspective of computational linguists. However, as data scientists, we have a richer view of the natural language world - unstructured data that by its very nature has latent information that is important to humans. NLP practitioners have benefited from machine learning techniques to unlock meaning from large corpora, and in this class we’ll explore how to do that particularly with Python, Gensim, and the Natural Language Toolkit (NLTK).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Text Classification with NLTK and Scikit-Learn</title>
@@ -1001,6 +1169,36 @@ ok  	github.com/bbengfort/sping	7.364s
       <pubDate>Fri, 25 Dec 2015 11:54:12 +0000</pubDate>
       <guid>https://bbengfort.github.io/2015/12/one-big-gift/</guid>
       <description>&lt;p&gt;My family does &amp;ldquo;one big gift&amp;rdquo; every Christmas; that is instead of everyone simply buying everyone else a smaller gift; every person is assigned to one other person to give them a single large gift. Selection of who gives what to who is a place of some (minor) conflict. Therefore we simply use a random algorithm. Unfortunately, apparently a uniform random sample of pairs is not enough, therefore we take 100 samples to vote for each combination to see who gets what as follows:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Natural Language Processing and Hadoop</title>
+      <link>https://bbengfort.github.io/2013/11/natural-language-processing-and-hadoop/</link>
+      <pubDate>Sat, 02 Nov 2013 12:00:00 -0500</pubDate>
+      <guid>https://bbengfort.github.io/2013/11/natural-language-processing-and-hadoop/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://strataconf.com/stratany2013/public/schedule/detail/30806&#34;&gt;Natural Language Processing and Hadoop&lt;/a&gt;&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/2642kr9-cB0?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;p&gt;Benjamin Bengfort and Sean Murphy discuss how NLP can be integrated with Hadoop to gain insights in big data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Unbound Concepts: Columbia TechBreakfast Dec. 2012</title>
+      <link>https://bbengfort.github.io/2012/12/unbound-concepts-columbia-techbreakfast/</link>
+      <pubDate>Wed, 12 Dec 2012 12:00:00 -0500</pubDate>
+      <guid>https://bbengfort.github.io/2012/12/unbound-concepts-columbia-techbreakfast/</guid>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/N-Bi_MwvZiY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
+&lt;p&gt;Presentation by the CTO of Unbound Concepts, Benjamin Bengfort, at the Columbia TechBreakfast 2012.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
