@@ -11,8 +11,21 @@
     </image>
     <generator>Hugo -- 0.135.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Nov 2023 12:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 30 Oct 2024 11:35:00 -0700</lastBuildDate>
     <atom:link href="https://bbengfort.github.io/categories/presentations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy and Security in the Age of Generative AI</title>
+      <link>https://bbengfort.github.io/2024/10/privacy-security-generative-ai/</link>
+      <pubDate>Wed, 30 Oct 2024 11:35:00 -0700</pubDate>
+      <guid>https://bbengfort.github.io/2024/10/privacy-security-generative-ai/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://odsc.com/speakers/privacy-and-security-in-the-age-of-generative-ai/&#34;&gt;Privacy and Security in the Age of Generative AI&lt;/a&gt; is a talk that I gave at ODSC West 2024 in Burlingame, California. The slides of the talk are below:&lt;/p&gt;
+&lt;iframe
+  style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
+  src=&#34;http://www.slideshare.net/slideshow/embed_code/272867721?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;From sensitive data leakage to prompt injection and zero-click worms, LLMs and generative models are the new cyber battleground for hackers. As more AI models are deployed in production, data scientists and ML engineers can&amp;rsquo;t ignore these problems. The good news is that we can influence privacy and security in the machine learning lifecycle using data specific techniques. In this talk, we&amp;rsquo;ll review some of the newest security concerns affecting LLMs and deep learning models and learn how to embed privacy into model training with ACLs and differential privacy, secure text generation and function-calling interfaces, and even leverage models to defend other models.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Smart Global Replication Using Reinforcement Learning</title>
       <link>https://bbengfort.github.io/2023/11/smart-global-replication-using-reinforcement-learning/</link>
