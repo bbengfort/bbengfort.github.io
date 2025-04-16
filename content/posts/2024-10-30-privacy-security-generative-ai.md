@@ -11,6 +11,10 @@ showtoc: false
 
 {{< slideshare id="272867721" >}}
 
+An updated presentation that I gave at C4AI on April 15, 2025 in Columbia, Maryland is below:
+
+{{< slideshare id="278029566" >}}
+
 ### Abstract
 
 From sensitive data leakage to prompt injection and zero-click worms, LLMs and generative models are the new cyber battleground for hackers. As more AI models are deployed in production, data scientists and ML engineers can't ignore these problems. The good news is that we can influence privacy and security in the machine learning lifecycle using data specific techniques. In this talk, we'll review some of the newest security concerns affecting LLMs and deep learning models and learn how to embed privacy into model training with ACLs and differential privacy, secure text generation and function-calling interfaces, and even leverage models to defend other models.
