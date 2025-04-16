@@ -60,7 +60,7 @@ So to be honest, there are situations where a mutex is a better choice than a ch
 </span></span></code></pre></div><p>You should see something like:</p><pre tabindex=0><code>1 locks requested by main.(*StateMachine).Alpha
 2 locks requested by main.(*StateMachine).Bravo
 </code></pre><p>Obviously you can do the same thing for <code>RWMutex</code> objects, and it&rsquo;s easy to swap them in and out of code by changing the package and adding or removing a &ldquo;D&rdquo;. My implementation is here: <a href=https://godoc.org/github.com/bbengfort/x/lock>github.com/bbengfort/x/lock</a>.</p></div><footer class=post-footer><ul class=post-tags></ul><nav class=paginav><a class=prev href=https://bbengfort.github.io/2017/12/psycopg2-transactions/><span class=title>« Prev</span><br><span>Transaction Handling with Psycopg2</span>
-</a><a class=next href=https://bbengfort.github.io/2017/09/lock-queueing/><span class=title>Next »</span><br><span>Lock Queuing in Go</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2024 <a href=https://bbengfort.github.io/>Libelli</a></span> ·
+</a><a class=next href=https://bbengfort.github.io/2017/09/lock-queueing/><span class=title>Next »</span><br><span>Lock Queuing in Go</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2025 <a href=https://bbengfort.github.io/>Libelli</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
