@@ -21,7 +21,7 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://info.umbctraining.com/effective-ai-systems&#34;&gt;Implementing Function Calling LLMs without Fear&lt;/a&gt; is a talk that I gave at a C4AI/RealmOne Happy Hour Tech Meetup in Columbia, Maryland. The slides of the talk are below:&lt;/p&gt;
 &lt;iframe
   style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
-  src=&#34;http://www.slideshare.net/slideshow/embed_code/278029409?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+  src=&#34;https://www.slideshare.net/slideshow/embed_code/278029409?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
 &lt;br&gt;&lt;br&gt;
 &lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 &lt;p&gt;Description: For an AI system to be an agent rather than a simple chatbot, it needs to be able to do work on behalf of its users, often accomplished through the use of Function Calling LLMs. Instruction-based models can identify external functions to call for additional input or context before creating a final response without the need for any additional training. However, giving an AI system access to databases, APIs, or even tools like our calendars is fraught with security concerns and task validation nightmares. In this talk, we&amp;rsquo;ll discuss the basics of how Function Calling works and think through the best practices and techniques to ensure that your agents work for you, not against you!&lt;/p&gt;</description>
@@ -34,12 +34,12 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://odsc.com/speakers/privacy-and-security-in-the-age-of-generative-ai/&#34;&gt;Privacy and Security in the Age of Generative AI&lt;/a&gt; is a talk that I gave at ODSC West 2024 in Burlingame, California. The slides of the talk are below:&lt;/p&gt;
 &lt;iframe
   style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
-  src=&#34;http://www.slideshare.net/slideshow/embed_code/272867721?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+  src=&#34;https://www.slideshare.net/slideshow/embed_code/272867721?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
 &lt;br&gt;&lt;br&gt;
 &lt;p&gt;An updated presentation that I gave at C4AI on April 15, 2025 in Columbia, Maryland is below:&lt;/p&gt;
 &lt;iframe
   style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
-  src=&#34;http://www.slideshare.net/slideshow/embed_code/278029566?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+  src=&#34;https://www.slideshare.net/slideshow/embed_code/278029566?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
 &lt;br&gt;&lt;br&gt;
 &lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 &lt;p&gt;From sensitive data leakage to prompt injection and zero-click worms, LLMs and generative models are the new cyber battleground for hackers. As more AI models are deployed in production, data scientists and ML engineers can&amp;rsquo;t ignore these problems. The good news is that we can influence privacy and security in the machine learning lifecycle using data specific techniques. In this talk, we&amp;rsquo;ll review some of the newest security concerns affecting LLMs and deep learning models and learn how to embed privacy into model training with ACLs and differential privacy, secure text generation and function-calling interfaces, and even leverage models to defend other models.&lt;/p&gt;</description>
@@ -208,7 +208,7 @@ nvme1n1     259:1    0    8G  0 disk
 
 &lt;iframe
   style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
-  src=&#34;http://www.slideshare.net/slideshow/embed_code/127690054?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+  src=&#34;https://www.slideshare.net/slideshow/embed_code/127690054?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
 &lt;br&gt;&lt;br&gt;
 &lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
 &lt;p&gt;Modeling is often treated as a search activity: find some combination of features, algorithm, and hyperparameters that yields the best score after cross-validation. In this talk, we will explore how to steer the model selection process with visual diagnostics and the Yellowbrick library, leading to more effective and more interpretable results and faster experimental workflows.&lt;/p&gt;</description>
@@ -804,7 +804,7 @@ ok  	github.com/bbengfort/sping	7.364s
 &lt;h3 id=&#34;slides&#34;&gt;Slides&lt;/h3&gt;
 &lt;iframe
   style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
-  src=&#34;http://www.slideshare.net/slideshow/embed_code/66065281?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+  src=&#34;https://www.slideshare.net/slideshow/embed_code/66065281?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
 &lt;br&gt;&lt;br&gt;
 &lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
 &lt;p&gt;Network analyses are powerful methods for both visual analytics and machine learning but can suffer as their complexity increases. By embedding time as a structural element rather than a property, we will explore how time series and interactive analysis can be improved on Graph structures. Primarily we will look at decomposition in NLP-extracted concept graphs using NetworkX and Graph Tool.&lt;/p&gt;</description>
@@ -867,7 +867,7 @@ ok  	github.com/bbengfort/sping	7.364s
       <guid>https://bbengfort.github.io/2016/07/visualizing-the-model-selection-process/</guid>
       <description>&lt;iframe
   style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
-  src=&#34;http://www.slideshare.net/slideshow/embed_code/64311820?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+  src=&#34;https://www.slideshare.net/slideshow/embed_code/64311820?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
 &lt;br&gt;&lt;br&gt;
 &lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
 &lt;p&gt;Machine learning is the hacker art of describing the features of instances that we want to make predictions about, then fitting the data that describes those instances to a model form. Applied machine learning has come a long way from it&amp;rsquo;s beginnings in academia, and with tools like Scikit-Learn, it&amp;rsquo;s easier than ever to generate operational models for a wide variety of applications. Thanks to the ease and variety of the tools in Scikit-Learn, the primary job of the data scientist is &lt;em&gt;model selection&lt;/em&gt;. Model selection involves performing feature engineering, hyperparameter tuning, and algorithm selection. These dimensions of machine learning often lead computer scientists towards automatic model selection via optimization (maximization) of a model&amp;rsquo;s evaluation metric. However, the search space is large, and grid search approaches to machine learning can easily lead to failure and frustration. Human intuition is still essential to machine learning, and visual analysis in concert with automatic methods can allow data scientists to steer model selection towards better fitted models, faster. In this talk, we will discuss interactive visual methods for better understanding, steering, and tuning machine learning models.&lt;/p&gt;</description>
@@ -879,7 +879,7 @@ ok  	github.com/bbengfort/sping	7.364s
       <guid>https://bbengfort.github.io/2016/07/data-product-architectures-seattle-data-day/</guid>
       <description>&lt;iframe
   style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
-  src=&#34;http://www.slideshare.net/slideshow/embed_code/64265501?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+  src=&#34;https://www.slideshare.net/slideshow/embed_code/64265501?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
 &lt;br&gt;&lt;br&gt;
 &lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
 &lt;p&gt;Data products derive their value from data and generate new data in return; as a result, machine learning techniques must be applied to their architecture and their development. Machine learning fits models to make predictions on unknown inputs and must be &lt;em&gt;generalizable&lt;/em&gt; and &lt;em&gt;adaptable&lt;/em&gt;. As such, fitted models cannot exist in isolation; they must be operationalized and user facing so that applications can benefit from the new data, respond to it, and feed it back in to the data product. Data product architectures are therefore &lt;em&gt;life cycles&lt;/em&gt; and understanding the data product life cycle will enable architects to develop robust, failure free workflows and applications. In this talk we will discuss the data product life cycle, explore how to engage a model build, evaluation, and selection phase with an operation and interaction phase. Following the lambda architecture, we will investigate wrapping a central computational store for speed and querying, as well as incorporating a discussion of monitoring, management, and data exploration for hypothesis driven development. From web applications to big data appliances; this architecture serves as a blueprint for handling data services of all sizes!&lt;/p&gt;</description>
