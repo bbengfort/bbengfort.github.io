@@ -1,7 +1,7 @@
 ---
 title: "Implementing Function Calling LLMs without Fear"
 slug: "function-calling-without-fear"
-date: "Wed Apr 16 13:59:33 2025 -0400"
+date: "2025-04-16T14:06:23-04:00"
 draft: false
 categories: presentations
 showtoc: false
